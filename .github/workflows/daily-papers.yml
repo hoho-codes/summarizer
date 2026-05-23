@@ -1,0 +1,39 @@
+name: Daily Research Paper Summary
+
+on:
+  schedule:
+    # Runs at 7 AM UTC every day (adjust to your timezone)
+    - cron: '0 7 * * *'
+  workflow_dispatch: # Allows manual trigger for testing
+
+jobs:
+  fetch-and-summarize:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        pip install requests feedparser
+        
+    - name: Fetch and summarize papers
+      env:
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        TOPICS: "quantum algorithms,quantum information,statistical physics,turbulence,geophysical turbulence"
+      run: python fetch_papers.py
+      
+    - name: Commit and push results
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add summaries/
+        git diff --quiet && git diff --staged --quiet || git commit -m "Daily paper summaries - $(date +'%Y-%m-%d')"
+        git push
+      continue-on-error: true
