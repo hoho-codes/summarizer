@@ -94,22 +94,27 @@ def fetch_arxiv(category, max_results):
 # Groq Summarization
 # =========================
 
-def summarize_with_groq(text, short=False):
+def summarize_with_groq(text, mode="paper"):
     headers = {
         "Authorization": f"Bearer {GROQ_API_KEY}",
         "Content-Type": "application/json",
     }
 
-    prompt = (
-        "Summarize the following set of research abstracts in one coherent paragraph:\n\n"
-        if short else
-        "Summarize this research abstract in 3 concise sentences:\n\n"
-    )
+    if mode == "paper":
+        prompt = (
+            "Summarize this research abstract as 2–3 very short bullet points. "
+            "Focus on the main idea, method, and result. Be concise.\n\n"
+        )
+    else:  # category
+        prompt = (
+            "Given the following research abstracts, produce 2–3 short bullet points "
+            "summarizing the main themes and directions. Be high-level and concise.\n\n"
+        )
 
     payload = {
         "model": GROQ_MODEL,
         "messages": [{"role": "user", "content": prompt + text[:2000]}],
-        "temperature": 0.3,
+        "temperature": 0.2,
     }
 
     for _ in range(3):
@@ -128,7 +133,7 @@ def summarize_with_groq(text, short=False):
         r.raise_for_status()
         return r.json()["choices"][0]["message"]["content"].strip()
 
-    return "Summary unavailable due to rate limits."
+    return "- Summary unavailable due to rate limits."
 
 # =========================
 # Main
@@ -167,28 +172,27 @@ def main():
             if not papers:
                 continue
 
-            # ---- CATEGORY HEADER ----
             md.write(f"## {category}\n\n")
 
-            # ---- CATEGORY SUMMARY (TOP) ----
-            abstracts = []
-            for p in papers:
-                if p["title"] not in seen_titles:
-                    abstracts.append(p["abstract"])
+            abstracts = [
+                p["abstract"]
+                for p in papers
+                if p["title"] not in seen_titles
+            ]
 
             if abstracts:
                 combined = "\n\n".join(abstracts)
-                cat_summary = summarize_with_groq(combined, short=True)
+                cat_summary = summarize_with_groq(combined, mode="category")
                 time.sleep(GROQ_DELAY)
-                md.write(f"**Category Summary:** {cat_summary}\n\n")
+                md.write("**Category Summary:**\n")
+                md.write(f"{cat_summary}\n\n")
 
-            # ---- INDIVIDUAL PAPERS ----
             for p in papers:
                 if p["title"] in seen_titles:
                     continue
                 seen_titles.add(p["title"])
 
-                summary = summarize_with_groq(p["abstract"])
+                summary = summarize_with_groq(p["abstract"], mode="paper")
                 time.sleep(GROQ_DELAY)
 
                 md.write(f"### {p['title']}\n")
