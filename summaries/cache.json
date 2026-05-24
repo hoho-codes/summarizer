@@ -113,5 +113,110 @@
     "title": "Physical completion of the Navier-Stokes equations",
     "summary": "- • The Navier-Stokes equations can be derived without linearisation assumptions.\n- • The nonlinear convective term drops out of the Fokker-Planck equilibrium condition.\n- • The resulting stochastic system is globally well-posed and converges exponentially.",
     "timestamp": "2026-05-24"
+  },
+  "2605.22793": {
+    "title": "Variation of Venusian Gravity Wave Absolute Momentum Fluxes and Drag as Retrieved from the Akatsuki Mission",
+    "summary": "- Temperature perturbations reach amplitudes of approximately ±10 K on Venus.\n- Momentum flux increases exponentially below 50-60 km, then peaks and attenuates.\n- Wave drag becomes prominent where momentum flux begins to decrease.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22710": {
+    "title": "Dynamics of fast magnetosonic wave turbulence",
+    "summary": "- Fast magnetosonic waves are fundamental oscillation modes of astrophysical plasmas.\n- Numerical simulations study the dynamics of wave turbulence kinetic equation.\n- Kolmogorov-Zakharov spectrum is found in the radial direction with anisotropy.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22648": {
+    "title": "Experimental investigation of twin pulsed jets in a hemispheric elastic cavity",
+    "summary": "- Two pulsed jets interact within an elastic hemispheric cavity.\n- Jet strength and spacing ratio affect fluid dynamics within cavity.\n- Three distinct flow regimes are observed in the experiment.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22546": {
+    "title": "Perpendicular rod-airfoil aeroacoustics: experiments and modelling of interaction noise",
+    "summary": "- A simplified configuration of a cylinder and airfoil is studied experimentally.\n- Simultaneous acoustic and particle image velocimetry measurements are taken.\n- Powell-Howe vortex-sound theory is combined with Green function for modelling.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22326": {
+    "title": "Lagrangian single-particle, multi-particle and topological analyses in turbulent Rayleigh-Bénard convection",
+    "summary": "- Particle accelerations show robust statistics and Heisenberg-Yaglom behaviour.\n- Lagrangian heat transfer is extremely intermittent and highly variable.\n- Topological analysis identifies dust-devil-like convective vortices in the Q-R plane.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22274": {
+    "title": "A unified gas-kinetic wave-particle method for multiscale binary-species gas mixtures",
+    "summary": "- UGKWP method decomposes gas distribution function into hydrodynamic waves and particles.\n- Method recovers correct viscosity and diffusion coefficients in continuum flow regime.\n- UGKWP method incorporates Shakhov model to correct Prandtl number and heat conduction.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22214": {
+    "title": "N-Component Free Energy Lattice Boltzmann Method with Reduction Consistency and Global Momentum Conservation",
+    "summary": "- Model simulates fluid systems with arbitrary number of immiscible components.\n- Method is strictly reduction consistent to prevent spontaneous nucleation.\n- Novel discretization conserves momentum to machine precision globally.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22212": {
+    "title": "Global exponential stability for the three-dimensional Navier-Stokes equations on hyperbolic space",
+    "summary": "- The Navier-Stokes equations admit a unique global mild solution on hyperbolic space.\n- Exponential decay rate is μλ_\\Def^{(}, where λ_\\Def^{( = 26/\n- Negative curvature provides a spectral gap for exponential stability.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22107": {
+    "title": "Full Turbulence Simulation of Channel Flow at $Re_τ \\approx 1000$",
+    "summary": "- FTS of channel flow at Re_tau ≈ 1000 was performed with high fidelity.\n- Wall-normal grid spacing confirmed no adverse numerical effects at high resolution.\n- First-approximation DNS resolution requires Delta x+ ≈ 19 and Delta y+ ≈",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22042": {
+    "title": "Modelling hydroelastic flexure of arbitrarily shaped ice shelves forced by long ocean waves",
+    "summary": "- A hydroelastic model is developed for wave-induced ice shelf flexure.\n- The model allows for ice shelves of arbitrary shape and thickness.\n- Finite elements and a Dirichlet-to-Neumann map are used for computation.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22242": {
+    "title": "Decomposing Ensemble Spread in Lorenz '96 With Learned Stochastic Parameterizations",
+    "summary": "- Ensemble perturbations regulate trajectory decorrelation and exploration.\n- Stochastic parameterizations enhance early spread growth and consistency.\n- Long-term variance is not increased by ensemble perturbations.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21875": {
+    "title": "Water vapor buoyancy and the African easterly jet",
+    "summary": "- African easterly jet's magnitude reduced by 30% due to moisture gradient.\n- Vapor buoyancy counteracts temperature gradient's effect on density balance.\n- Global warming strengthens effect of vapor buoyancy on African easterly jet.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21864": {
+    "title": "A Simulation Methodology Testbed for Typhoon Sensitivity Analysis: Framework Development and Perturbation-Response Experiments with the Pangu Weather Model",
+    "summary": "- A simulation testbed is developed for typhoon sensitivity analysis using the Pangu model.\n- The testbed integrates AI forecasting with PID closed-loop techniques for analysis.\n- Experiments reveal perturbation-response ranges and input-output coupling relationships.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21790": {
+    "title": "Microwave-Stimulated Serpentinization of Olivine for Geological Hydrogen Production",
+    "summary": "- Microwave stimulation accelerates serpentinization of olivine at atmospheric pressure.\n- Hydrogen concentration increased 12-fold with microwave exposure compared to hot-plate.\n- Microwave stimulation enhances serpentinization kinetics through rapid volumetric heating.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21687": {
+    "title": "Three-Dimensional Velocity Analysis and Particle Size Dynamics from Multi-Site RGB-Photometry of Noctilucent Clouds",
+    "summary": "- Method measures altitude and particle size of noctilucent clouds using RGB-photometry.\n- Three velocity components and particle radius are determined from observational data.\n- Meridional motion drives change in particle size of noctilucent clouds.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21673": {
+    "title": "From Licensing to Open Access: Designing a Sustainable Transition in Operational Weather Data",
+    "summary": "- ECMWF transitioned from restricted data licensing to open access in October\n- Tiered service model kept core forecast data open with cost-recovered delivery.\n- 93% of paying organisations retained Service Agreement after transition.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21196": {
+    "title": "Effect of grid anisotropy, resolution, and subgrid-scale models in pseudo-spectral Large Eddy Simulations of low-level clouds",
+    "summary": "- Grid anisotropy improves accuracy and computational efficiency in simulations.\n- AMD model with pseudo-spectral advection produces robust predictions without tuning.\n- Grid anisotropy balances accuracy and efficiency in simulations effectively.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21191": {
+    "title": "Beyond Vorticity: An Angular Momentum Perspective on Fluid Flow",
+    "summary": "- Angular momentum density field provides a complementary framework to vorticity analysis.\n- Viscous torque decomposes into diffusive and local spin dissipative terms.\n- Hydrodynamic impulse reformulates into dilatational, volumetric, and rotational flux components.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.20925": {
+    "title": "Blending machine learning and physics-based approaches for weather and climate: a typology",
+    "summary": "- Machine learning and physics-based models are integrated for weather and climate prediction.\n- Blended approaches combine benefits of machine learning and physics-based systems.\n- Typology provides framework for informed decision-making and strategic planning.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21174": {
+    "title": "Exact expression for maximum Lyapunov exponent during transients in computationally powerful dynamical networks",
+    "summary": "- Network's time dynamics can be exactly solved through nonlinear transformation.\n- Exact analytical expression for maximum Lyapunov exponent is derived.\n- Network exhibits positive MLEs during transients useful for computation.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21530": {
+    "title": "Pairwise Distance-Diffusion Analysis (PDDA): A Geometric Framework for Estimating Hurst Exponents in Multivariate Long-Memory Processes",
+    "summary": "- PDDA is a geometric framework for estimating Hurst exponents.\n- PDDA yields two complementary routes: R/S-PDDA and MSD-PDDA analysis.\n- PDDA is extended to multivariate isotropic and anisotropic processes analysis.",
+    "timestamp": "2026-05-24"
   }
 }
