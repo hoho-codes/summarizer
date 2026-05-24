@@ -10,7 +10,7 @@ from pathlib import Path
 GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
 TOPICS = os.environ.get('TOPICS', 'machine learning').split(',')
 MAX_PAPERS = 10  # Adjust based on how many papers you want daily
-REQUEST_DELAY = 3  # Seconds between arXiv requests to avoid rate limiting
+REQUEST_DELAY = 5  # Seconds between arXiv requests to avoid rate limiting
 
 # arXiv category mappings (add more as needed)
 ARXIV_CATEGORIES = {
@@ -97,6 +97,15 @@ def summarize_with_groq(text, title):
     if not GROQ_API_KEY:
         return "Error: GROQ_API_KEY not set"
     
+    # Truncate very long abstracts (Groq has token limits)
+    max_abstract_length = 2000
+    if len(text) > max_abstract_length:
+        text = text[:max_abstract_length] + "..."
+    
+    # Clean text to avoid API issues
+    text = text.replace('\n', ' ').strip()
+    title = title.replace('\n', ' ').strip()
+    
     url = "https://api.groq.com/openai/v1/chat/completions"
     headers = {
         "Authorization": f"Bearer {GROQ_API_KEY}",
@@ -117,13 +126,24 @@ Abstract: {text}"""
             {"role": "user", "content": prompt}
         ],
         "temperature": 0.3,
-        "max_tokens": 200
+        "max_tokens": 250
     }
     
     try:
         response = requests.post(url, headers=headers, json=payload, timeout=30)
         response.raise_for_status()
         return response.json()['choices'][0]['message']['content']
+    except requests.exceptions.HTTPError as e:
+        # Log the error details for debugging
+        error_detail = ""
+        try:
+            error_detail = response.json()
+        except:
+            error_detail = str(e)
+        print(f"    Groq API error: {error_detail}")
+        return f"Error summarizing: {str(e)}"
+    except requests.exceptions.Timeout:
+        return "Error: Groq API timeout"
     except Exception as e:
         return f"Error summarizing: {str(e)}"
 
