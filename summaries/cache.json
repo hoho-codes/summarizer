@@ -1,0 +1,117 @@
+{
+  "2605.22822": {
+    "title": "Bottom-up open EFT for non-Abelian gauge theory with dynamical color environment",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Developed bottom-up open EFT for non-Abelian gauge theories with dynamical color environment.\n- • Retained slow environmental response variables for local system-environment EFT construction.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22807": {
+    "title": "How many systems can be dephased before the quantum switch becomes causally definite?",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Dephasing all systems makes bipartite processes causally separable.\n- • Keeping future system undephased maintains causal nonseparability.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22797": {
+    "title": "One-photon communication in atomic media",
+    "summary": "- Here are three bullet points summarizing the abstract:\n- • Single-photon transmission through atomic media causes information loss.\n- • Quantum channel fidelity decreases with coupling strength in media.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22796": {
+    "title": "Geometric Origin of the Non-Adiabaticity Parameter and Self-Limiting Instability in Driven Nonlinear Systems",
+    "summary": "- Here are three bullet points summarizing the abstract:\n- • Non-adiabaticity parameter has a geometric interpretation in projective Hilbert space.\n- • Proposed framework provides a local criterion for non-adiabatic instability evaluation.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22770": {
+    "title": "Adiabatic Quantum Phase Estimation",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Adiabatic QPE estimates eigenvalues up to precision ε in Heisenberg-limited time.\n- • New protocol achieves optimal Heisenberg-limited scaling with precision and failure probability.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22758": {
+    "title": "A sharp interaction-degree threshold for simulating QAOA",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Sharp interaction-degree threshold found for QAOA classical simulation.\n- • Degree 3 QAOA simulation collapses polynomial hierarchy to third level.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22744": {
+    "title": "Quantum circuit design via dynamic Pauli constraints",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Novel quantum model uses Pauli constraints for gate specification.\n- • Model is equivalent to coupling-graph-restricted circuit model, universal for BQP.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22713": {
+    "title": "Self-testing of exact entanglement embezzlement",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Exact entanglement embezzlement is a self-test for Cuntz isometries.\n- • Unique quasi-free state on Cuntz algebra is required for embezzlement.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22603": {
+    "title": "Sudden death of entanglement, rebirth of magic",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Local noise can bring back \"magic\" in quantum systems, not entanglement.\n- • Magic and entanglement have a complementary relationship under local damping.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22583": {
+    "title": "Optimal work extraction in measurement-based quantum Otto engines: Non-adiabaticity and generalized measurements can be beneficial",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Measurement-based quantum Otto engines offer greater controllability and simpler implementation.\n- • POVM-based engines can yield higher optimal work extraction than PVM-based ones.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22764": {
+    "title": "Spin Glass Mapping of the Parallel Minority Game",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Parallel minority game is equivalent to Ising spin glass in mean-field limit.\n- • Agent choices are encoded as spin variables in the spin glass model.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22691": {
+    "title": "Posterior Collapse as Automatic Spectral Pruning",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Posterior collapse in β-VAEs implements automatic spectral pruning.\n- • Latent modes collapse if contribution to reconstruction is below β threshold.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22646": {
+    "title": "Directed extended-range percolation",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Directed networks reduce percolation complexity with ensured connectivity.\n- • DERP model shows directionality enables exact percolation threshold determination.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22555": {
+    "title": "Entanglement Dynamics across a Monitored Quantum Point Contact",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Entanglement grows linearly in time before reaching a maximum value.\n- • Entanglement then decays slowly to zero as the system empties.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22520": {
+    "title": "The cell fluid model with Curie-Weiss interactions: special cases and analytical results",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Cell fluid model with Curie-Weiss interactions studied in special cases.\n- • Analytical results derived for ideal-gas and strong-repulsion limits.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22424": {
+    "title": "Long-range nonstabilizerness of topologically encoded states from mutual information",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Researchers study long-range nonstabilizerness in 2D topologically-ordered systems.\n- • Mutual information is used to diagnose long-range nonstabilizerness in lattice models.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22383": {
+    "title": "Aggregation-Fragmentation Processes with Broken Detailed Balance",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Aggregation-fragmentation processes break detailed balance without equilibrium states.\n- • Steady states can be deduced from Laplace transform for mass-independent models.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22103": {
+    "title": "Berezinskii-Kosterlitz-Thouless-type Transition in Site Percolation on the Diamond Hierarchical Lattice",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Site percolation on diamond lattice doesn't have a traditional percolation transition.\n- • Critical phase emerges with subextensive cluster size scaling continuously with p.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21933": {
+    "title": "Thermodynamic Irreversibility of Training Algorithms",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Training algorithms introduce far-from-equilibrium dynamical processes in AI systems.\n- • Four methods characterize irreversibility of training algorithms with high accuracy.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21844": {
+    "title": "A Utility-Driven Bounded-Confidence Model for Opinion Dynamics",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Utility-driven model shows stronger influence from opinions with higher utility.\n- • Mean opinion follows a stochastic differential equation with Gibbs-like distribution.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22793": {
+    "title": "Variation of Venusian Gravity Wave Absolute Momentum Fluxes and Drag as Retrieved from the Akatsuki Mission",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Venusian gravity waves detected with amplitudes of ±10 K in temperature.\n- • Momentum flux (10-30 m^2 s^-2) and wave drag (0.003-0.03 m s^-2) detected.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22710": {
+    "title": "Dynamics of fast magnetosonic wave turbulence",
+    "summary": "- Here are 3 bullet points summarizing the article:\n- • Fast magnetosonic waves are fundamental oscillation modes in astrophysical plasmas.\n- • Numerical simulations study wave turbulence kinetic equation for energy spectrum evolution.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22648": {
+    "title": "Experimental investigation of twin pulsed jets in a hemispheric elastic cavity",
+    "summary": "- Here are three bullet points summarizing the study:\n- • Twin pulsed jets interact in an elastic hemispherical cavity with varied spacing and strength.\n- • Time-resolved particle image velocimetry captures instantaneous velocity fields in the cavity.",
+    "timestamp": "2026-05-24"
+  }
+}

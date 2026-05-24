@@ -1,1 +1,186 @@
-[]
+[
+  {
+    "title": "Bottom-up open EFT for non-Abelian gauge theory with dynamical color environment",
+    "authors": "Yoshihiko Abe, Kanji Nishii",
+    "abstract": "We develop a bottom-up open effective field theory (EFT) for non-Abelian gauge theories within the Schwinger--Keldysh formalism. Instead of integrating out the environment completely and starting from a nonlocal influence functional, we retain the slow environmental response variables explicitly and construct a local system-environment EFT. The environmental sector is described by a dynamical color-frame variable, Stückelberg-like field, and an associated color-current sector, which gives the nontrivial interactions and dissipation between the system and the environment. The resulting construction provides a gauge-covariant Markov embedding of nonlocal and non-Markovian color response. After integrating out the retained environmental variables with retarded boundary conditions, the reduced system theory acquires nonlocal dissipative kernels and stochastic sources. We show that the hard thermal loop response arises naturally as a particular realization of the retained environmental response. Our framework provides a local open-EFT description of color transport, memory effects, and fluctuation-dissipation structure in non-Abelian plasmas, and offers a systematic starting point for dissipative Yang--Mills EFTs with dynamical environments.",
+    "url": "https://arxiv.org/abs/2605.22822v1",
+    "published": "2026-05-21T17:59:56Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Developed bottom-up open EFT for non-Abelian gauge theories with dynamical color environment.\n- • Retained slow environmental response variables for local system-environment EFT construction."
+  },
+  {
+    "title": "How many systems can be dephased before the quantum switch becomes causally definite?",
+    "authors": "Yassine Benhaj, Kuntal Sengupta, Cyril Branciard",
+    "abstract": "Quantum processes with indefinite causal order -- so-called causally nonseparable processes -- can exhibit various advantages over quantum circuits with a fixed or a well-defined causal structure. A natural question is how much nonclassicality is required for a process to display causal nonseparability. Here we address this by investigating how many systems can be dephased (or decohered) before this property vanishes. First, for bipartite processes with open past and future we show that if all systems are dephased, or if only the future system is kept undephased, then the process becomes causally separable. However, if any single system other than the future system remains undephased, then there exist processes that retain causal nonseparability. Next, we demonstrate a similar behaviour in the multipartite case, when restricted to the physically motivated class of quantum circuits with quantum control (QC-QCs). Namely, dephasing all systems or keeping only the future system undephased renders any QC-QC causally separable; while causal nonseparability can persist if any non-future system is left undephased.",
+    "url": "https://arxiv.org/abs/2605.22807v1",
+    "published": "2026-05-21T17:56:44Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Dephasing all systems makes bipartite processes causally separable.\n- • Keeping future system undephased maintains causal nonseparability."
+  },
+  {
+    "title": "One-photon communication in atomic media",
+    "authors": "Zixiang Hong, John C. Schotland",
+    "abstract": "We consider the problem of single-photon transmission through an atomic medium, using quantum channel fidelity to describe the resulting information loss. We find that the normalized fidelity decreases monotonically with coupling strength, establishing a performance bound for quantum communication through such media. Our results hold for several channel types and for deterministic and random media.",
+    "url": "https://arxiv.org/abs/2605.22797v1",
+    "published": "2026-05-21T17:50:18Z",
+    "summary": "- Here are three bullet points summarizing the abstract:\n- • Single-photon transmission through atomic media causes information loss.\n- • Quantum channel fidelity decreases with coupling strength in media."
+  },
+  {
+    "title": "Geometric Origin of the Non-Adiabaticity Parameter and Self-Limiting Instability in Driven Nonlinear Systems",
+    "authors": "A. M. Tishin",
+    "abstract": "We establish that the non-adiabaticity parameter has a direct geometric interpretation as the instantaneous evolution speed of a driven quantum state in projective Hilbert space under the Fubini Study metric. In contrast to conventional asymptotic approaches, the proposed framework provides a strictly local geometric criterion that allows non-adiabatic instability and its nonlinear suppression to be evaluated continuously at each stage of the driven evolution. We further show that an occupation-dependent nonlinear regulator Usuppresses the effective geometric evolution speed, leading to bounded low-occupancy dynamics. The resulting crossover parameter provides a compact criterion for self-limited non-adiabatic instability in driven nonlinear bosonic systems.",
+    "url": "https://arxiv.org/abs/2605.22796v1",
+    "published": "2026-05-21T17:49:53Z",
+    "summary": "- Here are three bullet points summarizing the abstract:\n- • Non-adiabaticity parameter has a geometric interpretation in projective Hilbert space.\n- • Proposed framework provides a local criterion for non-adiabatic instability evaluation."
+  },
+  {
+    "title": "Adiabatic Quantum Phase Estimation",
+    "authors": "Alexander Schmidhuber, Seth Lloyd",
+    "abstract": "Quantum phase estimation (QPE) is a central algorithmic primitive that estimates eigenvalues of a Hamiltonian up to precision $ε$ in Heisenberg-limited time $T=Θ(1/ε)$. Standard gate-based implementations of QPE require deep controlled time-evolution circuits and are not native to analog hardware. Here, we present a simple adiabatic protocol for QPE that achieves (up to logarithmic factors) the optimal Heisenberg-limited scaling $T = O\\left( \\frac{1}ε \\log\\left(δ^{-1}\\right)\\right)$ in both the precision $ε$ and failure probability $δ$. By encoding eigenvalues in populations of computational basis states rather than complex phases, our approach is naturally robust against certain dephasing errors. The adiabatic protocol only requires the ability to couple a single ancilla qubit to the system Hamiltonian as well as pairwise couplings within the ancilla register.",
+    "url": "https://arxiv.org/abs/2605.22770v1",
+    "published": "2026-05-21T17:31:36Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Adiabatic QPE estimates eigenvalues up to precision ε in Heisenberg-limited time.\n- • New protocol achieves optimal Heisenberg-limited scaling with precision and failure probability."
+  },
+  {
+    "title": "A sharp interaction-degree threshold for simulating QAOA",
+    "authors": "Ralfs Āboliņš, Andris Ambainis",
+    "abstract": "We identify a sharp interaction-degree threshold for the classical simulation of QAOA with $2$-local cost functions. At degree $3$, classical sampling from depth-$1$ QAOA with small multiplicative error would collapse the polynomial hierarchy to its third level. At degree $2$, exact classical sampling from depth-$p$ QAOA on $n$ qubits runs in time $n^{O(1)}$ whenever $p = O(\\log n)$. The hard degree-$3$ instances have trivially optimizable cost functions, so sampling hardness does not by itself imply a quantum optimization advantage.",
+    "url": "https://arxiv.org/abs/2605.22758v1",
+    "published": "2026-05-21T17:24:00Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Sharp interaction-degree threshold found for QAOA classical simulation.\n- • Degree 3 QAOA simulation collapses polynomial hierarchy to third level."
+  },
+  {
+    "title": "Quantum circuit design via dynamic Pauli constraints",
+    "authors": "James R. Wootton, Merlin Incerti-Medici, Daniel Bultrini, Pierre Fromholz",
+    "abstract": "We introduce a novel software-oriented model of quantum computation motivated by the practical constraints of near-term quantum hardware. In this model, gates are specified by constraints expressed in terms of Pauli observables, with each disjoint layer of gates accompanied by a pairwise or $k$-local quantum state tomography of the device. We prove that the model is equivalent to the coupling-graph-restricted circuit model and hence universal for BQP, with a polynomial overhead: simulating a depth-$D$ circuit on $N$ qubits requires at most $O(D^2 N \\log N)$ complexity. The model formalizes an idiom shared by existing work that ranges from quantum imaginary time evolution for the study of quantum systems to the use of quantum computers for procedural generation in games. It therefore provides a natural interface for designing quantum software entirely in terms of physically observable quantities, relevant for the NISQ era and into fault-tolerance.",
+    "url": "https://arxiv.org/abs/2605.22744v1",
+    "published": "2026-05-21T17:14:16Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Novel quantum model uses Pauli constraints for gate specification.\n- • Model is equivalent to coupling-graph-restricted circuit model, universal for BQP."
+  },
+  {
+    "title": "Self-testing of exact entanglement embezzlement",
+    "authors": "Samuel J. Harris",
+    "abstract": "We consider bipartite exact entanglement embezzlement with a catalyst state vector $ψ$ in a Hilbert space $\\mathcal{H}$ using unitaries (or more generally, contractions). If $\\mathcal{M} \\subseteq \\mathcal{B}(\\mathcal{H})$ is a von Neumann algebra and $U \\in M_d \\otimes \\mathcal{M}$ and $V \\in \\mathcal{M}' \\otimes M_d$ are unitaries (or more generally contractions), then such a protocol is of the form $(U \\otimes I_d)(I_d \\otimes V)(e_0 \\otimes ψ\\otimes e_0)=\\sum_{i=0}^{d-1} α_i e_i \\otimes ψ\\otimes e_i$, where each $α_i>0$ and $\\sum_{i=0}^{d-1} α_i^2=1$. We show that any such protocol must arise from a unique state on the tensor product $\\mathcal{O}_d \\otimes \\mathcal{O}_d$ of the Cuntz algebra with itself. As a result, we prove that exact entanglement embezzlement is a self-test for a collection of $d$ Cuntz isometries for each party and a unique quasi-free state on the Cuntz algebra $\\mathcal{O}_d$ in the sense of \\cite{Iz93}. Moreover, we use modular theory to show that the von Neumann algebra generated by the copy of $\\mathcal{O}_d$ is the unique separable approximately finite-dimensional Type $\\text{III}_λ$ factor for some $0<λ\\leq 1$, where $λ$ can be determined by an algebraic condition on the Schmidt coefficients of the state $\\varphi=\\sum_{i=0}^{d-1} α_i e_i \\otimes e_i$.",
+    "url": "https://arxiv.org/abs/2605.22713v1",
+    "published": "2026-05-21T16:50:39Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Exact entanglement embezzlement is a self-test for Cuntz isometries.\n- • Unique quasi-free state on Cuntz algebra is required for embezzlement."
+  },
+  {
+    "title": "Sudden death of entanglement, rebirth of magic",
+    "authors": "Chenfeng Cao",
+    "abstract": "Local Markovian noise cannot bring entanglement back, but it can bring magic back. Unlike separability, stabilizer membership is not preserved by local channels, allowing dissipation to push states out of the stabilizer polytope as well as in. Under local amplitude damping, the $n$-qubit GHZ family $α|0^n\\rangle+β|1^n\\rangle$ ($0<α<β$) loses its magic at a lower damping strength $γ_-$ and regains it at a higher one $γ_+$, while entanglement is irreversibly lost at $γ_e$. This magic-entanglement complementarity, $γ_e+γ_+=1$ for every $n$, reflects a system-environment duality of amplitude damping and persists for a broader class of dissipative channels. For small $α$, the reborn magic resides in a fully separable state with all proper marginals stabilizer, yet parity-syndrome extraction concentrates it onto a single qubit for magic-state distillation. Local dissipation further divides pure stabilizer states into magic-generators and magic-insulators: at two qubits, the Bell state $|Φ^+\\rangle$ generates magic immediately, while its Bell-state partner $|Ψ^+\\rangle$ remains stabilizer. Together, magic and entanglement reveal a symmetry invisible to either alone.",
+    "url": "https://arxiv.org/abs/2605.22603v1",
+    "published": "2026-05-21T15:16:42Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Local noise can bring back \"magic\" in quantum systems, not entanglement.\n- • Magic and entanglement have a complementary relationship under local damping."
+  },
+  {
+    "title": "Optimal work extraction in measurement-based quantum Otto engines: Non-adiabaticity and generalized measurements can be beneficial",
+    "authors": "Arunabha Das, Sayan Mondal, Debarupa Saha, Ujjwal Sen",
+    "abstract": "Measurement-based quantum heat engines have attracted significant interest as alternatives to conventional thermal engines, as they replace the hot thermal reservoir with quantum measurements, thereby offering greater controllability and simpler implementation. Motivated by these advantages, we investigate a measurement-driven quantum Otto engine with a qubit working substance and study the optimal work extractable from such engines, including whether their performance can surpass that of conventional quantum Otto cycles. We analyze the engine in both the infinite-time (adiabatic) and finite-time (non-adiabatic) regimes, considering two distinct implementations obtained through optimization over all projection-valued measurements (PVMs) and over all two-outcome positive operator-valued measurements (POVMs). We show that measurement-based engines can outperform conventional quantum Otto engines within specific parameter regimes and that POVM-based engines can yield higher optimal work extraction than PVM-based ones. Furthermore, by incorporating the thermodynamic cost associated with resetting the auxiliary system required for POVM implementation, we demonstrate that the resulting net work output can still exceed that of PVM-based engines under suitable conditions on the spectral gaps and cold bath temperature. We also identify regimes in which non-adiabatic implementations can yield higher work output and efficiency than their adiabatic counterparts. Our study provides operational guidelines for designing improved measurement-driven quantum Otto engines.",
+    "url": "https://arxiv.org/abs/2605.22583v1",
+    "published": "2026-05-21T14:54:09Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Measurement-based quantum Otto engines offer greater controllability and simpler implementation.\n- • POVM-based engines can yield higher optimal work extraction than PVM-based ones."
+  },
+  {
+    "title": "Spin Glass Mapping of the Parallel Minority Game",
+    "authors": "Aryan Tyagi, Soumyaditya Das, Soumyajyoti Biswas, Anirban Chakraborti",
+    "abstract": "The parallel minority game (PMG) extends the classical minority game to many choices, with each agent restricted to two predetermined alternatives. In this condition, minimizing the population variance across all choices is a complex combinatorial optimization problem. We show that this minimization is exactly equivalent to finding the ground state of an Ising spin glass in the mean-field limit, i.e., the Sherrington-Kirkpatrick model. By encoding the agent choices as spin variables, the variance becomes a quadratic Hamiltonian with quenched random couplings $J_{ij}$ and random fields $h_i$. This mapping reveals inherent frustration and connects the PMG to the well developed theory of spin glasses, providing a new perspective on the frozen, sub-optimal configurations observed in stochastic strategies.",
+    "url": "https://arxiv.org/abs/2605.22764v1",
+    "published": "2026-05-21T17:25:13Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Parallel minority game is equivalent to Ising spin glass in mean-field limit.\n- • Agent choices are encoded as spin variables in the spin glass model."
+  },
+  {
+    "title": "Posterior Collapse as Automatic Spectral Pruning",
+    "authors": "Johannes Hirn",
+    "abstract": "We show that posterior collapse in $β$-VAEs implements automatic spectral pruning. A latent mode collapses if its contribution to reconstruction is below the cutoff set by $β$. Equilibrium solutions with different $β$ thus reveal a cascade of collapses as latent modes decouple from least to most useful. We derive this as a consequence of the loss via a Landau stability analysis. We define a latent-rescaling-invariant order parameter that ranks active latent modes and whose collapse thresholds identify which effective variables to inspect first. In the linear Gaussian case, the collapse spectrum, utility spectrum, and normalized PCA spectrum coincide, and each collapse follows a mean-field law. We test these predictions on the WorldClim dataset.",
+    "url": "https://arxiv.org/abs/2605.22691v1",
+    "published": "2026-05-21T16:36:10Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Posterior collapse in β-VAEs implements automatic spectral pruning.\n- • Latent modes collapse if contribution to reconstruction is below β threshold."
+  },
+  {
+    "title": "Directed extended-range percolation",
+    "authors": "Wenbo Liu, Yiwen Zeng, Xueming Liu, Ginestra Bianconi",
+    "abstract": "While for standard percolation directionality is known to increase the combinatorial complexity of percolation, here we show that when connectivity is ensured by paths of length $R\\geq 2$, network directionality, impeding backtracking, can significantly reduce the complexity of percolation. To illustrate this finding, we introduce Directed Extended-Range Percolation (DERP), defined directed networks with non-reciprocal edges, motivated by applications in quantum communication. In this framework, message transmission is enabled between trusted nodes separated by a directed path of length at most $R$. Using a message-passing approach, we show that directionality enables an exact determination of the percolation threshold and the anomalous critical indices on locally tree-like structures. On random directed networks we find that the critical behavior of DERP depends sensitively on degree correlations. These analytical predictions are corroborated by extensive Monte Carlo simulations, highlighting the profound impact of directionality and correlations on long-range connectivity in complex networks.",
+    "url": "https://arxiv.org/abs/2605.22646v1",
+    "published": "2026-05-21T15:51:57Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Directed networks reduce percolation complexity with ensured connectivity.\n- • DERP model shows directionality enables exact percolation threshold determination."
+  },
+  {
+    "title": "Entanglement Dynamics across a Monitored Quantum Point Contact",
+    "authors": "Anna Delmonte, Marco Schirò",
+    "abstract": "We compute the entanglement dynamics across a monitored quantum point contact, where particle losses are recorded on a given site, and demonstrate how this single-site local monitoring substantially reshapes the entanglement production. Contrary to the unitary case, where entanglement entropy grows logarithmically in time, here we find first a linear growth, up to a maximum value displaying volume-law scaling, and then a slow decay to zero, as the system empties out. We capture this crossover using a quasiparticle picture, where the first linear growth arises due to an emergent bias voltage established by the losses, which eventually decays away as the system depletes. We connect our results to studies of the Page curve and to experimentally relevant probes, via full counting statistics of charge transfer across a subregion, with only a single channel to unravel leading to a favorable scaling of the postselection overhead. Natural platforms for this setting include mesoscopic systems and ultracold atoms.",
+    "url": "https://arxiv.org/abs/2605.22555v1",
+    "published": "2026-05-21T14:39:23Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Entanglement grows linearly in time before reaching a maximum value.\n- • Entanglement then decays slowly to zero as the system empties."
+  },
+  {
+    "title": "The cell fluid model with Curie-Weiss interactions: special cases and analytical results",
+    "authors": "O. A. Dobush, M. P. Kozlovskii, I. V. Pylyuk, R. V. Romanik, M. A. Shpot",
+    "abstract": "Inspired by previous extensive numerical studies of a cell fluid model with Curie-Weiss interactions, we concentrate on some analytically tractable special cases in its description. The key ingredient of the model is a competition between global attraction and local repulsion interactions between particles with coupling constants $J_1$ and $J_2$, respectively. We provide analytical results in several limiting cases, including the ideal-gas limit $J_1=J_2=0$ and the strong-repulsion limit $J_2\\gg J_1$. For $J_2\\gg J_1$, a detailed analytical study is presented. We derive explicit expressions for the critical point parameters, the equation of state, and the binodal and spinodal curves in closed form. The equation of state is found to be in full agreement with that of the van der Waals lattice gas, and the order parameter satisfies the standard Curie-Weiss equation. In a neighborhood of the critical point, a Landau expansion is shown to have the same form and symmetry as that of the classical lattice gas within the mean-field approximation. Moreover, based on the explicit knowledge of a few leading terms in the asymptotic expansion of the deformed exponential function governing the physics of the cell model, we extend its validity range to include the marginal case of thermodynamic stability, $J_1=J_2$. In particular, this extension makes a consideration of the ideal-gas limit $J_1=J_2=0$ formally legitimate. For the generic marginal case $J_1=J_2\\ne0$ systematically avoided in previous works, we present numerical data and phase diagrams that augment their findings for $J_2>J_1$.",
+    "url": "https://arxiv.org/abs/2605.22520v1",
+    "published": "2026-05-21T14:13:00Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Cell fluid model with Curie-Weiss interactions studied in special cases.\n- • Analytical results derived for ideal-gas and strong-repulsion limits."
+  },
+  {
+    "title": "Long-range nonstabilizerness of topologically encoded states from mutual information",
+    "authors": "David Aram Korbany, Tyler D. Ellison, David T. Stephen, Lorenzo Piroli",
+    "abstract": "We study long-range nonstabilizerness (LRN), namely the obstruction to remove nonstabilizerness with shallow-depth local quantum circuits. In one-dimensional settings, the mutual information between disconnected spatial regions has proven to be a powerful tool to diagnose LRN. In this work, we focus on encoded states of two-dimensional topologically-ordered systems, and explore the ability of the mutual information to serve as a diagnostic of LRN. Focusing on the concrete setting of lattice models defined on a torus, we show that information about LRN can be gained from the analysis of the mutual information between non-overlapping regions containing non-contractible loops, and of the change of such mutual information under modular real-space transformations. We exemplify this idea in the toric code and the non-abelian string-net model with doubled Fibonacci topological order. In the former case, we show that the mutual information provides a full classification, certifying LRN for all encoded non-stabilizer states. In the latter case, instead, our approach does not lead to a full classification, as it detects LRN for all states except from a finite subset with special transformation properties under the modular group. Finally, we discuss how our results on LRN constrain the logical gates that can be implemented fault-tolerantly on the torus.",
+    "url": "https://arxiv.org/abs/2605.22424v1",
+    "published": "2026-05-21T12:43:23Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Researchers study long-range nonstabilizerness in 2D topologically-ordered systems.\n- • Mutual information is used to diagnose long-range nonstabilizerness in lattice models."
+  },
+  {
+    "title": "Aggregation-Fragmentation Processes with Broken Detailed Balance",
+    "authors": "P. L. Krapivsky",
+    "abstract": "We study aggregation-fragmentation processes in which pairs of clusters can aggregate, and each cluster can break into two fragments. If the rates of aggregation and fragmentation do not depend on the masses, detailed balance does not hold, but nonequilibrium steady states can still be deduced from an exact solution for the Laplace transform. For models in which aggregation rates remain constant but fragmentation rates scale as $(\\text{mass})^β$, detailed balance holds only when $β=1$. Away from this solvable case, we employ asymptotic techniques and show that when $β\\geq 0$, the steady states share similarities with those from the mass-independent ($β=0$) model. An instantaneous shattering transition with continuous mass loss occurs when $β<0$.",
+    "url": "https://arxiv.org/abs/2605.22383v1",
+    "published": "2026-05-21T12:12:52Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Aggregation-fragmentation processes break detailed balance without equilibrium states.\n- • Steady states can be deduced from Laplace transform for mass-independent models."
+  },
+  {
+    "title": "Berezinskii-Kosterlitz-Thouless-type Transition in Site Percolation on the Diamond Hierarchical Lattice",
+    "authors": "Takehisa Hasegawa, Kazuki Wataya, Tomoaki Nogawa",
+    "abstract": "We study site percolation on the diamond hierarchical lattice, a finite-dimensional fractal network, using an exact generating-function analysis. In contrast to bond percolation, site percolation on this lattice does not undergo a transition from a nonpercolating phase to a percolating phase. Instead, the system exhibits a nonpercolating phase for $p<p_{\\rm c}$ and a critical phase for $p>p_{\\rm c}$. In the critical phase, the size of the largest cluster remains subextensive, scaling as $N^{ψ(p)}$, where the fractal exponent $ψ(p)$ varies continuously with $p$. By analyzing the renormalization-group recursion relation in the vicinity of $p_{\\rm c}$, we show that the correlation length exhibits a Berezinskii-Kosterlitz-Thouless-type essential singularity, $ξ(p)\\sim \\exp \\left({\\rm const}/\\sqrt{p_{\\rm c}-p}\\right)$ for $p \\to p_{\\rm c}^-$, which is further confirmed by finite-size scaling analyses showing excellent data collapse. These results demonstrate that critical phases in percolation can emerge even on finite-dimensional networks and that exponential volume growth is not necessary for such phases to appear. We argue that the critical phase on the diamond hierarchical lattice stems from site dilution remaining relevant under renormalization.",
+    "url": "https://arxiv.org/abs/2605.22103v1",
+    "published": "2026-05-21T07:39:04Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Site percolation on diamond lattice doesn't have a traditional percolation transition.\n- • Critical phase emerges with subextensive cluster size scaling continuously with p."
+  },
+  {
+    "title": "Thermodynamic Irreversibility of Training Algorithms",
+    "authors": "Liu Ziyin, Yuanjie Ren, Adam Levine, Isaac Chuang",
+    "abstract": "The training algorithms for AI systems all introduce far-from-equilibrium dynamical processes, and understanding the irreversibility of these algorithms is a fundamental step towards understanding the learning dynamics of modern AI systems. In this work, we establish a general framework for defining and analyzing the irreversibility of training algorithms. We show that four different ways to characterize the irreversibility of dynamical processes are equivalent to leading order in the step size $η$: numerical backward error $φ_{\\rm DE}$, time-renormalized correction $φ_{\\rm TR}$, microscopic time reversal asymmetry $φ_{\\rm TA}$, and the (regularized) stochastic-thermodynamic entropy production $φ_{\\rm ST}$. The irreversibility gives rise to a time-reversal-symmetry-breaking emergent force that generically breaks non-isometric continuous reparametrization symmetries, preserves orthogonal symmetries, and leads to a universal preference for those learning trajectories that minimize the entropy production rate.",
+    "url": "https://arxiv.org/abs/2605.21933v1",
+    "published": "2026-05-21T03:04:44Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Training algorithms introduce far-from-equilibrium dynamical processes in AI systems.\n- • Four methods characterize irreversibility of training algorithms with high accuracy."
+  },
+  {
+    "title": "A Utility-Driven Bounded-Confidence Model for Opinion Dynamics",
+    "authors": "Alex Siebenmorgen, Juan G. Restrepo",
+    "abstract": "We introduce a utility-driven bounded-confidence model of opinion dynamics in which opinions associated with higher utility exert stronger social influence. In the regime where all agents belong to a single opinion cluster, we derive a stochastic differential equation for the mean opinion and show that its stationary distribution is Gibbs-like, with an effective potential determined by the utility landscape and an inverse temperature controlled by the learning rate and the number of agents. For multimodal utility functions, the dynamics exhibit metastability and spontaneous switching between competing opinion states. The reduced stochastic description also captures the evolution and merging of multiple opinion clusters, in agreement with agent-based simulations.",
+    "url": "https://arxiv.org/abs/2605.21844v1",
+    "published": "2026-05-21T00:27:39Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Utility-driven model shows stronger influence from opinions with higher utility.\n- • Mean opinion follows a stochastic differential equation with Gibbs-like distribution."
+  },
+  {
+    "title": "Variation of Venusian Gravity Wave Absolute Momentum Fluxes and Drag as Retrieved from the Akatsuki Mission",
+    "authors": "Erdal Yiğit, Emilia Sloan",
+    "abstract": "Using temperature retrievals from Akatsuki radio occultation measurements, we characterize gravity wave activity as a function of vertical wavenumber and altitude and, for the first time, estimate the absolute horizontal momentum fluxes and the magnitude of the associated gravity wave drag (i.e., wave acceleration), which quantify the potential effects of these waves in the Venusian middle atmosphere between 40--95 km. Observed temperature perturbations, which are indicative of atmospheric gravity wave activity, reach amplitudes of approximately $\\pm$10 K, and significant momentum flux (10--30 m$^2$ s$^{-2}$) and wave drag (0.003--0.03 m s$^{-2}$) are detected across all analyzed profiles. The inferred wave drag represents a lower bound on the total gravity wave-induced drag in the Venusian atmosphere. Momentum flux tends to increase exponentially with altitude below approximately 50--60 km, then peaks and attenuates at higher altitudes. Wave drag becomes prominent where momentum flux begins to decrease, which is a consequence of wave dissipation. Both quantities exhibit multiple altitude-localized maxima, which is consistent with upward wave propagation followed by dissipation at different altitudes for different vertical wavelengths. Damping due to gravity wave nonlinear interactions is likely to play the major role in limiting the growth of wave amplitudes and fluxes with height. These features are observed across a range of latitudes and local times. Overall, the results provide observational constraints on gravity wave momentum transport and dissipation in the Venusian middle atmosphere and could guide numerical models in their effort to quantify wave-mean flow interactions in Venus's atmosphere.",
+    "url": "https://arxiv.org/abs/2605.22793v1",
+    "published": "2026-05-21T17:48:18Z",
+    "summary": "- Here are three bullet points summarizing the article:\n- • Venusian gravity waves detected with amplitudes of ±10 K in temperature.\n- • Momentum flux (10-30 m^2 s^-2) and wave drag (0.003-0.03 m s^-2) detected."
+  },
+  {
+    "title": "Dynamics of fast magnetosonic wave turbulence",
+    "authors": "Nicolás Pablo Müller, Sébastien Galtier",
+    "abstract": "Fast magnetosonic waves are among the fundamental oscillation modes of astrophysical plasmas. To study their dynamics, we carry out numerical simulations of the wave turbulence kinetic equation, which describes the evolution of the energy spectrum of a set of weakly nonlinear fast magnetosonic waves. This kinetic equation, which involves three-wave interactions, has recently been derived from compressible magnetohydrodynamics in the low-$β$ limit (Galtier 2023). It has an exact stationary solution, the Kolmogorov-Zakharov spectrum, corresponding to a direct energy cascade. Here we perform free decay simulations of the kinetic equation for which we propose a Kolmogorov-type phenomenology to explain the temporal decay laws of energy and integral length scale. In the forced simulations, we show that the cascade is in fact composed of a mixture of a forward cascade for counter-propagating waves, and a backward cascade for co-propagating waves, with the former being stronger than the latter. The Kolmogorov-Zakharov energy spectrum in $k^{-3/2}$ is found in the radial direction with an anisotropy due to the amplitude that depends on the angle relative to the strong mean magnetic field. We give the analytical expression of the Kolmogorov-Zakharov constant, which is numerically verified in the high Reynolds number limit. Our study provides a theoretical explanation for certain observations in the solar wind plasma (Zhao et al. 2022), where a regime of weak turbulence has been identified for fast magnetosonic waves, alongside a critical balance regime for strong Alfvén wave turbulence.",
+    "url": "https://arxiv.org/abs/2605.22710v1",
+    "published": "2026-05-21T16:47:57Z",
+    "summary": "- Here are 3 bullet points summarizing the article:\n- • Fast magnetosonic waves are fundamental oscillation modes in astrophysical plasmas.\n- • Numerical simulations study wave turbulence kinetic equation for energy spectrum evolution."
+  },
+  {
+    "title": "Experimental investigation of twin pulsed jets in a hemispheric elastic cavity",
+    "authors": "L. S. Merlo, L. Kadem, W. Saleh, H. D. Ng, G. Di Labbio",
+    "abstract": "This study experimentally examines the impact of spacing between two pulsed jets and their strengths on the fluid dynamics within an elastic hemispherical cavity. Such interactions between multiple pulsed jets are observed in various natural and industrial contexts, including cardiovascular flows, where they occur naturally within the atria or result from medical interventions (e.g., mitral valve repair, mechanical heart valves, paravalvular leaks) or diseases (e.g., aortic or pulmonary valve regurgitation). Fundamentally, these flows usually feature two or more pulsed jets interacting in an expanding, elastic environment. In this investigation, the experimental setup features two parallel pulsed jets entering the cavity, with jet strength varied across five formation times (1, 2, 3, 4, 5) and four spacing ratios (1.5, 2.0, 2.5, 3.0). Time-resolved particle image velocimetry is used to capture the instantaneous velocity fields. The results reveal three distinct flow regimes: short-time decay, decay at the wall, and wall rebound with or without the formation of secondary vortices. These findings uncover rare aspects of twin vortex ring behavior, including symmetry breaking, trajectory shifts, and wall-induced rebound mechanisms, with direct relevance to cardiac fluid dynamics in both healthy and pathological conditions.",
+    "url": "https://arxiv.org/abs/2605.22648v1",
+    "published": "2026-05-21T15:52:19Z",
+    "summary": "- Here are three bullet points summarizing the study:\n- • Twin pulsed jets interact in an elastic hemispherical cavity with varied spacing and strength.\n- • Time-resolved particle image velocimetry captures instantaneous velocity fields in the cavity."
+  }
+]
