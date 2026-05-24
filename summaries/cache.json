@@ -113,5 +113,110 @@
     "title": "Experimental investigation of twin pulsed jets in a hemispheric elastic cavity",
     "summary": "- Here are three bullet points summarizing the study:\n- • Twin pulsed jets interact in an elastic hemispherical cavity with varied spacing and strength.\n- • Time-resolved particle image velocimetry captures instantaneous velocity fields in the cavity.",
     "timestamp": "2026-05-24"
+  },
+  "2605.22546": {
+    "title": "Perpendicular rod-airfoil aeroacoustics: experiments and modelling of interaction noise",
+    "summary": "- • A simplified configuration of a cylinder and airfoil is studied experimentally.\n- • Simultaneous acoustic and particle image velocimetry measurements are taken.\n- • Powell-Howe vortex-sound theory is used for aeroacoustic modelling and prediction.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22326": {
+    "title": "Lagrangian single-particle, multi-particle and topological analyses in turbulent Rayleigh-Bénard convection",
+    "summary": "- • Particle accelerations show robust statistics and Heisenberg-Yaglom behaviour.\n- • Lagrangian heat transfer is extremely intermittent and highly variable.\n- • Dust-devil-like convective vortices have a distinct topological footprint.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22274": {
+    "title": "A unified gas-kinetic wave-particle method for multiscale binary-species gas mixtures",
+    "summary": "- • UGKWP method decomposes gas distribution function into hydrodynamic waves and particles.\n- • Method enables automatic decomposition of gas distribution function in discretized space.\n- • UGKWP method incorporates Shakhov model to correct Prandtl number and heat conduction.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22214": {
+    "title": "N-Component Free Energy Lattice Boltzmann Method with Reduction Consistency and Global Momentum Conservation",
+    "summary": "- • Method simulates fluid systems with an arbitrary number of immiscible components.\n- • Model is strictly reduction consistent, preventing spontaneous nucleation of components.\n- • Method globally conserves momentum to machine precision with novel discretization.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22212": {
+    "title": "Global exponential stability for the three-dimensional Navier-Stokes equations on hyperbolic space",
+    "summary": "- • The Navier-Stokes equations admit a unique global mild solution on hyperbolic space.\n- • The solution decays exponentially to zero with a specific rate constant.\n- • Negative curvature provides a spectral gap for exponential stability.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22107": {
+    "title": "Full Turbulence Simulation of Channel Flow at $Re_τ \\approx 1000$",
+    "summary": "- • Turbulent channel flow at Re_tau ≈ 1000 was simulated with high fidelity.\n- • Grid spacing confirmed no adverse numerical effects in wall-normal direction.\n- • Two resolution criteria were identified for wall-parallel directions.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22042": {
+    "title": "Modelling hydroelastic flexure of arbitrarily shaped ice shelves forced by long ocean waves",
+    "summary": "- • A hydroelastic model is developed for wave-induced ice shelf flexure.\n- • The model allows for arbitrarily shaped ice shelves with non-uniform thickness.\n- • Finite elements and a Dirichlet-to-Neumann map are used for computation.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22242": {
+    "title": "Decomposing Ensemble Spread in Lorenz '96 With Learned Stochastic Parameterizations",
+    "summary": "- • Ensemble perturbations regulate trajectory decorrelation and exploration.\n- • Stochastic parameterizations enhance early spread growth and consistency.\n- • Uncertainty sources interact in a chaotic system with distinct effects.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21875": {
+    "title": "Water vapor buoyancy and the African easterly jet",
+    "summary": "- • African easterly jet's magnitude reduced by 30% due to moisture gradient.\n- • Vapor buoyancy counteracts temperature gradient's effect on density balance.\n- • Global warming strengthens vapor buoyancy's effect on the jet.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21864": {
+    "title": "A Simulation Methodology Testbed for Typhoon Sensitivity Analysis: Framework Development and Perturbation-Response Experiments with the Pangu Weather Model",
+    "summary": "- • A simulation testbed is developed for typhoon sensitivity analysis using the Pangu weather model.\n- • The testbed integrates a high-precision AI forecasting system with PID closed-loop techniques.\n- • Controlled perturbation-response experiments are performed on a SISO test system.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21790": {
+    "title": "Microwave-Stimulated Serpentinization of Olivine for Geological Hydrogen Production",
+    "summary": "- • Microwave stimulation accelerates serpentinization of olivine at atmospheric pressure.\n- • Hydrogen concentration increased 12-fold with microwave exposure compared to hot-plate.\n- • Microwave stimulation enhances serpentinization kinetics through rapid volumetric heating.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21687": {
+    "title": "Three-Dimensional Velocity Analysis and Particle Size Dynamics from Multi-Site RGB-Photometry of Noctilucent Clouds",
+    "summary": "- • Method measures altitude, particle size, and velocity components of noctilucent clouds.\n- • Particle size changes driven by meridional motion of the cloud.\n- • Latitudinal temperature gradient affects particle size evolution in clouds.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21673": {
+    "title": "From Licensing to Open Access: Designing a Sustainable Transition in Operational Weather Data",
+    "summary": "- • ECMWF transitioned from restricted data licensing to open access in October 2025.\n- • Tiered service model kept core forecast data open with cost-recovered delivery.\n- • Over 93% of paying organisations retained Service Agreement after transition.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21196": {
+    "title": "Effect of grid anisotropy, resolution, and subgrid-scale models in pseudo-spectral Large Eddy Simulations of low-level clouds",
+    "summary": "- • Grid anisotropy improves convergence rates in low-level cloud simulations.\n- • Pseudo-spectral advection with AMD model produces accurate predictions.\n- • Recommended grid anisotropy has vertical spacing three times finer horizontally.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21191": {
+    "title": "Beyond Vorticity: An Angular Momentum Perspective on Fluid Flow",
+    "summary": "- • Angular momentum density field provides a complementary framework to vorticity analysis.\n- • Viscous torque decomposed into diffusive and local spin dissipative terms.\n- • Hydrodynamic impulse reformulated for clean separation of terms components.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.20925": {
+    "title": "Blending machine learning and physics-based approaches for weather and climate: a typology",
+    "summary": "- • Machine learning and physics-based models are integrated for weather and climate prediction.\n- • Blended approaches combine benefits of ML and physics-based models effectively.\n- • Typology provides a framework for informed decision-making and strategic planning.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.22299": {
+    "title": "Data-Driven Reduced Modeling of Delayed Dynamical Systems via Spectral Submanifolds",
+    "summary": "- • Data-driven model reduction of nonlinear delay systems is enabled by SSM theory.\n- • SSM-reduced models remain predictive even for chaotic dynamics in systems.\n- • Parametric SSM-reduction captures bifurcations in systems with distributed delays.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21628": {
+    "title": "What We Talk About When We Talk About Dissipative Quantum Chaos",
+    "summary": "- • Dissipative quantum chaos extends Hamiltonian quantum chaos to open systems.\n- • New theory provides tools to distinguish chaotic open systems.\n- • Spectral properties of operators govern open quantum evolution.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21357": {
+    "title": "Physical completion of the Navier-Stokes equations",
+    "summary": "- • The Navier-Stokes equations' fluctuation-dissipation relation is derived without linearisation.\n- • The nonlinear convective term drops out of the Fokker-Planck equilibrium condition.\n- • The stochastic system is globally well-posed with a unique Gibbs equilibrium.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21174": {
+    "title": "Exact expression for maximum Lyapunov exponent during transients in computationally powerful dynamical networks",
+    "summary": "- • Network's time dynamics can be exactly solved through nonlinear transformation.\n- • Exact analytical expression is derived for maximum Lyapunov exponent.\n- • Positive MLEs occur during transients useful for computation and logic.",
+    "timestamp": "2026-05-24"
+  },
+  "2605.21530": {
+    "title": "Pairwise Distance-Diffusion Analysis (PDDA): A Geometric Framework for Estimating Hurst Exponents in Multivariate Long-Memory Processes",
+    "summary": "- • PDDA is a geometric framework for estimating Hurst exponents.\n- • PDDA yields two complementary routes: R/S-PDDA and MSD-PDDA analysis.\n- • PDDA extends to multivariate isotropic and anisotropic processes analysis.",
+    "timestamp": "2026-05-24"
   }
 }
