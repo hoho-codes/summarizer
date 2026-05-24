@@ -217,7 +217,7 @@ def format_bullets(text, max_lines=3, min_lines=3):
         return None
 
     def clean(l):
-        return re.sub(r'^(\*|-|\d+[\.\)]?)\s*', '', l).strip()
+        return re.sub(r'^[\*\-\•]|\d+[\.\)]', '', l).strip()
 
     lines = []
     for l in text.splitlines():
