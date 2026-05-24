@@ -5,7 +5,7 @@
     "abstract": "We develop a bottom-up open effective field theory (EFT) for non-Abelian gauge theories within the Schwinger--Keldysh formalism. Instead of integrating out the environment completely and starting from a nonlocal influence functional, we retain the slow environmental response variables explicitly and construct a local system-environment EFT. The environmental sector is described by a dynamical color-frame variable, St\u00fcckelberg-like field, and an associated color-current sector, which gives the nontrivial interactions and dissipation between the system and the environment. The resulting construction provides a gauge-covariant Markov embedding of nonlocal and non-Markovian color response. After integrating out the retained environmental variables with retarded boundary conditions, the reduced system theory acquires nonlocal dissipative kernels and stochastic sources. We show that the hard thermal loop response arises naturally as a particular realization of the retained environmental response. Our framework provides a local open-EFT description of color transport, memory effects, and fluctuation-dissipation structure in non-Abelian plasmas, and offers a systematic starting point for dissipative Yang--Mills EFTs with dynamical environments.",
     "url": "https://arxiv.org/abs/2605.22822v1",
     "published": "2026-05-21T17:59:56Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Here is a 3-sentence summary of the research abstract:\n\nResearchers have developed a new open effective field theory (EFT) for non-Abelian gauge theories, which describes the interaction between a system and its environment in a local and gauge-covariant way. This framework retains environmental response variables and introduces a dynamical color-frame variable, allowing for nontrivial interactions and dissipation between the system and environment. The resulting theory provides a systematic description of color transport, memory effects, and fluctuation-dissipation structure in non-Abelian plasmas, and offers a new starting point for dissipative Yang-Mills EFTs with dynamic environments.",
     "category": "quant-ph"
   },
   {
@@ -14,7 +14,7 @@
     "abstract": "Quantum processes with indefinite causal order -- so-called causally nonseparable processes -- can exhibit various advantages over quantum circuits with a fixed or a well-defined causal structure. A natural question is how much nonclassicality is required for a process to display causal nonseparability. Here we address this by investigating how many systems can be dephased (or decohered) before this property vanishes. First, for bipartite processes with open past and future we show that if all systems are dephased, or if only the future system is kept undephased, then the process becomes causally separable. However, if any single system other than the future system remains undephased, then there exist processes that retain causal nonseparability. Next, we demonstrate a similar behaviour in the multipartite case, when restricted to the physically motivated class of quantum circuits with quantum control (QC-QCs). Namely, dephasing all systems or keeping only the future system undephased renders any QC-QC causally separable; while causal nonseparability can persist if any non-future system is left undephased.",
     "url": "https://arxiv.org/abs/2605.22807v1",
     "published": "2026-05-21T17:56:44Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* Main idea: Investigating the nonclassicality required for quantum processes to display causal nonseparability.\n* Method: Analyzing the effect of dephasing systems on causal nonseparability in bipartite and multipartite processes.\n* Result: Causal nonseparability can persist if at least one non-future system remains undephased, but vanishes if all systems or only the future system is undephased.",
+    "summary": "Here is a summary of the research abstract in 3 concise sentences:\n\nResearchers investigated how much nonclassicality is required for a quantum process to exhibit causal nonseparability, a property that can provide advantages over traditional quantum circuits. They found that dephasing all systems or only keeping the future system undephased results in a causally separable process, but retaining any other system undephased can preserve causal nonseparability. This behavior was observed in both bipartite and multipartite quantum processes, including those with quantum control, highlighting the robustness of causal nonseparability in certain scenarios.",
     "category": "quant-ph"
   },
   {
@@ -23,7 +23,7 @@
     "abstract": "We consider the problem of single-photon transmission through an atomic medium, using quantum channel fidelity to describe the resulting information loss. We find that the normalized fidelity decreases monotonically with coupling strength, establishing a performance bound for quantum communication through such media. Our results hold for several channel types and for deterministic and random media.",
     "url": "https://arxiv.org/abs/2605.22797v1",
     "published": "2026-05-21T17:50:18Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Researchers studied the transmission of single photons through an atomic medium, focusing on the loss of information that occurs during this process. They found that the fidelity of the quantum channel, which measures the accuracy of the transmission, decreases as the coupling strength between the photon and the medium increases. This discovery establishes a performance limit for quantum communication through various types of media, including deterministic and random channels.",
     "category": "quant-ph"
   },
   {
@@ -32,7 +32,7 @@
     "abstract": "We establish that the non-adiabaticity parameter has a direct geometric interpretation as the instantaneous evolution speed of a driven quantum state in projective Hilbert space under the Fubini Study metric. In contrast to conventional asymptotic approaches, the proposed framework provides a strictly local geometric criterion that allows non-adiabatic instability and its nonlinear suppression to be evaluated continuously at each stage of the driven evolution. We further show that an occupation-dependent nonlinear regulator Usuppresses the effective geometric evolution speed, leading to bounded low-occupancy dynamics. The resulting crossover parameter provides a compact criterion for self-limited non-adiabatic instability in driven nonlinear bosonic systems.",
     "url": "https://arxiv.org/abs/2605.22796v1",
     "published": "2026-05-21T17:49:53Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Here is a 3-sentence summary of the research abstract:\n\nResearchers have found a geometric interpretation for the non-adiabaticity parameter, which represents the speed of a driven quantum state's evolution in projective Hilbert space. This framework allows for a local evaluation of non-adiabatic instability and its suppression at each stage of the evolution, providing a more precise understanding of the process. The study also identifies a nonlinear regulator that suppresses the evolution speed, leading to bounded dynamics and a compact criterion for self-limited non-adiabatic instability in driven bosonic systems.",
     "category": "quant-ph"
   },
   {
@@ -41,7 +41,7 @@
     "abstract": "Quantum phase estimation (QPE) is a central algorithmic primitive that estimates eigenvalues of a Hamiltonian up to precision $\u03b5$ in Heisenberg-limited time $T=\u0398(1/\u03b5)$. Standard gate-based implementations of QPE require deep controlled time-evolution circuits and are not native to analog hardware. Here, we present a simple adiabatic protocol for QPE that achieves (up to logarithmic factors) the optimal Heisenberg-limited scaling $T = O\\left( \\frac{1}\u03b5 \\log\\left(\u03b4^{-1}\\right)\\right)$ in both the precision $\u03b5$ and failure probability $\u03b4$. By encoding eigenvalues in populations of computational basis states rather than complex phases, our approach is naturally robust against certain dephasing errors. The adiabatic protocol only requires the ability to couple a single ancilla qubit to the system Hamiltonian as well as pairwise couplings within the ancilla register.",
     "url": "https://arxiv.org/abs/2605.22770v1",
     "published": "2026-05-21T17:31:36Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "quant-ph"
   },
   {
@@ -50,7 +50,7 @@
     "abstract": "We identify a sharp interaction-degree threshold for the classical simulation of QAOA with $2$-local cost functions. At degree $3$, classical sampling from depth-$1$ QAOA with small multiplicative error would collapse the polynomial hierarchy to its third level. At degree $2$, exact classical sampling from depth-$p$ QAOA on $n$ qubits runs in time $n^{O(1)}$ whenever $p = O(\\log n)$. The hard degree-$3$ instances have trivially optimizable cost functions, so sampling hardness does not by itself imply a quantum optimization advantage.",
     "url": "https://arxiv.org/abs/2605.22758v1",
     "published": "2026-05-21T17:24:00Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* Main idea: Investigating classical simulation of QAOA with 2-local cost functions.\n* Method: Analyzing interaction-degree thresholds for classical sampling.\n* Result: Found a sharp threshold at degree 3, where classical sampling becomes inefficient.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "quant-ph"
   },
   {
@@ -59,7 +59,7 @@
     "abstract": "We introduce a novel software-oriented model of quantum computation motivated by the practical constraints of near-term quantum hardware. In this model, gates are specified by constraints expressed in terms of Pauli observables, with each disjoint layer of gates accompanied by a pairwise or $k$-local quantum state tomography of the device. We prove that the model is equivalent to the coupling-graph-restricted circuit model and hence universal for BQP, with a polynomial overhead: simulating a depth-$D$ circuit on $N$ qubits requires at most $O(D^2 N \\log N)$ complexity. The model formalizes an idiom shared by existing work that ranges from quantum imaginary time evolution for the study of quantum systems to the use of quantum computers for procedural generation in games. It therefore provides a natural interface for designing quantum software entirely in terms of physically observable quantities, relevant for the NISQ era and into fault-tolerance.",
     "url": "https://arxiv.org/abs/2605.22744v1",
     "published": "2026-05-21T17:14:16Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "quant-ph"
   },
   {
@@ -68,7 +68,7 @@
     "abstract": "We consider bipartite exact entanglement embezzlement with a catalyst state vector $\u03c8$ in a Hilbert space $\\mathcal{H}$ using unitaries (or more generally, contractions). If $\\mathcal{M} \\subseteq \\mathcal{B}(\\mathcal{H})$ is a von Neumann algebra and $U \\in M_d \\otimes \\mathcal{M}$ and $V \\in \\mathcal{M}' \\otimes M_d$ are unitaries (or more generally contractions), then such a protocol is of the form $(U \\otimes I_d)(I_d \\otimes V)(e_0 \\otimes \u03c8\\otimes e_0)=\\sum_{i=0}^{d-1} \u03b1_i e_i \\otimes \u03c8\\otimes e_i$, where each $\u03b1_i>0$ and $\\sum_{i=0}^{d-1} \u03b1_i^2=1$. We show that any such protocol must arise from a unique state on the tensor product $\\mathcal{O}_d \\otimes \\mathcal{O}_d$ of the Cuntz algebra with itself. As a result, we prove that exact entanglement embezzlement is a self-test for a collection of $d$ Cuntz isometries for each party and a unique quasi-free state on the Cuntz algebra $\\mathcal{O}_d$ in the sense of \\cite{Iz93}. Moreover, we use modular theory to show that the von Neumann algebra generated by the copy of $\\mathcal{O}_d$ is the unique separable approximately finite-dimensional Type $\\text{III}_\u03bb$ factor for some $0<\u03bb\\leq 1$, where $\u03bb$ can be determined by an algebraic condition on the Schmidt coefficients of the state $\\varphi=\\sum_{i=0}^{d-1} \u03b1_i e_i \\otimes e_i$.",
     "url": "https://arxiv.org/abs/2605.22713v1",
     "published": "2026-05-21T16:50:39Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "quant-ph"
   },
   {
@@ -77,7 +77,7 @@
     "abstract": "Local Markovian noise cannot bring entanglement back, but it can bring magic back. Unlike separability, stabilizer membership is not preserved by local channels, allowing dissipation to push states out of the stabilizer polytope as well as in. Under local amplitude damping, the $n$-qubit GHZ family $\u03b1|0^n\\rangle+\u03b2|1^n\\rangle$ ($0<\u03b1<\u03b2$) loses its magic at a lower damping strength $\u03b3_-$ and regains it at a higher one $\u03b3_+$, while entanglement is irreversibly lost at $\u03b3_e$. This magic-entanglement complementarity, $\u03b3_e+\u03b3_+=1$ for every $n$, reflects a system-environment duality of amplitude damping and persists for a broader class of dissipative channels. For small $\u03b1$, the reborn magic resides in a fully separable state with all proper marginals stabilizer, yet parity-syndrome extraction concentrates it onto a single qubit for magic-state distillation. Local dissipation further divides pure stabilizer states into magic-generators and magic-insulators: at two qubits, the Bell state $|\u03a6^+\\rangle$ generates magic immediately, while its Bell-state partner $|\u03a8^+\\rangle$ remains stabilizer. Together, magic and entanglement reveal a symmetry invisible to either alone.",
     "url": "https://arxiv.org/abs/2605.22603v1",
     "published": "2026-05-21T15:16:42Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Here is a 3-sentence summary of the research abstract:\n\nLocal Markovian noise can restore \"magic\" to a quantum system, but not entanglement, and this process is reversible under certain conditions. The researchers found that under local amplitude damping, a specific family of quantum states loses and regains magic at different damping strengths, while entanglement is lost irreversibly. This phenomenon reveals a symmetry that is not visible when considering magic or entanglement alone, and has implications for the classification of quantum states and the process of magic-state distillation.",
     "category": "quant-ph"
   },
   {
@@ -86,7 +86,7 @@
     "abstract": "Measurement-based quantum heat engines have attracted significant interest as alternatives to conventional thermal engines, as they replace the hot thermal reservoir with quantum measurements, thereby offering greater controllability and simpler implementation. Motivated by these advantages, we investigate a measurement-driven quantum Otto engine with a qubit working substance and study the optimal work extractable from such engines, including whether their performance can surpass that of conventional quantum Otto cycles. We analyze the engine in both the infinite-time (adiabatic) and finite-time (non-adiabatic) regimes, considering two distinct implementations obtained through optimization over all projection-valued measurements (PVMs) and over all two-outcome positive operator-valued measurements (POVMs). We show that measurement-based engines can outperform conventional quantum Otto engines within specific parameter regimes and that POVM-based engines can yield higher optimal work extraction than PVM-based ones. Furthermore, by incorporating the thermodynamic cost associated with resetting the auxiliary system required for POVM implementation, we demonstrate that the resulting net work output can still exceed that of PVM-based engines under suitable conditions on the spectral gaps and cold bath temperature. We also identify regimes in which non-adiabatic implementations can yield higher work output and efficiency than their adiabatic counterparts. Our study provides operational guidelines for designing improved measurement-driven quantum Otto engines.",
     "url": "https://arxiv.org/abs/2605.22583v1",
     "published": "2026-05-21T14:54:09Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "quant-ph"
   },
   {
@@ -95,7 +95,7 @@
     "abstract": "The parallel minority game (PMG) extends the classical minority game to many choices, with each agent restricted to two predetermined alternatives. In this condition, minimizing the population variance across all choices is a complex combinatorial optimization problem. We show that this minimization is exactly equivalent to finding the ground state of an Ising spin glass in the mean-field limit, i.e., the Sherrington-Kirkpatrick model. By encoding the agent choices as spin variables, the variance becomes a quadratic Hamiltonian with quenched random couplings $J_{ij}$ and random fields $h_i$. This mapping reveals inherent frustration and connects the PMG to the well developed theory of spin glasses, providing a new perspective on the frozen, sub-optimal configurations observed in stochastic strategies.",
     "url": "https://arxiv.org/abs/2605.22764v1",
     "published": "2026-05-21T17:25:13Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* Main idea: The parallel minority game (PMG) is extended to many choices with restricted alternatives.\n* Method: The problem is mapped to an Ising spin glass model, specifically the Sherrington-Kirkpatrick model.\n* Result: This mapping reveals inherent frustration and connects the PMG to spin glass theory, explaining sub-optimal configurations.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "cond-mat.stat-mech"
   },
   {
@@ -104,7 +104,7 @@
     "abstract": "We show that posterior collapse in $\u03b2$-VAEs implements automatic spectral pruning. A latent mode collapses if its contribution to reconstruction is below the cutoff set by $\u03b2$. Equilibrium solutions with different $\u03b2$ thus reveal a cascade of collapses as latent modes decouple from least to most useful.\n  We derive this as a consequence of the loss via a Landau stability analysis. We define a latent-rescaling-invariant order parameter that ranks active latent modes and whose collapse thresholds identify which effective variables to inspect first.\n  In the linear Gaussian case, the collapse spectrum, utility spectrum, and normalized PCA spectrum coincide, and each collapse follows a mean-field law. We test these predictions on the WorldClim dataset.",
     "url": "https://arxiv.org/abs/2605.22691v1",
     "published": "2026-05-21T16:36:10Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Here is a summary of the research abstract in 3 concise sentences:\n\nResearchers have found that posterior collapse in \u03b2-VAEs (variational autoencoders) can be used for automatic spectral pruning, where latent modes are collapsed based on their contribution to reconstruction. The study derives this phenomenon through a Landau stability analysis and introduces an order parameter to rank active latent modes. The predictions are tested on the WorldClim dataset and coincide with other spectra, such as the utility spectrum and normalized PCA spectrum, in the linear Gaussian case.",
     "category": "cond-mat.stat-mech"
   },
   {
@@ -113,7 +113,7 @@
     "abstract": "While for standard percolation directionality is known to increase the combinatorial complexity of percolation, here we show that when connectivity is ensured by paths of length $R\\geq 2$, network directionality, impeding backtracking, can significantly reduce the complexity of percolation. To illustrate this finding, we introduce Directed Extended-Range Percolation (DERP), defined directed networks with non-reciprocal edges, motivated by applications in quantum communication. In this framework, message transmission is enabled between trusted nodes separated by a directed path of length at most $R$. Using a message-passing approach, we show that directionality enables an exact determination of the percolation threshold and the anomalous critical indices on locally tree-like structures. On random directed networks we find that the critical behavior of DERP depends sensitively on degree correlations. These analytical predictions are corroborated by extensive Monte Carlo simulations, highlighting the profound impact of directionality and correlations on long-range connectivity in complex networks.",
     "url": "https://arxiv.org/abs/2605.22646v1",
     "published": "2026-05-21T15:51:57Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "cond-mat.stat-mech"
   },
   {
@@ -122,7 +122,7 @@
     "abstract": "We compute the entanglement dynamics across a monitored quantum point contact, where particle losses are recorded on a given site, and demonstrate how this single-site local monitoring substantially reshapes the entanglement production. Contrary to the unitary case, where entanglement entropy grows logarithmically in time, here we find first a linear growth, up to a maximum value displaying volume-law scaling, and then a slow decay to zero, as the system empties out. We capture this crossover using a quasiparticle picture, where the first linear growth arises due to an emergent bias voltage established by the losses, which eventually decays away as the system depletes. We connect our results to studies of the Page curve and to experimentally relevant probes, via full counting statistics of charge transfer across a subregion, with only a single channel to unravel leading to a favorable scaling of the postselection overhead. Natural platforms for this setting include mesoscopic systems and ultracold atoms.",
     "url": "https://arxiv.org/abs/2605.22555v1",
     "published": "2026-05-21T14:39:23Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "cond-mat.stat-mech"
   },
   {
@@ -131,7 +131,7 @@
     "abstract": "Inspired by previous extensive numerical studies of a cell fluid model with Curie-Weiss interactions, we concentrate on some analytically tractable special cases in its description. The key ingredient of the model is a competition between global attraction and local repulsion interactions between particles with coupling constants $J_1$ and $J_2$, respectively. We provide analytical results in several limiting cases, including the ideal-gas limit $J_1=J_2=0$ and the strong-repulsion limit $J_2\\gg J_1$. For $J_2\\gg J_1$, a detailed analytical study is presented. We derive explicit expressions for the critical point parameters, the equation of state, and the binodal and spinodal curves in closed form. The equation of state is found to be in full agreement with that of the van der Waals lattice gas, and the order parameter satisfies the standard Curie-Weiss equation. In a neighborhood of the critical point, a Landau expansion is shown to have the same form and symmetry as that of the classical lattice gas within the mean-field approximation. Moreover, based on the explicit knowledge of a few leading terms in the asymptotic expansion of the deformed exponential function governing the physics of the cell model, we extend its validity range to include the marginal case of thermodynamic stability, $J_1=J_2$. In particular, this extension makes a consideration of the ideal-gas limit $J_1=J_2=0$ formally legitimate. For the generic marginal case $J_1=J_2\\ne0$ systematically avoided in previous works, we present numerical data and phase diagrams that augment their findings for $J_2>J_1$.",
     "url": "https://arxiv.org/abs/2605.22520v1",
     "published": "2026-05-21T14:13:00Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "cond-mat.stat-mech"
   },
   {
@@ -140,7 +140,7 @@
     "abstract": "We study long-range nonstabilizerness (LRN), namely the obstruction to remove nonstabilizerness with shallow-depth local quantum circuits. In one-dimensional settings, the mutual information between disconnected spatial regions has proven to be a powerful tool to diagnose LRN. In this work, we focus on encoded states of two-dimensional topologically-ordered systems, and explore the ability of the mutual information to serve as a diagnostic of LRN. Focusing on the concrete setting of lattice models defined on a torus, we show that information about LRN can be gained from the analysis of the mutual information between non-overlapping regions containing non-contractible loops, and of the change of such mutual information under modular real-space transformations. We exemplify this idea in the toric code and the non-abelian string-net model with doubled Fibonacci topological order. In the former case, we show that the mutual information provides a full classification, certifying LRN for all encoded non-stabilizer states. In the latter case, instead, our approach does not lead to a full classification, as it detects LRN for all states except from a finite subset with special transformation properties under the modular group. Finally, we discuss how our results on LRN constrain the logical gates that can be implemented fault-tolerantly on the torus.",
     "url": "https://arxiv.org/abs/2605.22424v1",
     "published": "2026-05-21T12:43:23Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "cond-mat.stat-mech"
   },
   {
@@ -149,7 +149,7 @@
     "abstract": "We study aggregation-fragmentation processes in which pairs of clusters can aggregate, and each cluster can break into two fragments. If the rates of aggregation and fragmentation do not depend on the masses, detailed balance does not hold, but nonequilibrium steady states can still be deduced from an exact solution for the Laplace transform. For models in which aggregation rates remain constant but fragmentation rates scale as $(\\text{mass})^\u03b2$, detailed balance holds only when $\u03b2=1$. Away from this solvable case, we employ asymptotic techniques and show that when $\u03b2\\geq 0$, the steady states share similarities with those from the mass-independent ($\u03b2=0$) model. An instantaneous shattering transition with continuous mass loss occurs when $\u03b2<0$.",
     "url": "https://arxiv.org/abs/2605.22383v1",
     "published": "2026-05-21T12:12:52Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* The study examines aggregation-fragmentation processes with mass-dependent rates.\n* Asymptotic techniques and exact solutions are used to analyze the models.\n* The results show distinct steady states depending on the mass scaling exponent (\u03b2), with transitions at \u03b2 = 0 and \u03b2 = 1.",
+    "summary": "Here is a 3-sentence summary of the research abstract:\n\nThis study examines aggregation-fragmentation processes where clusters can combine or break apart, with rates that may or may not depend on the cluster's mass. When fragmentation rates scale with mass, detailed balance only occurs when the scaling exponent is 1, but similar steady states are found for non-negative exponents using asymptotic techniques. For negative exponents, the system undergoes an instantaneous shattering transition, characterized by continuous mass loss.",
     "category": "cond-mat.stat-mech"
   },
   {
@@ -158,7 +158,7 @@
     "abstract": "We study site percolation on the diamond hierarchical lattice, a finite-dimensional fractal network, using an exact generating-function analysis. In contrast to bond percolation, site percolation on this lattice does not undergo a transition from a nonpercolating phase to a percolating phase. Instead, the system exhibits a nonpercolating phase for $p<p_{\\rm c}$ and a critical phase for $p>p_{\\rm c}$. In the critical phase, the size of the largest cluster remains subextensive, scaling as $N^{\u03c8(p)}$, where the fractal exponent $\u03c8(p)$ varies continuously with $p$. By analyzing the renormalization-group recursion relation in the vicinity of $p_{\\rm c}$, we show that the correlation length exhibits a Berezinskii-Kosterlitz-Thouless-type essential singularity, $\u03be(p)\\sim \\exp \\left({\\rm const}/\\sqrt{p_{\\rm c}-p}\\right)$ for $p \\to p_{\\rm c}^-$, which is further confirmed by finite-size scaling analyses showing excellent data collapse. These results demonstrate that critical phases in percolation can emerge even on finite-dimensional networks and that exponential volume growth is not necessary for such phases to appear. We argue that the critical phase on the diamond hierarchical lattice stems from site dilution remaining relevant under renormalization.",
     "url": "https://arxiv.org/abs/2605.22103v1",
     "published": "2026-05-21T07:39:04Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "cond-mat.stat-mech"
   },
   {
@@ -167,7 +167,7 @@
     "abstract": "The training algorithms for AI systems all introduce far-from-equilibrium dynamical processes, and understanding the irreversibility of these algorithms is a fundamental step towards understanding the learning dynamics of modern AI systems. In this work, we establish a general framework for defining and analyzing the irreversibility of training algorithms. We show that four different ways to characterize the irreversibility of dynamical processes are equivalent to leading order in the step size $\u03b7$: numerical backward error $\u03c6_{\\rm DE}$, time-renormalized correction $\u03c6_{\\rm TR}$, microscopic time reversal asymmetry $\u03c6_{\\rm TA}$, and the (regularized) stochastic-thermodynamic entropy production $\u03c6_{\\rm ST}$. The irreversibility gives rise to a time-reversal-symmetry-breaking emergent force that generically breaks non-isometric continuous reparametrization symmetries, preserves orthogonal symmetries, and leads to a universal preference for those learning trajectories that minimize the entropy production rate.",
     "url": "https://arxiv.org/abs/2605.21933v1",
     "published": "2026-05-21T03:04:44Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "cond-mat.stat-mech"
   },
   {
@@ -176,7 +176,7 @@
     "abstract": "We introduce a utility-driven bounded-confidence model of opinion dynamics in which opinions associated with higher utility exert stronger social influence. In the regime where all agents belong to a single opinion cluster, we derive a stochastic differential equation for the mean opinion and show that its stationary distribution is Gibbs-like, with an effective potential determined by the utility landscape and an inverse temperature controlled by the learning rate and the number of agents. For multimodal utility functions, the dynamics exhibit metastability and spontaneous switching between competing opinion states. The reduced stochastic description also captures the evolution and merging of multiple opinion clusters, in agreement with agent-based simulations.",
     "url": "https://arxiv.org/abs/2605.21844v1",
     "published": "2026-05-21T00:27:39Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* Main idea: A model of opinion dynamics where opinions with higher utility have stronger social influence.\n* Method: Derivation of a stochastic differential equation for the mean opinion.\n* Result: The model exhibits metastability and spontaneous switching between opinion states, matching agent-based simulations.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "cond-mat.stat-mech"
   },
   {
@@ -185,7 +185,7 @@
     "abstract": "Using temperature retrievals from Akatsuki radio occultation measurements, we characterize gravity wave activity as a function of vertical wavenumber and altitude and, for the first time, estimate the absolute horizontal momentum fluxes and the magnitude of the associated gravity wave drag (i.e., wave acceleration), which quantify the potential effects of these waves in the Venusian middle atmosphere between 40--95 km. Observed temperature perturbations, which are indicative of atmospheric gravity wave activity, reach amplitudes of approximately $\\pm$10 K, and significant momentum flux (10--30 m$^2$ s$^{-2}$) and wave drag (0.003--0.03 m s$^{-2}$) are detected across all analyzed profiles. The inferred wave drag represents a lower bound on the total gravity wave-induced drag in the Venusian atmosphere. Momentum flux tends to increase exponentially with altitude below approximately 50--60 km, then peaks and attenuates at higher altitudes. Wave drag becomes prominent where momentum flux begins to decrease, which is a consequence of wave dissipation. Both quantities exhibit multiple altitude-localized maxima, which is consistent with upward wave propagation followed by dissipation at different altitudes for different vertical wavelengths. Damping due to gravity wave nonlinear interactions is likely to play the major role in limiting the growth of wave amplitudes and fluxes with height. These features are observed across a range of latitudes and local times. Overall, the results provide observational constraints on gravity wave momentum transport and dissipation in the Venusian middle atmosphere and could guide numerical models in their effort to quantify wave-mean flow interactions in Venus's atmosphere.",
     "url": "https://arxiv.org/abs/2605.22793v1",
     "published": "2026-05-21T17:48:18Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.flu-dyn"
   },
   {
@@ -194,7 +194,7 @@
     "abstract": "Fast magnetosonic waves are among the fundamental oscillation modes of astrophysical plasmas. To study their dynamics, we carry out numerical simulations of the wave turbulence kinetic equation, which describes the evolution of the energy spectrum of a set of weakly nonlinear fast magnetosonic waves. This kinetic equation, which involves three-wave interactions, has recently been derived from compressible magnetohydrodynamics in the low-$\u03b2$ limit (Galtier 2023). It has an exact stationary solution, the Kolmogorov-Zakharov spectrum, corresponding to a direct energy cascade. Here we perform free decay simulations of the kinetic equation for which we propose a Kolmogorov-type phenomenology to explain the temporal decay laws of energy and integral length scale. In the forced simulations, we show that the cascade is in fact composed of a mixture of a forward cascade for counter-propagating waves, and a backward cascade for co-propagating waves, with the former being stronger than the latter. The Kolmogorov-Zakharov energy spectrum in $k^{-3/2}$ is found in the radial direction with an anisotropy due to the amplitude that depends on the angle relative to the strong mean magnetic field. We give the analytical expression of the Kolmogorov-Zakharov constant, which is numerically verified in the high Reynolds number limit. Our study provides a theoretical explanation for certain observations in the solar wind plasma (Zhao et al. 2022), where a regime of weak turbulence has been identified for fast magnetosonic waves, alongside a critical balance regime for strong Alfv\u00e9n wave turbulence.",
     "url": "https://arxiv.org/abs/2605.22710v1",
     "published": "2026-05-21T16:47:57Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.flu-dyn"
   },
   {
@@ -203,7 +203,7 @@
     "abstract": "This study experimentally examines the impact of spacing between two pulsed jets and their strengths on the fluid dynamics within an elastic hemispherical cavity. Such interactions between multiple pulsed jets are observed in various natural and industrial contexts, including cardiovascular flows, where they occur naturally within the atria or result from medical interventions (e.g., mitral valve repair, mechanical heart valves, paravalvular leaks) or diseases (e.g., aortic or pulmonary valve regurgitation). Fundamentally, these flows usually feature two or more pulsed jets interacting in an expanding, elastic environment. In this investigation, the experimental setup features two parallel pulsed jets entering the cavity, with jet strength varied across five formation times (1, 2, 3, 4, 5) and four spacing ratios (1.5, 2.0, 2.5, 3.0). Time-resolved particle image velocimetry is used to capture the instantaneous velocity fields. The results reveal three distinct flow regimes: short-time decay, decay at the wall, and wall rebound with or without the formation of secondary vortices. These findings uncover rare aspects of twin vortex ring behavior, including symmetry breaking, trajectory shifts, and wall-induced rebound mechanisms, with direct relevance to cardiac fluid dynamics in both healthy and pathological conditions.",
     "url": "https://arxiv.org/abs/2605.22648v1",
     "published": "2026-05-21T15:52:19Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "This study examines the fluid dynamics within an elastic hemispherical cavity when two pulsed jets interact, a phenomenon observed in natural and industrial contexts, including cardiovascular flows. The experiment varied jet strength and spacing between the two jets, capturing instantaneous velocity fields using particle image velocimetry. The results revealed three distinct flow regimes and provided insights into twin vortex ring behavior, including symmetry breaking and wall-induced rebound mechanisms, with implications for understanding cardiac fluid dynamics.",
     "category": "physics.flu-dyn"
   },
   {
@@ -212,7 +212,7 @@
     "abstract": "During the phase of landing, an important aircraft-noise source emanates from the interaction of the landing-gear wake with the deployed flap. In the present work we cast this problem in an academic framework, by studying a simplified configuration that consists of a cylinder placed upstream and perpendicularly to a symmetrical NACA-0012 airfoil. An experimental campaign is conducted, followed by modelling approaches to explore the flow phenomena associated with the acoustic field. Simultaneous acoustic and stereoscopic Time-Resolved Particle Image Velocimetry measurements are taken, to study the sound and flow-fields generated by the interaction of the cylinder-wake with the downstream airfoil, when the spans of the two objects are orthogonally aligned. The experimental data highlight the three-dimensional nature of the problem. The maximum sound pressure levels are obtained at frequencies close to $St \\equiv f d/U = 0.38$ (cylinder's drag fluctuation frequency), where also the maximum linear coherence between the acoustic and cylinder-span-oriented fluctuation velocity is observed, demonstrating that the measured acoustic-field is an outcome of the three-dimensional cylinder-wake. Powell-Howe vortex-sound theory combined with an acoustically compact Green function for the NACA-0012 are employed for the aeroacoustic modelling. A linearised source-term based on the analysed experimental data is used as input to estimate the acoustic field and identify the acoustically important coherent structures of the flow-field. A reasonable agreement is obtained between the sound field estimations and the measurements. To further explore the mechanisms of sound generation, a semi-empirical source-model, informed by the experimental data, is proposed, based on Fourier modes in the cylinder's span direction.",
     "url": "https://arxiv.org/abs/2605.22546v1",
     "published": "2026-05-21T14:28:16Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.flu-dyn"
   },
   {
@@ -221,7 +221,7 @@
     "abstract": "We present three-dimensional direct numerical simulations of turbulent Rayleigh-B\u00e9nard convection (RBC) in the Lagrangian frame of reference for Rayleigh numbers $10^5 \\leq Ra \\leq 10^{10}$ and a Prandtl number $Pr=0.7$ in a plane layer at an aspect ratio $L:L:H=4:4:1$ with a horizontal length $L$ and height $H$. We use particle accelerations, Lagrangian heat transfer, $Q$-$R$ invariant topology, Lagrangian particle pair dispersion, scale-dependent Lagrangian eddy viscosity, and principal-component analysis (PCA) of dense particle clouds to characterise convective transport along material trajectories. By computing particle accelerations at the integration time step and controlling spectral-element-method signatures, we obtain robust acceleration statistics and recover Heisenberg-Yaglom behaviour. Lagrangian heat transfer is extremely intermittent: individual massless Lagrangian particles can carry convective heat fluxes up to $500$ times the global Eulerian mean, although higher-order heat flux moments decrease toward Gaussian values with increasing $Ra$. The analysis of velocity gradient invariants in the $Q$-$R$ plane along trajectories identifies a distinct topological footprint of dust-devil-like convective vortices in the quadrant of $Q>0$, $R<0$, associated with vortex stretching, plume detachment, and intense localised heat transfer. Global unconditioned pair dispersion exhibits neither extended Richardson nor Bolgiano-Obukhov scaling plateaus. Rather, scale-dependent eddy viscosity and conditioned PCA of dense particle clouds reveal that buoyancy- and shear-driven dispersion are temporally organised: rapid plume-driven ejection produces a short $t^5$-like episode, followed by sustained Richardson-like $t^3$-scaling. Thus, Lagrangian topology and cloud geometry provide mechanism-resolving diagnostics for active-scalar turbulence beyond RBC-specific global scaling laws.",
     "url": "https://arxiv.org/abs/2605.22326v1",
     "published": "2026-05-21T11:18:10Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.flu-dyn"
   },
   {
@@ -230,7 +230,7 @@
     "abstract": "This paper presents a unified gas-kinetic wave-particle (UGKWP) method for simulating multiscale binary-species gas mixtures. Benefiting from direct modeling in a discretized space, the UGKWP method enables the automatic decomposition of the gas distribution function into analytical hydrodynamic waves and discrete particles, which respectively describe its near-equilibrium and non-equilibrium parts. This approach offers significant advantages for simulating various multiscale physical phenomena, such as hypersonic flows, plasma transport, and radiation transport. In this study, we employ the model proposed by Groppi et al. [EPL, 96 (2011) 64002] to calculate the macroscopic velocity and temperature of the local target equilibrium distribution function, thereby recovering the correct viscosity and diffusion coefficients in the continuum flow regime. To address the heat conduction coefficient, the Shakhov model is incorporated to correct the Prandtl number. Diffusion effects are accounted for not only in the source term via an operator-splitting method, but also in the flux evolution through the characteristic integral solution, while strictly maintaining consistency between the wave and particle descriptions. Furthermore, the microscopic model for high-speed particles is improved by utilizing a physically corrected collision time to determine their free-transport time. Through a series of numerical tests spanning the continuum to rarefied regimes, the proposed UGKWP method is shown to accurately capture the differences in velocity and temperature between different species. Notably, for hypersonic flows, the predicted wall pressure, shear stress, and heat flux coefficients agree well with DSMC results.",
     "url": "https://arxiv.org/abs/2605.22274v1",
     "published": "2026-05-21T10:16:24Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* The unified gas-kinetic wave-particle (UGKWP) method is used to simulate multiscale binary-species gas mixtures.\n* The method combines direct modeling and particle description to capture both equilibrium and non-equilibrium parts of the gas distribution.\n* The UGKWP method accurately captures differences in velocity and temperature between species, and agrees with DSMC results for hypersonic flows.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.flu-dyn"
   },
   {
@@ -239,7 +239,7 @@
     "abstract": "We present a free energy lattice Boltzmann model capable of simulating fluid systems with an arbitrary number of immiscible components in principle. Our method is strictly reduction consistent, ensuring that absent fluid components do not spontaneously nucleate. We introduce a novel discretization of the surface tension force that globally conserves momentum to machine precision, and we enforce reduction consistency through a flux correction that is independent of the mobility. The method is benchmarked with a range of static and dynamic problems, including: liquid lenses, Janus droplets, quaternary phase separation, and six-component layered Poiseuille flow, and we obtain excellent agreement with theoretical predictions throughout. Finally, we demonstrate the applicability of the proposed method through patterned liquid surfaces and microfluidic emulsion droplet generation.",
     "url": "https://arxiv.org/abs/2605.22214v1",
     "published": "2026-05-21T09:19:16Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Here is a summary of the research abstract in 3 concise sentences:\n\nA new lattice Boltzmann model has been developed to simulate fluid systems with multiple immiscible components, ensuring that absent components do not spontaneously nucleate. The model features a novel surface tension force discretization that conserves momentum and is benchmarked with various static and dynamic problems, showing excellent agreement with theoretical predictions. The method is demonstrated to be applicable in various scenarios, including patterned liquid surfaces and microfluidic emulsion droplet generation, showcasing its potential for simulating complex fluid systems.",
     "category": "physics.flu-dyn"
   },
   {
@@ -248,7 +248,7 @@
     "abstract": "We prove that the three-dimensional incompressible Navier-Stokes equations with the deformation Laplacian on hyperbolic 3-space $\\HH^3$ admit a unique global mild solution for sufficiently small initial data in $L^3(\\HH^3)$, and that this solution decays exponentially to zero. The exponential decay rate is $\u03bc\u03bb_\\Def^{(3)}$, where $\u03bc$ is the dynamic viscosity and $\u03bb_\\Def^{(3)} = 26/9$ is the effective spectral gap of the deformation Laplacian in $L^3$. On flat $\\R^3$, the corresponding Kato-type result gives only algebraic decay. The exponential stability is a macroscopic consequence of the spectral gap provided by negative curvature. We also show that the $L^2$ norm is supercritical on $\\HH^3$ (as on $\\R^3$), with the obstruction arising from the local ultraviolet scaling of the heat kernel, which is insensitive to global geometry. The boundary between what curvature can and cannot improve is located exactly: the Fujita-Kato integral has a scaling exponent $1/2 - 3/(2p)$ that depends only on the integrability of the initial data, not on the geometry of the manifold. For $p \\geq 3$ (the Kato critical space), the integral is bounded and the spectral gap contributes exponential time decay. For $p < 3$, the integral diverges at $t = 0$ (and strictly diverges for all $t>0$ when $p \\le 2$) regardless of the curvature.",
     "url": "https://arxiv.org/abs/2605.22212v1",
     "published": "2026-05-21T09:16:58Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.flu-dyn"
   },
   {
@@ -257,7 +257,7 @@
     "abstract": "A Full Turbulence Simulation (FTS) of turbulent channel flow at friction Reynolds number (Re_tau) approx 1000 was performed by resolving the Kolmogorov wavenumber in all spatial directions. At this Reynolds number, the intermediate layer attains a physically meaningful width and is fully resolved in the present computation, providing the reference dataset that captures its turbulence and dissipation characteristics with high fidelity. The wall-normal grid spacing of the FTS also confirms that, when the Kolmogorov length scale is sufficiently resolved, the second-order central-difference scheme introduces no adverse numerical effects in the wall-normal direction. In the wall-parallel directions, two resolution criteria were identified based on the present FTS: a first-approximation DNS resolution that resolves more than 99 percent of the turbulent kinetic energy and dissipation rate (Delta x+ approx 19, Delta y+ approx 8, where Delta x+ and Delta y+ denote the streamwise and spanwise spatial resolutions in wall units) and a full dissipation-resolution criterion (Delta x+ approx 7.5, Delta y+ approx 5.0). The first-approximation resolution by means of a spectral method reproduces the essential turbulence statistics within 1 percent accuracy while requiring only one-eighth of the grid points used in the FTS, demonstrating its practical efficiency. In contrast, even the highest-resolution second-order central-difference case (Delta x+ approx 5.0, Delta y+ approx 4.5) fails to match the accuracy of the first-approximation spectral resolution. These findings provide important resolution guidelines for high-Reynolds-number DNS, particularly for simulations at Re_tau = O(10^4).",
     "url": "https://arxiv.org/abs/2605.22107v1",
     "published": "2026-05-21T07:42:09Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.flu-dyn"
   },
   {
@@ -266,7 +266,7 @@
     "abstract": "Flexure of Antarctic ice shelves under excitation from long ocean waves induces mechanical ice shelf stresses that amplify fractures and, hence, contribute to calving events. Here, a solution method is developed for a hydroelastic mathematical model of wave-induced ice shelf flexure, based on the conventional theory of a Kirchoff-Love plate floating on shallow water under linearised conditions, but allowing wave forcing of ice shelves with variations in both horizontal dimensions, and where the ice shelves are of arbitrary shape, including non-uniform thickness. The method uses finite elements specifically designed for the high-order hydroelastic system, and a Dirichlet-to-Neumann map to bound the computational domain in the open ocean. Following verification, the method is used to conduct novel studies on how the ice-shelf deflection is affected by the ice shelf shape, the incident wave direction and the proportion of the shelf that is grounded. The efficiency of the method allows the studies to be conducted over a broad frequency range, such that resonant responses are identified.",
     "url": "https://arxiv.org/abs/2605.22042v1",
     "published": "2026-05-21T06:30:25Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.flu-dyn"
   },
   {
@@ -275,7 +275,7 @@
     "abstract": "Weather and climate forecasts are inherently uncertain due to chaotic dynamics, imperfect initial conditions, and incomplete representation of the underlying physical processes. Operational ensemble forecasts aim to represent these uncertainties through forecast spread, yet many approaches yield underdispersive estimates, with spread that grows too slowly relative to forecast error. Using the two-scale Lorenz 1996 system as a widely used, controlled testbed, we design a systematic approach to disentangle intrinsic variability, initial-condition perturbations, and stochastic model uncertainty. We compare multiple ensemble configurations and parameterization strategies, including existing deterministic and autoregressive as well as novel Bayesian and flow-based approaches. Our results show that ensemble perturbations do not increase the system's long-term variance; rather, they regulate how rapidly trajectories decorrelate and explore the invariant measure. Stochastic parameterizations, particularly those with temporally persistent structure, enhance early spread growth and improve spread-error consistency. Overall, we bring clarity to how different sources of uncertainty interact in a chaotic system and provide guidance for the design and evaluation of stochastic parameterizations in weather and climate models.",
     "url": "https://arxiv.org/abs/2605.22242v1",
     "published": "2026-05-21T09:48:10Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* Main idea: The study aims to improve uncertainty representation in weather and climate forecasts.\n* Method: Researchers used the Lorenz 1996 system to compare different ensemble configurations and parameterization strategies.\n* Result: Stochastic parameterizations with persistent structure were found to enhance early spread growth and improve forecast accuracy.",
+    "summary": "Here is a 3-sentence summary of the research abstract:\n\nWeather and climate forecasts are uncertain due to various factors, and operational ensemble forecasts often underestimate this uncertainty. Researchers used a controlled testbed to compare different ensemble configurations and parameterization strategies, finding that stochastic parameterizations can improve the accuracy of uncertainty estimates. The study's results provide guidance for designing and evaluating stochastic parameterizations in weather and climate models, helping to better represent the complex interactions between different sources of uncertainty.",
     "category": "physics.ao-ph"
   },
   {
@@ -284,7 +284,7 @@
     "abstract": "The African easterly jet (AEJ) is a prominent circulation feature in the tropical atmosphere. It transports mineral dust and generates easterly waves that serve as seeds for hurricanes. Conventional wisdom holds that the AEJ is in thermal wind balance with the positive meridional temperature gradient over North Africa. Here, using reanalysis data, we show that the negative meridional moisture gradient substantially counteracts the effect of the temperature gradient on density in that balance, diagnostically accounting for a 30\\% reduction of the AEJ magnitude. Using CMIP6 data, we further show that this effect of vapor buoyancy on the AEJ strengthens under global warming, highlighting the critical role of the spatial distribution of moisture on large-scale circulation. Analysis of the AEJ in CMIP6 models confirms that some models do not include vapor buoyancy in their governing equations, raising questions about the relevance of their projections of climate change in that region.",
     "url": "https://arxiv.org/abs/2605.21875v1",
     "published": "2026-05-21T01:38:05Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.ao-ph"
   },
   {
@@ -293,7 +293,7 @@
     "abstract": "Understanding how typhoons respond to localized perturbations in their environmental fields is fundamental to assessing the limits of predictability and exploring the potential for track or intensity intervention. This study develops a dedicated simulation methodology testbed for typhoon sensitivity analysis by integrating the Pangu weather model, a high-precision AI forecasting system, with Proportional-Integral-Derivative (PID) closed-loop techniques. The testbed is constructed with modular functional blocks including a meteorological prediction module, an artificial perturbation input interface, a typhoon quantitative modeling module, and a PID closed-loop test module, implemented via a cross-platform MATLAB/ONNX technical framework. A Single-Input Single-Output (SISO) test system was built, with velocity and thermal perturbations set as the core inputs and typhoon track and intensity as the key output targets, to perform controlled perturbation-response experiments. The experiments reveal the feasible perturbation-response range, the parameter tuning behavior of the PID module, and the energy-scale response characteristics under different perturbation modes, and quantify the input-output coupling relationships of the test system. By constructing this testbed on an operational AI weather forecasting model, this study provides a framework that goes beyond idealized sensitivity studies typically validated only on low-order dynamical models. The testbed offers an expandable platform for investigating typhoon sensitivity to artificial environmental perturbations and provides a foundation for subsequent expansion toward multi-input multi-output architectures and advanced analysis strategies such as nonlinear PID or model predictive control.",
     "url": "https://arxiv.org/abs/2605.21864v1",
     "published": "2026-05-21T01:21:10Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.ao-ph"
   },
   {
@@ -302,7 +302,7 @@
     "abstract": "Serpentinization of ultramafic rocks is a naturally occurring mineralogical process that can generate molecular hydrogen through the oxidation of ferrous iron during water-rock reaction. Although the resource potential is large, the natural reaction is kinetically limited, and practical hydrogen recovery requires methods that can accelerate conversion without imposing an energy penalty that exceeds the value of the hydrogen produced. This short communication reports a preliminary atmospheric-pressure microwave serpentinization experiment using a water-saturated 2 g crushed olivine sample. Microwave irradiation produced a rapid increase in measured hydrogen concentration compared with conventional hot-plate heating under otherwise similar conditions. The preliminary experiment showed approximately a 12-fold increase in hydrogen concentration and an apparent rate increase from about 2 ppb s$^{-1}$ for conventional heating to about 10 ppb s$^{-1}$ during microwave exposure. These results suggest that electromagnetic stimulation can enhance serpentinization kinetics, likely through rapid volumetric heating, selective coupling to iron-bearing phases, and localized thermal gradients. The result provides an initial experimental basis for evaluating microwave stimulation as a route to accelerated geologic hydrogen production and motivates follow-on measurements using calibrated gas analysis, absorbed-power measurements, dielectric characterization, and elevated-pressure testing.",
     "url": "https://arxiv.org/abs/2605.21790v1",
     "published": "2026-05-20T22:32:34Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.ao-ph"
   },
   {
@@ -311,7 +311,7 @@
     "abstract": "A method for measuring the altitude and particle size of noctilucent clouds, based on positioning and photometry from wide-angle three-color cameras, has been developed to determine the three velocity components, particle radius, and its derivative with respect to time for different cloud fragments. The updated method is applied to observational data of bright clouds during the summers of 2023-2025. Meridional motion of the cloud is found to be the principal factor driving the change in particle size. The effect of particle size evolution in the presence of a strong latitudinal temperature gradient is also studied.",
     "url": "https://arxiv.org/abs/2605.21687v1",
     "published": "2026-05-20T19:44:55Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* Method: Wide-angle three-color cameras measure noctilucent clouds.\n* Approach: Analyze observational data from 2023-2025 to determine cloud properties.\n* Result: Meridional motion drives changes in particle size, influenced by temperature gradients.",
+    "summary": "Researchers have developed a method to measure the altitude and particle size of noctilucent clouds using wide-angle cameras. This method was applied to observational data from 2023-2025, revealing that meridional motion is the main driver of changes in particle size. The study also examined how particle size evolves in response to strong temperature gradients, providing new insights into noctilucent cloud behavior.",
     "category": "physics.ao-ph"
   },
   {
@@ -320,7 +320,7 @@
     "abstract": "This translational article documents the European Centre for Medium-Range Weather Forecasts (ECMWF) transition from a restricted data licensing model to open access under CC BY 4.0, completed in October 2025. The policy context included EU open data requirements and alignment with international data exchange frameworks. The transition was implemented through a tiered service model that kept core forecast data open while offering operationally supported delivery as a cost-recovered service. Between 2020 and 2025, ECMWF executed an iterative planning cycle: setting an annual target for revenue reduction, specifying additions to the open tier under that target, provisioning infrastructure, and assessing outcomes to update assumptions. Drawing on internal administrative records (2014 - 2025), we describe design choices, operational constraints, and early outcomes. In the six months following the end of the transition, more than 93% of previously paying organisations retained a Service Agreement, while open endpoint download volumes increased substantially. We discuss trade-offs in defining the open tier (resolution, parameters, schedule), the reduction of compliance overheads formerly associated with redistribution restrictions, and the scalability implications of global distribution. We note an emerging sustainability question as AI-based forecast products become freely available. The early evidence is consistent with the view that a tiered service model can be designed to reconcile open-access obligations with operational sustainability, subject to monitoring over longer contract renewal cycles (typically annual).",
     "url": "https://arxiv.org/abs/2605.21673v1",
     "published": "2026-05-20T19:30:02Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.ao-ph"
   },
   {
@@ -329,7 +329,7 @@
     "abstract": "We investigate the effect due to grid resolution and subgrid-scale model on large-eddy simulations of low-level clouds using a novel framework that combines pseudo-spectral advection with the anisotropic minimum dissipation (AMD) subgrid-scale model. We use two field campaigns as reference, DYCOMS-II RF01 and ASTEX, which cover both non-precipitating and precipitating stratocumulus cloud regimes across different time scales. Our results demonstrate that the AMD model combined with pseudo-spectral advection produces robust and accurate predictions across varying grid resolutions without parameter tuning. We identify a recommended grid anisotropy where vertical spacing is approximately three times finer than horizontal spacing, balancing accuracy and computational efficiency. Finally, an error analysis based on cloud liquid water content and vertical velocity variance reveals good agreement with theoretical predictions for isotropic grids, while grid anisotropy effectively improves convergence rates.",
     "url": "https://arxiv.org/abs/2605.21196v1",
     "published": "2026-05-20T13:57:19Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.ao-ph"
   },
   {
@@ -338,7 +338,7 @@
     "abstract": "While vorticity is the classical tool for analyzing rotational fluid kinematics, it inherently focuses on local, differential spin. This paper introduces a complementary framework based on the angular momentum density field, $\\mathbf{L} = \\mathbf{r} \\times \\mathbf{u}$, deriving generalized transport equations that explicitly balance macroscopic torque and rotational momentum. This $\\mathbf{L}$ perspective offers several distinct theoretical advantages over traditional velocity/vorticity formulations. Specifically, this approach: (i) provides a novel decomposition of the viscous torque into a diffusive component and a local spin dissipative term; (ii) shows the mechanism by which lift is generated in viscous boundary layers by vorticity acting as a source of angular momentum; it also explains stall (iii) reformulates the hydrodynamic impulse to yield a remarkably clean separation of terms into dilatational, volumetric, and rotational flux components; The $\\mathbf{L}$ formalism provides the kinematic closure necessary to unify non-circulatory added mass and circulatory lift within a single, dimensionally consistent budget. (iv) enables the direct calculation of the viscous added mass force, accounting for the inertial resistance of boundary layers and separated wakes; (v) simplifies geophysical fluid dynamics by absorbing the planet's rotation, traditionally treated as an artificial virtual vorticity term which directly gets absorbed into the conserved axial angular momentum $m$, revealing the fundamental physics of global circulation through explicit torque balances; (vi) identifies the rotlet as a fundamental Green's function for the $\\mathbf{L}$ transport equation in the Stokes regime; and (vii) demonstrates that both oblique shocks and vortex sheets act as singular sources of $\\mathbf{L}$ that turn the macroscopic flow.",
     "url": "https://arxiv.org/abs/2605.21191v1",
     "published": "2026-05-20T13:54:38Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.ao-ph"
   },
   {
@@ -347,268 +347,7 @@
     "abstract": "The integration of machine learning (ML) with traditional physics-based models is reshaping the landscape of weather and climate prediction. On their own, ML-based and physics-based approaches each have significant benefits - but also challenges. Deploying both these approaches side by side has the potential to accelerate the pull through of emerging science in a trusted and practical way. But there are many choices that can be made to how we \"blend\" ML and established physics-based modelling systems to get the optimal benefits. This paper aims to provide a typology of blended modelling approaches and discusses some of the strategic benefits that come with them. It can be used not just to classify modelling systems, but also identify routes to gradual, incremental or wholesale development and implementation of new and emerging capabilities. These approaches provide a practical path to innovation by combining the speed and adaptability of machine learning with the robustness, trust, and interpretability of physics-based systems. By adopting a structured vocabulary and outlining the benefits and limitations of each approach, this framework supports informed decision-making and strategic planning, and can be used by the wider community to navigate the transition to next-generation prediction systems.",
     "url": "https://arxiv.org/abs/2605.20925v1",
     "published": "2026-05-20T09:10:45Z",
-    "summary": "- Summary unavailable due to rate limits.",
+    "summary": "Summary unavailable due to rate limits.",
     "category": "physics.ao-ph"
-  },
-  {
-    "title": "Data-Driven Reduced Modeling of Delayed Dynamical Systems via Spectral Submanifolds",
-    "authors": "Giacomo Abbasciano, Gergely Buza, George Haller",
-    "abstract": "We show how the recent extension of spectral submanifold (SSM) theory to delay differential equations (DDEs) enables data-driven model reduction of nonlinear delay systems. First, using a scalar DDE with a single discrete delay, we compare equation-based and data-driven SSM reductions, to illustrate the need for the latter. We then use the same algorithm to obtain purely data-driven, SSM-reduced, delay-free ODE models for several nonlinear delayed systems. Our approach requires no information about the form of the underlying DDE, or about the number and magnitude of the delays it contains. Our SSM-reduced, low-dimensional models remain predictive even for chaotic dynamics. We also illustrate the use of parametric SSM-reduction to capture bifurcations in systems with both distributed and discrete delays. Finally we extend the theoretical underpinning of delayed SSM-reductions to non-autonomous systems with periodic delays, and apply these results to experimental data from a control system with feedback delay and quantization.",
-    "url": "https://arxiv.org/abs/2605.22299v1",
-    "published": "2026-05-21T10:46:33Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* Main idea: Data-driven model reduction of nonlinear delay systems using spectral submanifold (SSM) theory.\n* Method: Applying SSM reduction to delay differential equations (DDEs) without requiring knowledge of the underlying equation or delays.\n* Result: Low-dimensional, delay-free ODE models that remain predictive even for chaotic dynamics and can capture bifurcations in various systems.",
-    "category": "nlin.CD"
-  },
-  {
-    "title": "What We Talk About When We Talk About Dissipative Quantum Chaos",
-    "authors": "Lucas S\u00e1, Pedro Ribeiro, Sergey Denisov",
-    "abstract": "Dissipative quantum chaos is an emerging theory that is expected to extend the ideas, concepts, and methodology of conventional Hamiltonian quantum chaos from coherent evolution to open quantum dynamics. The new theory should provide a set of tools to distinguish chaotic open quantum systems from integrable ones, as well as quantitative measures of their chaoticity (or, conversely, integrability). The foundations of this theory were laid in the late 1980s, and from the very start it was clear that, like its Hamiltonian predecessor, it had to be based on the spectral properties of the operators governing open quantum evolution. After these first steps, the field remained relatively quiet for many years and it is only over the last decade that the development of dissipative quantum chaos has received a strong boost, as confirmed by a large number of publications on this topic and, very recently, the first experiments performed to test its theoretical predictions. In this chapter, we review these recent developments and outline the basic foundations of dissipative quantum chaos.",
-    "url": "https://arxiv.org/abs/2605.21628v1",
-    "published": "2026-05-20T18:40:36Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.CD"
-  },
-  {
-    "title": "Physical completion of the Navier-Stokes equations",
-    "authors": "Samuel L. Braunstein",
-    "abstract": "The incompressible Navier-Stokes equations contain viscous dissipation but no thermal noise. I show, using a topological argument based on Poincar\u00e9's lemma, that the fluctuation-dissipation relation for the full nonlinear dynamics can be derived without the linearisation or structural assumptions that all previous derivations require. The nonlinear convective term is Hamiltonian (energy-preserving and phase-space-volume-preserving) and drops out of the Fokker-Planck equilibrium condition exactly, so the noise derived from linearised fluctuations near equilibrium is in fact exact for the full nonlinear system. This result proves, rather than assumes, the reversible/irreversible decomposition that the GENERIC framework postulates, provided Poincar\u00e9's lemma holds on the phase space. The resulting stochastic system, with a physical molecular-scale spectral cutoff, is trivially globally well-posed: a finite-dimensional stochastic differential equation with non-degenerate noise and a confining Lyapunov function. It has a unique Gibbs equilibrium and converges to it exponentially. The difficulty of the Clay Millennium Prize Problem arises entirely from two idealisations, zero temperature and infinite spectral resolution, neither of which is satisfied by any physical fluid.",
-    "url": "https://arxiv.org/abs/2605.21357v1",
-    "published": "2026-05-20T16:22:25Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.CD"
-  },
-  {
-    "title": "Exact expression for maximum Lyapunov exponent during transients in computationally powerful dynamical networks",
-    "authors": "Arthur S. Powanwe, Luisa H. B. Liboni, Anif N. Shikder, Alexandra N. Busch, Kalel L. Rossi, Todd Coleman, J\u00e1n Min\u00e1\u010d, Ulrike Feudel, Roberto C. Budzinski, Lyle E. Muller",
-    "abstract": "We study a network whose rich spatiotemporal dynamics have recently been shown to enable dynamics-based computation, including logic gates, short-term memory, and simple encryption. The network's time dynamics can be exactly solved through a nonlinear coordinate transformation. Here, we derive an exact analytical expression for the network's time-dependent maximum Lyapunov exponent (MLE). We demonstrate, both numerically and analytically, that the network exhibits positive MLEs during the transients that are useful for computation. Our framework enables algebraic manipulation of transient lifetimes through network connectivity and initial conditions, providing a rigorous theoretical foundation for understanding and controlling computation with transients.",
-    "url": "https://arxiv.org/abs/2605.21174v1",
-    "published": "2026-05-20T13:43:10Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.CD"
-  },
-  {
-    "title": "Pairwise Distance-Diffusion Analysis (PDDA): A Geometric Framework for Estimating Hurst Exponents in Multivariate Long-Memory Processes",
-    "authors": "Diogo C. Soriano, Frederique Vanheusden, Slawomir J. Nasuto",
-    "abstract": "We introduce Pairwise Distance-Diffusion Analysis (PDDA), a geometric framework for estimating the Hurst exponent from distance plots of long-memory stochastic processes. A single construction yields two complementary routes: R/S-PDDA, a geometric reformulation of the classical rescaled-range definition, and MSD-PDDA, based on mean-squared-displacement scaling, classically used in anomalous diffusion. We extend PDDA to multivariate isotropic and anisotropic processes and derive an explicit link between temporal persistence, range dimension, and recurrence statistics, providing a unified distance-based foundation for Hurst analysis.",
-    "url": "https://arxiv.org/abs/2605.21530v1",
-    "published": "2026-05-19T20:22:37Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* Main idea: Introducing Pairwise Distance-Diffusion Analysis (PDDA) for estimating the Hurst exponent.\n* Method: Using geometric framework and distance plots of stochastic processes.\n* Result: Providing a unified foundation for Hurst analysis, applicable to various processes.",
-    "category": "nlin.CD"
-  },
-  {
-    "title": "Reconfigurable Nonlinear Photonic Networks for In-Situ Learning and Memory Formation via Driven-Dissipative Dynamics",
-    "authors": "Isaac Yorke",
-    "abstract": "Photonic neuromorphic computing offers a promising route to overcoming the limitations of conventional von Neumann architectures by exploiting the high bandwidth, low latency, and massive parallelism of optical systems. However, most existing implementations rely on fixed dynamical substrates such as classic reservoir computing, where learning is restricted to external readout layers and memory is limited to transient fading effects. In this work, I propose a Reconfigurable Nonlinear Photonic Decision Network (RNPDN), a physically grounded neuromorphic framework in which computation, memory, and learning emerge directly from driven-dissipative dynamics. Through numerical simulations, I demonstrate the simultaneous realization of key properties: local physical learning rules enabling adaptive state evolution, a tunable stability-plasticity tradeoff governed by decay and hysteresis mechanisms, controlled memory formation and erasure via bistable photonic states, fading memory, in-situ learning, and hardware-faithful nonlinear dynamics incorporating saturation and dissipation. In contrast to conventional approaches, the proposed system enables intrinsic adaptation within the physical layer while supporting both transient and persistent memory. These results establish a unified framework for adaptive photonic information processing and provide a pathway toward scalable and energy-efficient neuromorphic photonic hardware.",
-    "url": "https://arxiv.org/abs/2605.19911v1",
-    "published": "2026-05-19T14:38:33Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.CD"
-  },
-  {
-    "title": "Spin-Hair Induced Chaos of Spinning Test Particles in Rotating Hairy Black Holes",
-    "authors": "Surojit Dalui, Xian-Hui Ge",
-    "abstract": "We investigate the finite-time instability of massive spinning test particles around a rotating hairy black hole generated through gravitational decoupling. The particle motion is described by the full Mathisson-Papapetrou-Dixon equations with the Tulczyjew spin supplementary condition, and the sensitivity to initial conditions is measured using a ZAMO-projected finite-time Lyapunov analysis. The hairy deformation is controlled by two parameters: $\u03b1$, which sets the deviation from Kerr, and $\u03b2$, which changes the radial localization of the deformation. We show that spin-curvature coupling and the hairy geometry can shift the evolved orbit away from the requested seed parameters, making the empirical orbital map essential for interpreting the dynamics. Small-spin and geodesic trajectories remain close to regular behavior, whereas large-spin trajectories show stronger finite-time growth. A scan of the $(S,\u03b2)$ plane shows that the instability does not grow monotonically, but appears in localized regions where the particle spin and the radial profile of the hair act cooperatively. Thus, the hairy background does not simply rescale the Kerr result; it reorganizes the strong-field phase-space region sampled by spinning particles.",
-    "url": "https://arxiv.org/abs/2605.19673v1",
-    "published": "2026-05-19T11:04:10Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.CD"
-  },
-  {
-    "title": "Task-specific programming of chaos in neural circuits",
-    "authors": "Jungyoon Kim, Kyuho Kim, Kunwoo Park, Namkyoo Park, Sunkyu Yu",
-    "abstract": "Chaotic dynamics have emerged as a versatile resource for neuromorphic and probabilistic computing, enabling high-dimensional nonlinear processing and classical analogues of quantum randomness. Exploiting chaos for computation requires task-dependent control over complexity, as demonstrated in reservoir computing, random-number generation, and probabilistic inference. Existing approaches have focused on tuning element-level parameters, leaving the collective, many-body origin of chaos largely unexplored as a design freedom. Here, we demonstrate programmable chaotic dynamics for task-specific reservoir computing. Using a continuous-time neural-circuit model, we show that tuning network topology drives an ordered-to-chaotic transition, accompanied by transitions in correlation timescales, stability characteristics, and signal propagation. By jointly controlling element-level properties and network topology, we establish a unified chaos-latency phase diagram, revealing that small-world connectivity enables low-latency on-off switching of chaos via edge rewiring. Supported by distinct reservoir-computing benchmarks across various topological regimes, our results demonstrate that network topology serves as a reconfigurable parameter for task-specific computation and tunable randomness.",
-    "url": "https://arxiv.org/abs/2605.19465v1",
-    "published": "2026-05-19T07:16:55Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.CD"
-  },
-  {
-    "title": "Dispersal-induced survival of predators in metacommunities due to transient chaos",
-    "authors": "Samali Ghosh, Arnob Ray, Everton S. Medeiros, Dibakar Ghosh, Syamal Kumar Dana, Tomasz Kapitaniak, Chittaranjan Hens, Ulrike Feudel",
-    "abstract": "Dispersal networks critically shape the fate of ecological communities, yet the mechanisms linking connectivity and persistence remain poorly understood. We show that an interplay between asymmetric dispersal and asynchronous dynamics across patches in a dispersal network can prevent predator extinction across broad dispersal ranges, even in identical environments in which synchrony usually drives ecosystems to collapse. Unlike classical rescue effects based on environmental heterogeneity or equilibrium states, this mechanism emerges from non-equilibrium dynamics, specifically from transient chaotic dynamics. Dispersal coupling perturbs local trajectories in patches facing extinction and reinforce chaotic motion, thereby sustaining chaotic oscillations indefinitely. Strikingly, only minimal connectivity is required: small-world networks with a few long-range links suffice to rescue predator populations. These findings reveal a counterintuitive principle that limited, well-placed connectivity can harness chaos to maintain biodiversity in fragmented landscapes.",
-    "url": "https://arxiv.org/abs/2605.19456v1",
-    "published": "2026-05-19T07:09:07Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.CD"
-  },
-  {
-    "title": "Semiclassical periodic-orbit theory for quantum spectra",
-    "authors": "Sebastian M\u00fcller, Martin Sieber",
-    "abstract": "Gutzwiller's trace formula has a central place in quantum chaos because it provides semiclassical approximations for quantum energy levels in classically chaotic systems by linking them to classical periodic orbits. In this didactic article, we discuss a derivation of the trace formula starting from the Feynman path integral. We then describe how the trace formula is used to explain universal features in the distribution of the quantum energy levels that are described by random matrix theory, and we give an overview of related work.",
-    "url": "https://arxiv.org/abs/2605.19019v1",
-    "published": "2026-05-18T18:40:45Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* Main idea: Derivation of Gutzwiller's trace formula for quantum energy levels in chaotic systems.\n* Method: Starting from the Feynman path integral.\n* Result: Explanation of universal features in quantum energy level distribution using random matrix theory.",
-    "category": "nlin.CD"
-  },
-  {
-    "title": "On the Riemann problem for the Adlam-Allen model",
-    "authors": "Su Yang, Marco Calabrese, Vassilis Koukouloyannis, Panayotis G. Kevrekidis",
-    "abstract": "In the present work, we revisit the Adlam-Allen (AA) model in order to investigate its numerically observed rarefaction and dispersive shock waves that arise in numerical simulations of the Riemann problem associated with the model. On the one hand, we perform a direct analysis of the rarefaction and dispersive shock waves of the AA model via examining its corresponding dispersionless system and leveraging the DSW-fitting method to obtain theoretical predictions on various edge features of the dispersive shock waves. On the other hand, we review the KdV reduction of the AA model and utilize the KdV dispersive shock wave to approximate that of the AA model. Relevant numerical comparisons demonstrate the good performance of not only the direct analysis on the AA dispersive shock wave, but also of the approximation via the KdV DSW. These methodologies provide a systematic toolbox for analyzing the outcome of Riemann problems in not only this fundamental setting of cold plasmas but also potentially in related plasma-physics problems.",
-    "url": "https://arxiv.org/abs/2605.22610v1",
-    "published": "2026-05-21T15:26:32Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.PS"
-  },
-  {
-    "title": "Dark solitons in the fractional NLS equation",
-    "authors": "Almudena P. M\u00e1rquez, Jes\u00fas Cuevas-Maraver, Panayotis G. Kevrekidis",
-    "abstract": "In the present work we consider the subject of dark fractional solitary waves in the realm of generalized (fractional) forms of the nonlinear Schr\u00f6dinger (NLS) equation. While earlier studies have examined such states in the realm of real field theories, we showcase the existence and stability of individual dark solitary waves in such NLS settings and subsequently turn to two-soliton solutions. We find different branches of such two-soliton solution equilibria and contrary to the real field-theoretic setting all possible branches of two-soliton equilibria are found to be potentially unstable, although with different types of instabilities. Odd branches are potentially subject to oscillatory instabilities, while even branches are always exponentially unstable. The dynamics that results from the instabilities is also examined and is found to potentially feature breathing characteristics. This prompts us to seek and find associated periodic (breathing) orbits that are also unprecedented in this context, to the best of our knowledge. The effective particle-like dynamics of the solitary waves also prompts us to seek ordinary differential equation (ODE) descriptions to the dark soliton interaction dynamics. These are shown to hold promise toward providing us with effective reduced order models, indicating some potential directions for further investigation.",
-    "url": "https://arxiv.org/abs/2605.21271v1",
-    "published": "2026-05-20T14:59:10Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.PS"
-  },
-  {
-    "title": "Orbital Stability of Smooth Traveling Solitary Waves to the Fornberg-Whitham Equation",
-    "authors": "Xijun Deng, Stephane Lafortune, Zhisu Liu",
-    "abstract": "The Fornberg-Whitham (FW) equation was introduced by Fornberg and Whitham [Fornberg and Whitham, Phil. Trans. R. Soc. Lond. A (1978)] as a nonlocal model for unidirectional shallow water waves capable of capturing wave steepening and breaking. Despite its similarities with integrable shallow-water equations, the FW equation is not completely integrable. Nevertheless, the FW equation is part of the family of peakon-type models as it supports peaked traveling wave solutions. In this paper, we consider smooth solitary wave solutions to the FW equation. We use a variational approach to show that some are orbitally stable.",
-    "url": "https://arxiv.org/abs/2605.19906v1",
-    "published": "2026-05-19T14:35:38Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* The study focuses on the Fornberg-Whitham (FW) equation, a model for shallow water waves.\n* A variational approach is used to analyze the equation's solitary wave solutions.\n* The result shows that some of these solutions are orbitally stable.",
-    "category": "nlin.PS"
-  },
-  {
-    "title": "Periodic and quasiperiodic traveling waves in nonlinear lattices with odd elasticity",
-    "authors": "Andrus Giraldo, Stefan Ruschel, Behrooz Yousefzadeh",
-    "abstract": "Discrete nonlinear systems support a rich variety of localized and extended wave phenomena, with their dynamics sensitively dependent on the symmetries of the underlying interaction forces within the lattice. Odd elasticity, emerging in effective models of active materials, breaks the action-reaction symmetry of the local interactions and gives rise to new wave behavior. We investigate the existence and stability of traveling waves in a nonlinear lattice with odd elasticity, where the coupling force between adjacent units depends asymmetrically on the deformations of the coupled units (nonreciprocal elastic coupling). We demonstrate the existence of periodic and quasiperiodic traveling waves and analyze their spectral stability using the master stability framework. In particular, we identify the onset of Eckhaus instability based on the curvature of the associated master stability curve. This approach enables a quantitative analysis of size effects, specifically the bounds on lattice sizes for which a given traveling wave is stable. The stability analysis for quasiperiodic waves is based on an effective description of the envelope of the response through a rotating wave approximation, which agrees well with direct numerical simulations. Our findings establish a unified framework for understanding wave propagation characteristics in nonlinear lattices, for both periodic and quasiperiodic wave profiles. We highlight, qualitatively and quantitatively, the role of nonreciprocal stiffness on the existence and stability of nonlinear traveling waves in dissipative systems, and discuss how localization and stability depend on the interplay between nonlinearity, dissipation and odd elasticity.",
-    "url": "https://arxiv.org/abs/2605.18997v1",
-    "published": "2026-05-18T18:18:09Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.PS"
-  },
-  {
-    "title": "Arbitrary-genus dark soliton gases in the defocusing nonlinear Schr\u00f6dinger hydrodynamics",
-    "authors": "Marco Bertola, Deng-Shan Wang, Peng Yan, Dinghao Zhu",
-    "abstract": "The defocusing nonlinear Schr\u00f6dinger hydrodynamics supports exact dark solitons under finite density boundary conditions. However, the dark soliton gas, an interacting ensemble of dark solitons, has not yet been studied. In this work, we introduce an arbitrary-genus potential of dark soliton gases by considering the limit of the $\\mathcal{N}$-dark soliton as $\\mathcal{N}\\to \\infty$. The large-space asymptotics and long-time evolution of this dark soliton gas potential are analytically investigated through Deift-Zhou nonlinear steepest descent approach. The genus-$N$ dark soliton gas potential approaches the genus-$N$ finite-gap solution as $x \\to -\\infty$ and the background $1$ as $x \\to +\\infty$. In the long-time evolution, as the self-similar variable $\u03be=x/t$ increases, the gas configuration exhibits a cascade of behaviours, passing from unmodulated and modulated genus-$N$ regions and progressively reducing the genus down to the planar region (unmodulated genus-$0$ region). Notably, the evolution of lower-genus soliton gases can be embedded within that of higher-genus gases, exhibiting identical dynamics within specific regimes. This phenomenon is encoded by the underlying spectra. We also include numerical validations, in perfect agreement with the theoretical predictions.",
-    "url": "https://arxiv.org/abs/2605.18651v1",
-    "published": "2026-05-18T16:57:24Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.PS"
-  },
-  {
-    "title": "Formation of mechanical rogue waves",
-    "authors": "Yasuhiro Miyazawa, Christopher Chong, Panayotis G. Kevrekidis, Jinkyu Yang",
-    "abstract": "Rogue waves, characterized by their abrupt and extreme localization in space and time, have evolved from maritime folklore to subjects of intense study across diverse fields, from hydrodynamics and nonlinear optics to plasmas and condensed matter physics. In mechanical systems, however, experimental realization remains elusive despite theoretical and numerical predictions. This gap stems from the stringent requirements for controllable nonlinearity, the high-fidelity initialization of the system, and the necessity to overcome inherent energy dissipation. Here, we report the experimental formation of mechanical rogue waves in a precisely engineered one-dimensional metamaterial lattice with tailored nonlinearity and minimal dissipative losses. Using a precision electromagnetic release system, we prescribe initial strain profiles that trigger a transition from dispersive decay to extreme wave focusing. Our parametric analysis reveals that the emergence of these extreme events is strictly contingent upon a synergy between high nonlinearity and a broad spatial energy reservoir within the initial seed. Crucially, neither factor alone is sufficient to overcome dispersion and trigger the observed focusing. These findings establish a robust platform for studying transient nonlinear wave focusing phenomena in mechanical systems and offer insights for harnessing extreme wave localization for applications such as energy harvesting, waveguiding, and mechanical signal processing.",
-    "url": "https://arxiv.org/abs/2605.18518v1",
-    "published": "2026-05-18T15:08:01Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.PS"
-  },
-  {
-    "title": "Bifurcation of the quasi-stationary velocity of strongly discrete transition waves driven by gravity",
-    "authors": "Zehuan Tang, Qing Xia, Hui Chen, Songyang Fu, Yuanwen Gao",
-    "abstract": "Transition waves are common in multistable mechanical metamaterials, and the dynamics of weakly discrete transition waves under driving forces have been extensively discussed. However, as lattice effects become more pronounced, strongly discrete transition waves may exhibit dynamics that cannot be predicted by the continuum limit. Here, by tilting a bistable chain, we introduce a gravitational perturbation term into the dynamical equations, under which the transition waves are continuously accelerated. In the strongly discrete regime, we find that transition waves under gravitational driving possess quasi-stationary velocity plateaus (QSVPs), and the number of these plateaus first increases and then decreases as the tilt angle increases. We theoretically elucidate that the emergence of the velocity plateaus originates from the balance between gravitational driving and phonon radiation. In further analysis, the theoretical model reveals that the balance point undergoes a bifurcation at the radiation resonance, which leads to a change in the number of velocity plateaus. Our study extends the investigation of transition waves into the strongly discrete regime, and the emergence of multiple velocity plateaus opens up new possibilities for programmable solitary waves.",
-    "url": "https://arxiv.org/abs/2605.18926v1",
-    "published": "2026-05-18T12:46:51Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.PS"
-  },
-  {
-    "title": "Confinement-controlled pattern selection in a finite population-imbalanced dipolar Bose-Einstein condensate",
-    "authors": "Zhenhao Wang, Weijing Bao, Jia-Rui Luo, Gentaro Watanabe, Kui-Tian Xi",
-    "abstract": "We study the ground-state density patterns of a population-imbalanced two-component dipolar Bose-Einstein condensate confined in a circular quasi-two-dimensional box. Using a mean-field model, we map out phase diagrams as functions of the axial confinement, interaction imbalance, and population ratio. The system supports a rich sequence of stationary morphologies, including a nearly uniform pancake state, pancake-droplet and ring-droplet coexistence states, droplet arrays, and concentric rings. These patterns show a close structural correspondence to microphase-separated morphologies in diblock-copolymer systems, with the population imbalance acting as an effective volume fraction that selects the pattern topology. Analysis of the density profiles and structure factors reveals that the modulated states possess an intrinsic nonzero characteristic wave vector, which remains essentially unchanged when the box size is varied. We also find that the characteristic pattern spacing scales linearly with the axial confinement length, indicating that the transverse thickness of the condensate controls the effective in-plane length scale. In a finite circular box, this smooth scaling is interrupted by discrete steps, reflecting geometric frustration and the integer locking of the number of rings or droplets. Our results show that box-trapped dipolar mixtures provide a controllable platform for studying finite-size pattern selection and nonlocal microphase formation in quantum fluids.",
-    "url": "https://arxiv.org/abs/2605.18139v2",
-    "published": "2026-05-18T09:47:09Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.PS"
-  },
-  {
-    "title": "Collective dynamics of active matter with orientation-weighted alignment",
-    "authors": "Bohdan Dobosh, Alexander Yakimenko",
-    "abstract": "We study an agent-based model of self-propelled particles with a velocity-dependent alignment rule. This interaction is orientation weighted and acts along the line connecting neighboring particles. Tuning the alignment strength produces several distinct collective regimes, including disordered gas-like motion, coherent flocking, jammed high-density states, and densely ordered moving clusters with active-crystal-like behavior. These results show that a simple local alignment rule can generate a broad range of nonequilibrium collective dynamics within a single microscopic model.",
-    "url": "https://arxiv.org/abs/2605.17627v1",
-    "published": "2026-05-17T19:48:32Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* Main idea: Studying collective behavior in self-propelled particles.\n* Method: Using an agent-based model with velocity-dependent alignment rule.\n* Result: Produces various collective regimes, including flocking and crystal-like behavior.",
-    "category": "nlin.PS"
-  },
-  {
-    "title": "Front propagation in non-homogeneous $\u03c6^4$ model",
-    "authors": "Jacek Gatlik, Tomasz Dobrowolski, Dominika Lasa, Panayotis G. Kevrekidis",
-    "abstract": "We investigate the propagation of fronts in an inhomogeneous medium within the framework of the $\u03c6^4$ model. The inhomogeneity is modeled either as an interface separating regions with different dissipation or as a finite layer with modified dissipation. The propagating front is described in two ways: as a kink solution in an effectively unbounded domain, and as a half-kink in a finite system. The half-kink represents the decay of the unstable state $\u03c6=0$ toward the true vacuum. We show that while the effective description based on the kink provides accurate results, applying a similar approach to the half-kink leads to significant deviations from the predictions of the field model. We then demonstrate that a consistent description does exist and propose a modified effective model which reproduces the field-theory results over a relatively broad range of parameters.",
-    "url": "https://arxiv.org/abs/2605.15826v1",
-    "published": "2026-05-15T10:26:04Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.PS"
-  },
-  {
-    "title": "Moving Boundary Problems for a Cuspon Equation and Reciprocal Associates: Exact Solution via Painleve' Symmetry Reduction",
-    "authors": "Colin Rogers, Sandra Carillo",
-    "abstract": "Here classes of moving boundary problems of Stefan-type for both an established non-linear evolution equation of cuspon theory and novel reciprocally linked solitonic equations are shown to be solvable via Painleve' II symmetry reduction.",
-    "url": "https://arxiv.org/abs/2605.22565v1",
-    "published": "2026-05-21T14:45:18Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* Main idea: Solving moving boundary problems of Stefan-type.\n* Method: Using Painleve' II symmetry reduction.\n* Result: Solving non-linear evolution and solitonic equations.",
-    "category": "nlin.SI"
-  },
-  {
-    "title": "Semi-global symplectic invariant of the champagne bottle",
-    "authors": "Ognyan Christov",
-    "abstract": "We study a two degrees of freedom Hamiltonian system describing the motion of a particle in a potential field of the form of $S^1$ symmetric double well, namely $V = - (x_1^2 + x_2^2) + (x_1^2 + x_2^2)^2$, known also as a champagne bottle potential.\n  This system is completely integrable. The champagne bottle is the simplest member of a class of integrable systems that have no global action variables due to a non-trivial monodromy, Bates (1991). Beyond that, the geometric and dynamical properties of the system near the equilibrium are of primary interest. We calculate the Birkhoff normal form and the nontrivial action near the focus-focus singularity and obtain the semi-global symplectic invariant near focus-focus point, which is introduced by V\u0169 Ng\\d{o}c (2003). Examples of such calculations are still few. We compare our result with the semi-global symplectic invariant of the spherical pendulum, calculated by Dullin (2013).",
-    "url": "https://arxiv.org/abs/2605.21985v1",
-    "published": "2026-05-21T04:35:18Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.SI"
-  },
-  {
-    "title": "Landau-Ginzburg models of generalised Dubrovin-Zhang form and pole collision: Dynkin-type A",
-    "authors": "Alessandro Proserpio, Karoline van Gemst",
-    "abstract": "In arXiv:1711.05958, arXiv:2103.12673, the authors derive one-dimensional Landau-Ginzburg mirrors of Dubrovin-Zhang Frobenius manifolds constructed on regular orbit spaces of an extension of affine Weyl groups. We generalise the method employed, and classify the resulting Frobenius manifold structures in Dynkin type A. We interpret our results in terms of a stratification on the Hurwitz space boundary, and develop a pole-collision framework to compare the Frobenius structures within different strata. With this, we can prove a structural result at the level of the prepotential, for arbitrary rank and dimension, as a suitable renormalised limit of the formulae in arXiv:2412.05165. As a corollary, a conjecture of Ma and Zuo regarding the form of prepotentials related to doubly-extended affine Weyl groups is proven.",
-    "url": "https://arxiv.org/abs/2605.21749v1",
-    "published": "2026-05-20T21:24:18Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.SI"
-  },
-  {
-    "title": "Modified Painlev\u00e9 systems with meromorphic solutions for polynomial Hamiltonians of all degrees",
-    "authors": "Marta Dell'Atti, Thomas Kecker",
-    "abstract": "We review non-autonomous Hamiltonian systems, polynomial in two dependent variables, with the property that all of their solutions are meromorphic functions in the complex plane. These are related to known Hamiltonian systems with the Painlev\u00e9 property, for which the solutions are single-valued outside a set of fixed singularities. Our systems are equivalent to them in the absence of fixed singularities, and give modified Painlev\u00e9 equations otherwise. Using the geometric approach by computing the Okamoto's spaces of initial conditions for certain Hamiltonian systems with general coefficient functions, we obtain differential constraints on these functions for the systems to have only meromorphic solutions. Guided by the Newton polygon of the Hamiltonian function, we obtain all such systems with polynomial Hamiltonian of degree three, four, five, and seven, up to affine equivalence in the dependent variables, while there are none for degree six or degree higher than seven. We thus obtain a list of 12 standard polynomial Hamiltonians that can serve as reference for the Painlev\u00e9 equivalence problem. This list contains also some new Hamiltonians not previously written down, such as quartic Hamiltonians for Painlev\u00e9 I and II, quartic Hamiltonians for the modified Painlev\u00e9 III and V equations, a quintic Hamiltonian for Painlev\u00e9 IV and quintic and septic Hamiltonians for a modified Painlev\u00e9 VI equation.",
-    "url": "https://arxiv.org/abs/2605.21166v1",
-    "published": "2026-05-20T13:34:48Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.SI"
-  },
-  {
-    "title": "Large-space and Large-time Asymptotics for the Focusing Nonlinear Schr\u00f6dinger Soliton Gas",
-    "authors": "Dedi Yan, Xianguo Geng, Wei Jiao",
-    "abstract": "We investigate the large-space and large-time asymptotic behavior of a soliton gas for the focusing nonlinear Schr\u00f6dinger equation. The soliton gas is constructed as the continuum limit of pure $N$-soliton solutions as $N\\to\\infty$, with the discrete spectrum confined to two segments $\u03a3_1$ and $\u03a3_2$. In particular, our framework does not require the discrete spectrum to be confined to the imaginary axis. By combining the nonlinear steepest descent method with an appropriate $g$-function mechanism, we show that, as $x\\to-\\infty$, the soliton gas is asymptotically described by a finite-gap elliptic solution with constant coefficients. In the large-time regime $t\\to+\\infty$, we assume that the endpoint $F$ lies on the trajectory of $H(\u03be)$ with $\u03be=\\frac{x}{2t}\\in(-E_1-\\sqrt{2}E_2,-E_1)$, namely, $F=H(\\hat\u03be)$, $\\hat\u03be\\in (-E_1-\\sqrt{2}E_2,-E_1)$. Under this assumption, we prove that the solution exhibits distinct asymptotic behaviors in different regions of the variable $\u03be=\\frac{x}{2t}$. More precisely, there exist an exponentially decaying region $\u03be\\in(-E_1,+\\infty)$, a modulated elliptic-wave region $\u03be\\in(\\hat\u03be,-E_1)$, and an unmodulated elliptic-wave region $\u03be\\in(-\\infty,\\hat\u03be)$.",
-    "url": "https://arxiv.org/abs/2605.21091v1",
-    "published": "2026-05-20T12:22:55Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.SI"
-  },
-  {
-    "title": "Higher-Rank Connections and Deformed Schr\u00f6dinger Operators",
-    "authors": "Jonah Baerman, Alba Grassi, Giovanni Ravazzini",
-    "abstract": "We study the connection problem for a class of linear differential equations of order $N$ closely related to the Baxter equation of the quantum Toda chain. The space of solutions is $N$-dimensional and several linearly independent solutions decay at each singularity, leading to a rich structure of boundary value problems. We derive the weakest quantization conditions compatible with decaying behavior at both singularities, and formulate these conditions in terms of the associated monodromy data. In doing so, we prove the quantization conditions predicted by the topological string/spectral theory duality for a family of deformed Schr\u00f6dinger equations. More generally, our results point to a hierarchy of spectral problems interpolating between the minimal conditions studied here and the maximally decaying boundary conditions of the $N$-particle quantum Toda chain.",
-    "url": "https://arxiv.org/abs/2605.20338v1",
-    "published": "2026-05-19T18:00:10Z",
-    "summary": "Here are 3 short bullet points summarizing the research abstract:\n* Main idea: Studying connection problems for linear differential equations related to the quantum Toda chain.\n* Method: Deriving quantization conditions from monodromy data for decaying solutions.\n* Result: Proving quantization conditions predicted by topological string/spectral theory duality for deformed Schr\u00f6dinger equations.",
-    "category": "nlin.SI"
-  },
-  {
-    "title": "Large-space and large-time asymptotics for the mKdV soliton gas with any odd genus",
-    "authors": "Dedi Yan, Xianguo Geng, Kedong Wang",
-    "abstract": "We study the large-space and large-time asymptotic behavior of the soliton gas of genus $2n-1$ for the mKdV equation with $n\\in \\mathbb{N}_+$. As $x \\to +\\infty$, we show that the large-space asymptotics of the mKdV soliton gas can be expressed with the Riemann-theta function of genus $2n-1$. For large $t$, based on the nonlinear steepest descent method and $g$-function approach, we establish a global large-time asymptotic description of the mKdV soliton gas. The half-plane $\\{(x,t):-\\infty<x<+\\infty, t>0\\}$ is divided into $2n+1$ separated regions. In each region, the large-time asymptotics of the mKdV soliton gas is given by using the Riemann-theta functions and uniform error estimation.",
-    "url": "https://arxiv.org/abs/2605.19934v1",
-    "published": "2026-05-19T14:53:36Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.SI"
-  },
-  {
-    "title": "Complete Weierstrass elliptic function solutions for coherent couplers and their relation to degenerate four-wave mixing",
-    "authors": "Graham Hesketh",
-    "abstract": "Complete analytic solutions for the coherent coupler with arbitrary propagation constants and self- and cross-phase modulation coefficients are presented in terms of Weierstrass elliptic $\\wp$, $\u03b6$, and $\u03c3$ functions, giving the full complex envelopes for both modes under generic initial conditions. Jensen's coupler emerges as a special case of the general system. The mode solutions contain factors of the form $\\exp(r\\log R(z))$, where $R(z)$ is a ratio of Weierstrass $\u03c3$ functions, giving a multi-valued branch structure that is removable by a gauge transformation. A projection from the three-mode degenerate four-wave mixing system onto the two-mode coupler is identified, and the corresponding degenerate-system solutions are single-valued meromorphic Kronecker theta functions. This connection establishes the coherent coupler as a reduction of a broader class of integrable parametric processes and opens a pathway to leveraging known expansions of Kronecker theta functions for further analysis of nonlinear coupler dynamics.",
-    "url": "https://arxiv.org/abs/2605.19216v1",
-    "published": "2026-05-19T00:41:23Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.SI"
-  },
-  {
-    "title": "Generalized Hydrodynamics of Bloch Oscillations in the Absence of a Lattice",
-    "authors": "Stefano Scopa, Philip Zechmann, Michael Knap, Jacopo De Nardis, Alvise Bastianello",
-    "abstract": "Objects subjected to a constant force generally increase their velocity over time. This expectation fails whenever their energy is a smooth and periodic function of momentum, resulting in periodic Bloch oscillations instead. Periodic dispersions, typical of lattice systems, can also emerge in continuum media through strong interactions. Here, we study the phenomenon of such Bloch oscillations in the absence of a lattice in a paradigmatic model of integrable quantum gases: the two-component Yang-Gaudin model. We derive a generalized-hydrodynamic theory of Bloch oscillations for a finite density of impurities embedded in a homogeneous interacting background, which we show to persist superimposed to a drift due to the acceleration of the center of mass. Moreover, we show the single-impurity oscillation period is renormalized at finite impurity density when two-magnon bound states are populated. Our results are relevant for ultracold atom experiments, where impurities can be created at controllable densities.",
-    "url": "https://arxiv.org/abs/2605.18957v1",
-    "published": "2026-05-18T18:00:04Z",
-    "summary": "- Summary unavailable due to rate limits.",
-    "category": "nlin.SI"
   }
 ]
