@@ -11,14 +11,16 @@ from pathlib import Path
 # ============================================================
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+
 TOPICS = os.environ.get(
     "TOPICS",
-    "quantum algorithms,quantum information,statistical physics,turbulence,geophysical turbulence,nonlinear sciences"
+    "quantum algorithms,quantum information,statistical physics,"
+    "turbulence,geophysical turbulence,nonlinear sciences"
 ).split(",")
 
 MAX_PAPERS = 10
-REQUEST_DELAY = 5          # arXiv delay
-GROQ_DELAY = 3.0           # VERY conservative Groq throttle
+REQUEST_DELAY = 5          # arXiv politeness delay
+GROQ_DELAY = 3.0           # Groq hard throttle
 BATCH_SIZE = 3             # papers per Groq call
 
 LAST_GROQ_CALL = 0.0
@@ -32,7 +34,7 @@ ARXIV_CATEGORIES = {
     "geophysical turbulence": "physics.ao-ph",
     "fluid dynamics": "physics.flu-dyn",
     "atmospheric physics": "physics.ao-ph",
-    "nonlinear sciences": "nlin",
+    "nonlinear sciences": ["nlin.CD", "nlin.PS", "nlin.SI"],
     "chaos": "nlin.CD",
     "pattern formation": "nlin.PS",
 }
@@ -199,8 +201,11 @@ def main():
     unique_categories = {}
     for topic in TOPICS:
         topic = topic.strip().lower()
-        category = ARXIV_CATEGORIES.get(topic, "cs.AI")
-        unique_categories.setdefault(category, []).append(topic)
+        cats = ARXIV_CATEGORIES.get(topic, ["cs.AI"])
+        if isinstance(cats, str):
+            cats = [cats]
+        for cat in cats:
+            unique_categories.setdefault(cat, []).append(topic)
 
     for category, topics in unique_categories.items():
         print(f"Fetching {category} ({', '.join(topics)})")
@@ -244,11 +249,7 @@ def main():
 
     with open(output_dir / f"{today}.json", "w", encoding="utf-8") as f:
         json.dump(
-            {
-                "date": today,
-                "categories": category_summaries,
-                "papers": all_papers,
-            },
+            {"date": today, "categories": category_summaries, "papers": all_papers},
             f,
             indent=2,
             ensure_ascii=False,
