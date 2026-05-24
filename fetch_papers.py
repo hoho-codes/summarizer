@@ -12,7 +12,6 @@ from requests.exceptions import ReadTimeout, RequestException
 
 MAX_PAPERS = 10
 REQUEST_DELAY = 5
-GROQ_DELAY = 8
 GROQ_MODEL = "llama-3.3-70b-versatile"
 
 OUTPUT_DIR = "summaries"
@@ -91,49 +90,90 @@ def fetch_arxiv(category, max_results):
     return papers
 
 # =========================
-# Groq Summarization
+# Groq Batch Summarization
 # =========================
 
-def summarize_with_groq(text, mode="paper"):
+def summarize_category_batch(papers):
+    """
+    One Groq call per category.
+    Returns:
+      - category_summary (bullets)
+      - paper_summaries {title: bullets}
+    """
+
     headers = {
         "Authorization": f"Bearer {GROQ_API_KEY}",
         "Content-Type": "application/json",
     }
 
-    if mode == "paper":
-        prompt = (
-            "Summarize this research abstract as 2–3 very short bullet points. "
-            "Focus on the main idea, method, and result. Be concise.\n\n"
-        )
-    else:  # category
-        prompt = (
-            "Given the following research abstracts, produce 2–3 short bullet points "
-            "summarizing the main themes and directions. Be high-level and concise.\n\n"
-        )
+    content = ""
+    for i, p in enumerate(papers, 1):
+        content += f"\nPaper {i}: {p['title']}\nAbstract: {p['abstract']}\n"
+
+    prompt = """
+You are preparing a DAILY RESEARCH DIGEST.
+
+TASK:
+1. Produce a VERY SHORT category summary (2–3 bullet points).
+2. For EACH paper, produce 2 concise bullet points.
+
+FORMAT EXACTLY AS:
+
+CATEGORY SUMMARY:
+- bullet
+- bullet
+
+PAPER SUMMARIES:
+Title: <paper title>
+- bullet
+- bullet
+"""
 
     payload = {
         "model": GROQ_MODEL,
-        "messages": [{"role": "user", "content": prompt + text[:2000]}],
+        "messages": [
+            {"role": "user", "content": prompt + content[:12000]}
+        ],
         "temperature": 0.2,
     }
 
-    for _ in range(3):
-        r = requests.post(
-            "https://api.groq.com/openai/v1/chat/completions",
-            headers=headers,
-            json=payload,
-            timeout=30,
-        )
+    r = requests.post(
+        "https://api.groq.com/openai/v1/chat/completions",
+        headers=headers,
+        json=payload,
+        timeout=60,
+    )
+    r.raise_for_status()
 
-        if r.status_code == 429:
-            print("  Groq rate limit — sleeping")
-            time.sleep(15)
+    text = r.json()["choices"][0]["message"]["content"]
+
+    category_summary = ""
+    paper_summaries = {}
+
+    section = None
+    current_title = None
+
+    for line in text.splitlines():
+        line = line.strip()
+
+        if line.startswith("CATEGORY SUMMARY"):
+            section = "category"
+            continue
+        if line.startswith("PAPER SUMMARIES"):
+            section = "papers"
             continue
 
-        r.raise_for_status()
-        return r.json()["choices"][0]["message"]["content"].strip()
+        if section == "category" and line.startswith("-"):
+            category_summary += line + "\n"
 
-    return "- Summary unavailable due to rate limits."
+        if section == "papers":
+            if line.startswith("Title:"):
+                current_title = line.replace("Title:", "").strip()
+                paper_summaries[current_title] = ""
+            elif line.startswith("-") and current_title:
+                paper_summaries[current_title] += line + "\n"
+
+    return category_summary.strip(), paper_summaries
 
 # =========================
 # Main
@@ -163,44 +203,29 @@ def main():
         for category, topics in category_map.items():
             print(f"Fetching {category} ({', '.join(topics)})")
 
-            try:
-                papers = fetch_arxiv(category, MAX_PAPERS)
-            except Exception as e:
-                print(f"  ❌ Skipping {category}: {e}")
-                continue
+            papers = fetch_arxiv(category, MAX_PAPERS)
+            papers = [p for p in papers if p["title"] not in seen_titles]
 
             if not papers:
                 continue
 
-            md.write(f"## {category}\n\n")
-
-            abstracts = [
-                p["abstract"]
-                for p in papers
-                if p["title"] not in seen_titles
-            ]
-
-            if abstracts:
-                combined = "\n\n".join(abstracts)
-                cat_summary = summarize_with_groq(combined, mode="category")
-                time.sleep(GROQ_DELAY)
-                md.write("**Category Summary:**\n")
-                md.write(f"{cat_summary}\n\n")
-
             for p in papers:
-                if p["title"] in seen_titles:
-                    continue
                 seen_titles.add(p["title"])
 
-                summary = summarize_with_groq(p["abstract"], mode="paper")
-                time.sleep(GROQ_DELAY)
+            cat_summary, paper_summaries = summarize_category_batch(papers)
 
+            md.write(f"## {category}\n\n")
+            md.write("**Category Summary:**\n")
+            md.write(f"{cat_summary}\n\n")
+
+            for p in papers:
                 md.write(f"### {p['title']}\n")
                 md.write(f"- **Authors:** {p['authors']}\n")
                 md.write(f"- **Link:** {p['url']}\n\n")
-                md.write(f"{summary}\n\n")
+                md.write(paper_summaries.get(p["title"], "- Summary unavailable\n"))
+                md.write("\n")
 
-                p["summary"] = summary
+                p["summary"] = paper_summaries.get(p["title"], "")
                 p["category"] = category
                 all_results.append(p)
 
