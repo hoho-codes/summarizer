@@ -11,8 +11,8 @@ from requests.exceptions import ReadTimeout, RequestException
 # =========================
 
 MAX_PAPERS = 10
-REQUEST_DELAY = 5            # arXiv delay
-GROQ_DELAY = 8               # VERY conservative Groq delay
+REQUEST_DELAY = 5
+GROQ_DELAY = 8
 GROQ_MODEL = "llama-3.3-70b-versatile"
 
 OUTPUT_DIR = "summaries"
@@ -101,9 +101,9 @@ def summarize_with_groq(text, short=False):
     }
 
     prompt = (
+        "Summarize the following set of research abstracts in one coherent paragraph:\n\n"
+        if short else
         "Summarize this research abstract in 3 concise sentences:\n\n"
-        if not short else
-        "Summarize the following set of research abstracts in one paragraph:\n\n"
     )
 
     payload = {
@@ -112,7 +112,7 @@ def summarize_with_groq(text, short=False):
         "temperature": 0.3,
     }
 
-    for attempt in range(3):
+    for _ in range(3):
         r = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
             headers=headers,
@@ -167,9 +167,22 @@ def main():
             if not papers:
                 continue
 
+            # ---- CATEGORY HEADER ----
             md.write(f"## {category}\n\n")
-            category_abstracts = []
 
+            # ---- CATEGORY SUMMARY (TOP) ----
+            abstracts = []
+            for p in papers:
+                if p["title"] not in seen_titles:
+                    abstracts.append(p["abstract"])
+
+            if abstracts:
+                combined = "\n\n".join(abstracts)
+                cat_summary = summarize_with_groq(combined, short=True)
+                time.sleep(GROQ_DELAY)
+                md.write(f"**Category Summary:** {cat_summary}\n\n")
+
+            # ---- INDIVIDUAL PAPERS ----
             for p in papers:
                 if p["title"] in seen_titles:
                     continue
@@ -186,13 +199,6 @@ def main():
                 p["summary"] = summary
                 p["category"] = category
                 all_results.append(p)
-                category_abstracts.append(p["abstract"])
-
-            if category_abstracts:
-                combined = "\n\n".join(category_abstracts)
-                cat_summary = summarize_with_groq(combined, short=True)
-                time.sleep(GROQ_DELAY)
-                md.write(f"**Category Summary:** {cat_summary}\n\n")
 
     with open(json_path, "w") as f:
         json.dump(all_results, f, indent=2)
