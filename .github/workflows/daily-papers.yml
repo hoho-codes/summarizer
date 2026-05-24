@@ -46,3 +46,7 @@ jobs:
           echo "No changes to commit"
         fi
       continue-on-error: true
+    - name: Notify completion
+      if: success()
+      run: |
+        echo "Daily paper summaries generated successfully on $(date)"
