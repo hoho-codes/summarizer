@@ -6,7 +6,7 @@
     "url": "https://arxiv.org/abs/2605.22822v1",
     "published": "2026-05-21T17:59:56Z",
     "arxiv_id": "2605.22822v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of describing the interactions between a non-Abelian gauge theory system and its dynamic environment, providing a framework for understanding color transport and dissipation in non-Abelian plasmas. The key approach is the development of a bottom-up open effective field theory (EFT) within the Schwinger-Keldysh formalism, which retains slow environmental response variables explicitly and constructs a local system-environment EFT. The main contribution is a gauge-covariant Markov embedding of nonlocal and non-Markovian color response, allowing for a systematic description of dissipative effects and fluctuation-dissipation structure in non-Abelian plasmas.",
     "topic": "quantum algorithms"
   },
   {
@@ -16,7 +16,7 @@
     "url": "https://arxiv.org/abs/2605.22807v1",
     "published": "2026-05-21T17:56:44Z",
     "arxiv_id": "2605.22807v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper addresses the problem of determining how much nonclassicality is required for a quantum process to exhibit causal nonseparability, a property that allows for advantages over traditional quantum circuits. The key approach involves investigating the effect of dephasing (or decohering) systems on the causal structure of quantum processes, both in bipartite and multipartite cases. The main result shows that dephasing all systems or only keeping the future system undephased leads to causal separability, while leaving any non-future system undephased can preserve causal nonseparability.",
     "topic": "quantum algorithms"
   },
   {
@@ -26,7 +26,7 @@
     "url": "https://arxiv.org/abs/2605.22797v1",
     "published": "2026-05-21T17:50:18Z",
     "arxiv_id": "2605.22797v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper addresses the problem of information loss during single-photon transmission through atomic media, which is a significant challenge in quantum communication. The key approach involves using quantum channel fidelity to describe and quantify the resulting information loss. The main contribution of the paper is the establishment of a performance bound for quantum communication through atomic media, showing that the normalized fidelity decreases monotonically with coupling strength across various channel types and media conditions.",
     "topic": "quantum algorithms"
   },
   {
@@ -36,7 +36,7 @@
     "url": "https://arxiv.org/abs/2605.22796v1",
     "published": "2026-05-21T17:49:53Z",
     "arxiv_id": "2605.22796v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of evaluating non-adiabatic instability in driven nonlinear systems by providing a geometric interpretation of the non-adiabaticity parameter. The key approach is to use a local geometric criterion based on the Fubini Study metric in projective Hilbert space, allowing for continuous evaluation of instability at each stage of the driven evolution. The main result is the identification of a crossover parameter that characterizes self-limited non-adiabatic instability in driven nonlinear bosonic systems, enabled by an occupation-dependent nonlinear regulator that suppresses the effective geometric evolution speed.",
     "topic": "quantum algorithms"
   },
   {
@@ -46,7 +46,7 @@
     "url": "https://arxiv.org/abs/2605.22770v1",
     "published": "2026-05-21T17:31:36Z",
     "arxiv_id": "2605.22770v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of quantum phase estimation (QPE) in a more efficient and robust manner, particularly for analog hardware. The key approach is an adiabatic protocol that encodes eigenvalues in populations of computational basis states, rather than complex phases, allowing for natural robustness against certain dephasing errors. The main result is that this protocol achieves the optimal Heisenberg-limited scaling, with a time complexity of O(1/ε log(δ^-1)), making it a significant contribution to the field of quantum computing.",
     "topic": "quantum algorithms"
   },
   {
@@ -56,7 +56,7 @@
     "url": "https://arxiv.org/abs/2605.22758v1",
     "published": "2026-05-21T17:24:00Z",
     "arxiv_id": "2605.22758v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of determining the classical simulation threshold for the Quantum Approximate Optimization Algorithm (QAOA) with 2-local cost functions. The key approach involves identifying a sharp interaction-degree threshold, which reveals that classical simulation is feasible at degree 2 but becomes intractable at degree 3. The main contribution is that the paper establishes a threshold beyond which classical simulation of QAOA is unlikely, with degree-3 instances being hard to simulate classically, yet having trivially optimizable cost functions.",
     "topic": "quantum algorithms"
   },
   {
@@ -66,7 +66,7 @@
     "url": "https://arxiv.org/abs/2605.22744v1",
     "published": "2026-05-21T17:14:16Z",
     "arxiv_id": "2605.22744v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of designing quantum circuits that are compatible with the practical constraints of near-term quantum hardware. The key approach is to specify gates using dynamic Pauli constraints, which are expressed in terms of physically observable quantities, and to validate these constraints using quantum state tomography. The main contribution is a novel software-oriented model of quantum computation that is proven to be universal and efficient, with a polynomial overhead, providing a natural interface for designing quantum software relevant for the NISQ era and beyond.",
     "topic": "quantum algorithms"
   },
   {
@@ -76,7 +76,7 @@
     "url": "https://arxiv.org/abs/2605.22713v1",
     "published": "2026-05-21T16:50:39Z",
     "arxiv_id": "2605.22713v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of characterizing exact entanglement embezzlement protocols, which are used to transform entangled states using unitary operations and a catalyst state. The key approach involves using modular theory and the Cuntz algebra to analyze these protocols, showing that they must arise from a unique state on the tensor product of the Cuntz algebra with itself. The main contribution is that exact entanglement embezzlement is a self-test for a collection of Cuntz isometries and a unique quasi-free state on the Cuntz algebra, and the von Neumann algebra generated by the copy of the Cuntz algebra is a unique separable approximately finite-dimensional Type III factor.",
     "topic": "quantum algorithms"
   },
   {
@@ -86,7 +86,7 @@
     "url": "https://arxiv.org/abs/2605.22603v1",
     "published": "2026-05-21T15:16:42Z",
     "arxiv_id": "2605.22603v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of understanding the relationship between entanglement and \"magic\" in quantum systems under the influence of local Markovian noise. The key approach involves analyzing the effects of local amplitude damping on the $n$-qubit GHZ family, revealing a \"magic-entanglement complementarity\" where entanglement is irreversibly lost, but magic can be regained. The main contribution is the discovery of this complementarity, where the system exhibits a symmetry that is invisible when considering entanglement or magic alone, and that local dissipation can concentrate magic onto a single qubit for potential use in magic-state distillation.",
     "topic": "quantum algorithms"
   },
   {
@@ -96,7 +96,7 @@
     "url": "https://arxiv.org/abs/2605.22583v1",
     "published": "2026-05-21T14:54:09Z",
     "arxiv_id": "2605.22583v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of optimizing work extraction in measurement-based quantum Otto engines, which have the potential to surpass the performance of conventional thermal engines. The key approach involves analyzing the engine's performance in both adiabatic and non-adiabatic regimes, using two distinct implementations: projection-valued measurements (PVMs) and positive operator-valued measurements (POVMs). The main results show that POVM-based engines can yield higher optimal work extraction than PVM-based ones, and that non-adiabatic implementations can outperform adiabatic ones under certain conditions, providing guidelines for designing improved measurement-driven quantum Otto engines.",
     "topic": "quantum algorithms"
   },
   {
@@ -106,7 +106,7 @@
     "url": "https://arxiv.org/abs/2605.22764v1",
     "published": "2026-05-21T17:25:13Z",
     "arxiv_id": "2605.22764v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the complex combinatorial optimization problem of minimizing population variance in the parallel minority game (PMG) by mapping it to a spin glass problem. The key approach is to encode agent choices as spin variables, transforming the variance into a quadratic Hamiltonian with random couplings and fields, equivalent to the Sherrington-Kirkpatrick model. The main contribution is that this mapping reveals inherent frustration in the PMG and connects it to the well-developed theory of spin glasses, providing a new perspective on the sub-optimal configurations observed in stochastic strategies.",
     "topic": "statistical physics"
   },
   {
@@ -116,7 +116,7 @@
     "url": "https://arxiv.org/abs/2605.22691v1",
     "published": "2026-05-21T16:36:10Z",
     "arxiv_id": "2605.22691v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper addresses the problem of posterior collapse in $\\beta$-VAEs, a common issue in variational autoencoders where certain latent modes become inactive. The key approach involves analyzing the loss function using a Landau stability analysis, which reveals that posterior collapse implements automatic spectral pruning, where latent modes are pruned based on their usefulness. The main contribution of the paper is the derivation of a latent-rescaling-invariant order parameter that predicts the collapse of latent modes, which is validated through experiments on the WorldClim dataset.",
     "topic": "statistical physics"
   },
   {
@@ -126,7 +126,7 @@
     "url": "https://arxiv.org/abs/2605.22646v1",
     "published": "2026-05-21T15:51:57Z",
     "arxiv_id": "2605.22646v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of determining the percolation threshold and critical behavior in directed networks with non-reciprocal edges, which is crucial for applications such as quantum communication. The key approach used is a message-passing method, which enables an exact determination of the percolation threshold and anomalous critical indices on locally tree-like structures. The main contribution of the paper is the finding that directionality can significantly reduce the complexity of percolation, and that the critical behavior of Directed Extended-Range Percolation (DERP) depends sensitively on degree correlations, as confirmed by extensive Monte Carlo simulations.",
     "topic": "statistical physics"
   },
   {
@@ -136,7 +136,7 @@
     "url": "https://arxiv.org/abs/2605.22555v1",
     "published": "2026-05-21T14:39:23Z",
     "arxiv_id": "2605.22555v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of understanding entanglement dynamics in a quantum system with particle losses, specifically across a monitored quantum point contact. The key approach involves using a quasiparticle picture to capture the crossover in entanglement production, which exhibits a linear growth followed by a slow decay to zero as the system empties out. The main contribution of this study is the demonstration of a volume-law scaling of entanglement entropy, which contrasts with the logarithmic growth observed in unitary cases, and has implications for experimentally relevant probes in mesoscopic systems and ultracold atoms.",
     "topic": "statistical physics"
   },
   {
@@ -146,7 +146,7 @@
     "url": "https://arxiv.org/abs/2605.22520v1",
     "published": "2026-05-21T14:13:00Z",
     "arxiv_id": "2605.22520v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of understanding the behavior of a cell fluid model with competing global attraction and local repulsion interactions by providing analytical results for special cases. The key approach involves analyzing the model in limiting cases, such as the ideal-gas limit and the strong-repulsion limit, and deriving explicit expressions for critical point parameters and the equation of state. The main contribution of the paper is the extension of the model's validity range to include the marginal case of thermodynamic stability, providing a more complete understanding of the model's behavior and agreeing with previous findings for certain parameter ranges.",
     "topic": "statistical physics"
   },
   {
@@ -156,7 +156,7 @@
     "url": "https://arxiv.org/abs/2605.22424v1",
     "published": "2026-05-21T12:43:23Z",
     "arxiv_id": "2605.22424v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper addresses the problem of diagnosing long-range nonstabilizerness (LRN) in topologically encoded states, which refers to the inability to remove nonstabilizerness using shallow-depth local quantum circuits. The key approach used is the analysis of mutual information between disconnected spatial regions, particularly in the context of lattice models on a torus. The main result is that this approach can provide a full or partial classification of LRN in certain models, such as the toric code and the non-abelian string-net model, with implications for the implementation of logical gates in fault-tolerant quantum computing.",
     "topic": "statistical physics"
   },
   {
@@ -166,7 +166,7 @@
     "url": "https://arxiv.org/abs/2605.22383v1",
     "published": "2026-05-21T12:12:52Z",
     "arxiv_id": "2605.22383v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of understanding aggregation-fragmentation processes where detailed balance is broken, meaning the rates of aggregation and fragmentation are not balanced. The key approach involves using asymptotic techniques and analyzing the Laplace transform to deduce nonequilibrium steady states. The main contribution is the discovery that the steady states exhibit distinct behaviors depending on the scaling exponent β, including a shattering transition for β < 0 and similarities to the mass-independent model for β ≥ 0.",
     "topic": "statistical physics"
   },
   {
@@ -176,7 +176,7 @@
     "url": "https://arxiv.org/abs/2605.22103v1",
     "published": "2026-05-21T07:39:04Z",
     "arxiv_id": "2605.22103v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of understanding the behavior of site percolation on the diamond hierarchical lattice, a complex network that exhibits unique properties. The key approach used is an exact generating-function analysis, combined with renormalization-group recursion relation and finite-size scaling analyses, which reveals a Berezinskii-Kosterlitz-Thouless-type transition. The main result is that the system exhibits a critical phase for certain values of the occupation probability, characterized by a continuously varying fractal exponent and an essential singularity in the correlation length, demonstrating that critical phases can emerge even on finite-dimensional networks.",
     "topic": "statistical physics"
   },
   {
@@ -186,7 +186,7 @@
     "url": "https://arxiv.org/abs/2605.21933v1",
     "published": "2026-05-21T03:04:44Z",
     "arxiv_id": "2605.21933v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper addresses the problem of understanding the irreversibility of training algorithms in AI systems, which is crucial for comprehending their learning dynamics. The key approach involves establishing a general framework to define and analyze irreversibility, and the authors show that four different characterizations of irreversibility are equivalent to leading order. The main contribution is the discovery that irreversibility leads to a time-reversal-symmetry-breaking force that favors learning trajectories with minimal entropy production, providing new insights into the underlying mechanisms of AI systems.",
     "topic": "statistical physics"
   },
   {
@@ -196,7 +196,197 @@
     "url": "https://arxiv.org/abs/2605.21844v1",
     "published": "2026-05-21T00:27:39Z",
     "arxiv_id": "2605.21844v1",
-    "summary": "Error summarizing: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions",
+    "summary": "This research paper solves the problem of modeling opinion dynamics in a social network where individuals are influenced by opinions with varying utility. The key approach is a utility-driven bounded-confidence model, which uses a stochastic differential equation to capture the dynamics of opinion formation and evolution. The main contribution is a reduced stochastic description that accurately predicts the emergence of metastability, spontaneous switching between opinion states, and the merging of opinion clusters, in agreement with agent-based simulations.",
     "topic": "statistical physics"
+  },
+  {
+    "title": "Variation of Venusian Gravity Wave Absolute Momentum Fluxes and Drag as Retrieved from the Akatsuki Mission",
+    "authors": "Erdal Yiğit, Emilia Sloan",
+    "abstract": "Using temperature retrievals from Akatsuki radio occultation measurements, we characterize gravity wave activity as a function of vertical wavenumber and altitude and, for the first time, estimate the absolute horizontal momentum fluxes and the magnitude of the associated gravity wave drag (i.e., wave acceleration), which quantify the potential effects of these waves in the Venusian middle atmosphere between 40--95 km. Observed temperature perturbations, which are indicative of atmospheric gravity wave activity, reach amplitudes of approximately $\\pm$10 K, and significant momentum flux (10--30 m$^2$ s$^{-2}$) and wave drag (0.003--0.03 m s$^{-2}$) are detected across all analyzed profiles. The inferred wave drag represents a lower bound on the total gravity wave-induced drag in the Venusian atmosphere. Momentum flux tends to increase exponentially with altitude below approximately 50--60 km, then peaks and attenuates at higher altitudes. Wave drag becomes prominent where momentum flux begins to decrease, which is a consequence of wave dissipation. Both quantities exhibit multiple altitude-localized maxima, which is consistent with upward wave propagation followed by dissipation at different altitudes for different vertical wavelengths. Damping due to gravity wave nonlinear interactions is likely to play the major role in limiting the growth of wave amplitudes and fluxes with height. These features are observed across a range of latitudes and local times. Overall, the results provide observational constraints on gravity wave momentum transport and dissipation in the Venusian middle atmosphere and could guide numerical models in their effort to quantify wave-mean flow interactions in Venus's atmosphere.",
+    "url": "https://arxiv.org/abs/2605.22793v1",
+    "published": "2026-05-21T17:48:18Z",
+    "arxiv_id": "2605.22793v1",
+    "summary": "This research paper addresses the problem of understanding gravity wave activity and its effects on the Venusian middle atmosphere, specifically the momentum fluxes and drag. The key approach involves using temperature retrievals from Akatsuki radio occultation measurements to characterize gravity wave activity and estimate absolute horizontal momentum fluxes and wave drag. The main results show that significant momentum flux and wave drag are detected, with wave drag representing a lower bound on the total gravity wave-induced drag, and that these quantities exhibit complex altitude-dependent behavior, providing observational constraints for numerical models of Venus's atmosphere.",
+    "topic": "turbulence"
+  },
+  {
+    "title": "Dynamics of fast magnetosonic wave turbulence",
+    "authors": "Nicolás Pablo Müller, Sébastien Galtier",
+    "abstract": "Fast magnetosonic waves are among the fundamental oscillation modes of astrophysical plasmas. To study their dynamics, we carry out numerical simulations of the wave turbulence kinetic equation, which describes the evolution of the energy spectrum of a set of weakly nonlinear fast magnetosonic waves. This kinetic equation, which involves three-wave interactions, has recently been derived from compressible magnetohydrodynamics in the low-$β$ limit (Galtier 2023). It has an exact stationary solution, the Kolmogorov-Zakharov spectrum, corresponding to a direct energy cascade. Here we perform free decay simulations of the kinetic equation for which we propose a Kolmogorov-type phenomenology to explain the temporal decay laws of energy and integral length scale. In the forced simulations, we show that the cascade is in fact composed of a mixture of a forward cascade for counter-propagating waves, and a backward cascade for co-propagating waves, with the former being stronger than the latter. The Kolmogorov-Zakharov energy spectrum in $k^{-3/2}$ is found in the radial direction with an anisotropy due to the amplitude that depends on the angle relative to the strong mean magnetic field. We give the analytical expression of the Kolmogorov-Zakharov constant, which is numerically verified in the high Reynolds number limit. Our study provides a theoretical explanation for certain observations in the solar wind plasma (Zhao et al. 2022), where a regime of weak turbulence has been identified for fast magnetosonic waves, alongside a critical balance regime for strong Alfvén wave turbulence.",
+    "url": "https://arxiv.org/abs/2605.22710v1",
+    "published": "2026-05-21T16:47:57Z",
+    "arxiv_id": "2605.22710v1",
+    "summary": "This research paper solves the problem of understanding the dynamics of fast magnetosonic wave turbulence in astrophysical plasmas by studying the evolution of their energy spectrum. The key approach involves numerical simulations of the wave turbulence kinetic equation, which describes the interactions of weakly nonlinear fast magnetosonic waves. The main results include the discovery of a mixture of forward and backward cascades, with the former being stronger, and the verification of the Kolmogorov-Zakharov energy spectrum, providing a theoretical explanation for observations in the solar wind plasma.",
+    "topic": "turbulence"
+  },
+  {
+    "title": "Experimental investigation of twin pulsed jets in a hemispheric elastic cavity",
+    "authors": "L. S. Merlo, L. Kadem, W. Saleh, H. D. Ng, G. Di Labbio",
+    "abstract": "This study experimentally examines the impact of spacing between two pulsed jets and their strengths on the fluid dynamics within an elastic hemispherical cavity. Such interactions between multiple pulsed jets are observed in various natural and industrial contexts, including cardiovascular flows, where they occur naturally within the atria or result from medical interventions (e.g., mitral valve repair, mechanical heart valves, paravalvular leaks) or diseases (e.g., aortic or pulmonary valve regurgitation). Fundamentally, these flows usually feature two or more pulsed jets interacting in an expanding, elastic environment. In this investigation, the experimental setup features two parallel pulsed jets entering the cavity, with jet strength varied across five formation times (1, 2, 3, 4, 5) and four spacing ratios (1.5, 2.0, 2.5, 3.0). Time-resolved particle image velocimetry is used to capture the instantaneous velocity fields. The results reveal three distinct flow regimes: short-time decay, decay at the wall, and wall rebound with or without the formation of secondary vortices. These findings uncover rare aspects of twin vortex ring behavior, including symmetry breaking, trajectory shifts, and wall-induced rebound mechanisms, with direct relevance to cardiac fluid dynamics in both healthy and pathological conditions.",
+    "url": "https://arxiv.org/abs/2605.22648v1",
+    "published": "2026-05-21T15:52:19Z",
+    "arxiv_id": "2605.22648v1",
+    "summary": "This research paper solves the problem of understanding the complex fluid dynamics of twin pulsed jets interacting within an elastic hemispherical cavity, which is relevant to various natural and industrial contexts, including cardiovascular flows. The key approach used is an experimental investigation employing time-resolved particle image velocimetry to capture the instantaneous velocity fields of two parallel pulsed jets with varying strengths and spacing ratios. The main results of this study reveal three distinct flow regimes and provide new insights into the behavior of twin vortex rings, including symmetry breaking and wall-induced rebound mechanisms, which have direct relevance to cardiac fluid dynamics in both healthy and pathological conditions.",
+    "topic": "turbulence"
+  },
+  {
+    "title": "Perpendicular rod-airfoil aeroacoustics: experiments and modelling of interaction noise",
+    "authors": "Marios I. Spiropoulos, Filipe R. Amaral, Florent Margnat, Vincent Valeau, Peter Jordan",
+    "abstract": "During the phase of landing, an important aircraft-noise source emanates from the interaction of the landing-gear wake with the deployed flap. In the present work we cast this problem in an academic framework, by studying a simplified configuration that consists of a cylinder placed upstream and perpendicularly to a symmetrical NACA-0012 airfoil. An experimental campaign is conducted, followed by modelling approaches to explore the flow phenomena associated with the acoustic field. Simultaneous acoustic and stereoscopic Time-Resolved Particle Image Velocimetry measurements are taken, to study the sound and flow-fields generated by the interaction of the cylinder-wake with the downstream airfoil, when the spans of the two objects are orthogonally aligned. The experimental data highlight the three-dimensional nature of the problem. The maximum sound pressure levels are obtained at frequencies close to $St \\equiv f d/U = 0.38$ (cylinder's drag fluctuation frequency), where also the maximum linear coherence between the acoustic and cylinder-span-oriented fluctuation velocity is observed, demonstrating that the measured acoustic-field is an outcome of the three-dimensional cylinder-wake. Powell-Howe vortex-sound theory combined with an acoustically compact Green function for the NACA-0012 are employed for the aeroacoustic modelling. A linearised source-term based on the analysed experimental data is used as input to estimate the acoustic field and identify the acoustically important coherent structures of the flow-field. A reasonable agreement is obtained between the sound field estimations and the measurements. To further explore the mechanisms of sound generation, a semi-empirical source-model, informed by the experimental data, is proposed, based on Fourier modes in the cylinder's span direction.",
+    "url": "https://arxiv.org/abs/2605.22546v1",
+    "published": "2026-05-21T14:28:16Z",
+    "arxiv_id": "2605.22546v1",
+    "summary": "This research paper addresses the problem of aircraft noise generated by the interaction of landing-gear wake with deployed flaps during landing. The key approach involves experimental measurements and modelling using Powell-Howe vortex-sound theory, combined with a semi-empirical source-model, to study the aeroacoustic interaction between a perpendicular rod (cylinder) and an airfoil. The main contribution is the development of a modelling approach that reasonably agrees with experimental measurements, shedding light on the three-dimensional nature of the problem and identifying the coherent structures responsible for sound generation.",
+    "topic": "turbulence"
+  },
+  {
+    "title": "Lagrangian single-particle, multi-particle and topological analyses in turbulent Rayleigh-Bénard convection",
+    "authors": "Matti Ettel, Roshan J. Samuel, Michael Chertkov, Jörg Schumacher",
+    "abstract": "We present three-dimensional direct numerical simulations of turbulent Rayleigh-Bénard convection (RBC) in the Lagrangian frame of reference for Rayleigh numbers $10^5 \\leq Ra \\leq 10^{10}$ and a Prandtl number $Pr=0.7$ in a plane layer at an aspect ratio $L:L:H=4:4:1$ with a horizontal length $L$ and height $H$. We use particle accelerations, Lagrangian heat transfer, $Q$-$R$ invariant topology, Lagrangian particle pair dispersion, scale-dependent Lagrangian eddy viscosity, and principal-component analysis (PCA) of dense particle clouds to characterise convective transport along material trajectories. By computing particle accelerations at the integration time step and controlling spectral-element-method signatures, we obtain robust acceleration statistics and recover Heisenberg-Yaglom behaviour. Lagrangian heat transfer is extremely intermittent: individual massless Lagrangian particles can carry convective heat fluxes up to $500$ times the global Eulerian mean, although higher-order heat flux moments decrease toward Gaussian values with increasing $Ra$. The analysis of velocity gradient invariants in the $Q$-$R$ plane along trajectories identifies a distinct topological footprint of dust-devil-like convective vortices in the quadrant of $Q>0$, $R<0$, associated with vortex stretching, plume detachment, and intense localised heat transfer. Global unconditioned pair dispersion exhibits neither extended Richardson nor Bolgiano-Obukhov scaling plateaus. Rather, scale-dependent eddy viscosity and conditioned PCA of dense particle clouds reveal that buoyancy- and shear-driven dispersion are temporally organised: rapid plume-driven ejection produces a short $t^5$-like episode, followed by sustained Richardson-like $t^3$-scaling. Thus, Lagrangian topology and cloud geometry provide mechanism-resolving diagnostics for active-scalar turbulence beyond RBC-specific global scaling laws.",
+    "url": "https://arxiv.org/abs/2605.22326v1",
+    "published": "2026-05-21T11:18:10Z",
+    "arxiv_id": "2605.22326v1",
+    "summary": "This research paper solves the problem of understanding the complex dynamics of turbulent Rayleigh-Bénard convection by analyzing the Lagrangian motion of particles in a convective system. The key approach involves using direct numerical simulations and various analytical tools, such as particle accelerations, Lagrangian heat transfer, and principal-component analysis, to characterize convective transport along material trajectories. The main results show that Lagrangian heat transfer is extremely intermittent, and the analysis reveals a distinct topological footprint of convective vortices, providing new insights into the mechanisms of turbulent convection beyond traditional global scaling laws.",
+    "topic": "turbulence"
+  },
+  {
+    "title": "A unified gas-kinetic wave-particle method for multiscale binary-species gas mixtures",
+    "authors": "Junzhe Cao, Yufeng Wei, Wenpei Long, Chengwen Zhong, Kun Xu",
+    "abstract": "This paper presents a unified gas-kinetic wave-particle (UGKWP) method for simulating multiscale binary-species gas mixtures. Benefiting from direct modeling in a discretized space, the UGKWP method enables the automatic decomposition of the gas distribution function into analytical hydrodynamic waves and discrete particles, which respectively describe its near-equilibrium and non-equilibrium parts. This approach offers significant advantages for simulating various multiscale physical phenomena, such as hypersonic flows, plasma transport, and radiation transport. In this study, we employ the model proposed by Groppi et al. [EPL, 96 (2011) 64002] to calculate the macroscopic velocity and temperature of the local target equilibrium distribution function, thereby recovering the correct viscosity and diffusion coefficients in the continuum flow regime. To address the heat conduction coefficient, the Shakhov model is incorporated to correct the Prandtl number. Diffusion effects are accounted for not only in the source term via an operator-splitting method, but also in the flux evolution through the characteristic integral solution, while strictly maintaining consistency between the wave and particle descriptions. Furthermore, the microscopic model for high-speed particles is improved by utilizing a physically corrected collision time to determine their free-transport time. Through a series of numerical tests spanning the continuum to rarefied regimes, the proposed UGKWP method is shown to accurately capture the differences in velocity and temperature between different species. Notably, for hypersonic flows, the predicted wall pressure, shear stress, and heat flux coefficients agree well with DSMC results.",
+    "url": "https://arxiv.org/abs/2605.22274v1",
+    "published": "2026-05-21T10:16:24Z",
+    "arxiv_id": "2605.22274v1",
+    "summary": "This research paper solves the problem of simulating multiscale binary-species gas mixtures by developing a unified gas-kinetic wave-particle (UGKWP) method. The key approach involves directly modeling the gas distribution function in a discretized space, allowing for the decomposition into analytical hydrodynamic waves and discrete particles to describe near-equilibrium and non-equilibrium parts. The main result is that the UGKWP method accurately captures the differences in velocity and temperature between species, and its predictions for hypersonic flows agree well with DSMC results, demonstrating its effectiveness in simulating various multiscale physical phenomena.",
+    "topic": "turbulence"
+  },
+  {
+    "title": "N-Component Free Energy Lattice Boltzmann Method with Reduction Consistency and Global Momentum Conservation",
+    "authors": "Michael Rennick, Xitong Zhang, Tim Niklas Bingert, Mathias J. Krause, Halim Kusumaatmaja",
+    "abstract": "We present a free energy lattice Boltzmann model capable of simulating fluid systems with an arbitrary number of immiscible components in principle. Our method is strictly reduction consistent, ensuring that absent fluid components do not spontaneously nucleate. We introduce a novel discretization of the surface tension force that globally conserves momentum to machine precision, and we enforce reduction consistency through a flux correction that is independent of the mobility. The method is benchmarked with a range of static and dynamic problems, including: liquid lenses, Janus droplets, quaternary phase separation, and six-component layered Poiseuille flow, and we obtain excellent agreement with theoretical predictions throughout. Finally, we demonstrate the applicability of the proposed method through patterned liquid surfaces and microfluidic emulsion droplet generation.",
+    "url": "https://arxiv.org/abs/2605.22214v1",
+    "published": "2026-05-21T09:19:16Z",
+    "arxiv_id": "2605.22214v1",
+    "summary": "This research paper solves the problem of simulating complex fluid systems with multiple immiscible components by introducing a free energy lattice Boltzmann model. The key approach involves a novel discretization of the surface tension force that conserves momentum and a flux correction that ensures reduction consistency, allowing for accurate simulations of systems with an arbitrary number of components. The main contribution of this work is a robust and versatile method that achieves excellent agreement with theoretical predictions across a range of static and dynamic problems, including multi-component fluid flows and patterned liquid surfaces.",
+    "topic": "turbulence"
+  },
+  {
+    "title": "Global exponential stability for the three-dimensional Navier-Stokes equations on hyperbolic space",
+    "authors": "Zhi-Wei Wang, Samuel L. Braunstein",
+    "abstract": "We prove that the three-dimensional incompressible Navier-Stokes equations with the deformation Laplacian on hyperbolic 3-space $\\HH^3$ admit a unique global mild solution for sufficiently small initial data in $L^3(\\HH^3)$, and that this solution decays exponentially to zero. The exponential decay rate is $μλ_\\Def^{(3)}$, where $μ$ is the dynamic viscosity and $λ_\\Def^{(3)} = 26/9$ is the effective spectral gap of the deformation Laplacian in $L^3$. On flat $\\R^3$, the corresponding Kato-type result gives only algebraic decay. The exponential stability is a macroscopic consequence of the spectral gap provided by negative curvature. We also show that the $L^2$ norm is supercritical on $\\HH^3$ (as on $\\R^3$), with the obstruction arising from the local ultraviolet scaling of the heat kernel, which is insensitive to global geometry. The boundary between what curvature can and cannot improve is located exactly: the Fujita-Kato integral has a scaling exponent $1/2 - 3/(2p)$ that depends only on the integrability of the initial data, not on the geometry of the manifold. For $p \\geq 3$ (the Kato critical space), the integral is bounded and the spectral gap contributes exponential time decay. For $p < 3$, the integral diverges at $t = 0$ (and strictly diverges for all $t>0$ when $p \\le 2$) regardless of the curvature.",
+    "url": "https://arxiv.org/abs/2605.22212v1",
+    "published": "2026-05-21T09:16:58Z",
+    "arxiv_id": "2605.22212v1",
+    "summary": "This research paper solves the problem of determining the global stability of the three-dimensional Navier-Stokes equations on hyperbolic space, addressing the issue of decay rates for solutions with small initial data. The key approach involves utilizing the deformation Laplacian and exploiting the spectral gap provided by the negative curvature of hyperbolic space. The main result is that the solution decays exponentially to zero with a rate determined by the dynamic viscosity and the spectral gap, which is a significant improvement over the algebraic decay observed in flat spaces.",
+    "topic": "turbulence"
+  },
+  {
+    "title": "Full Turbulence Simulation of Channel Flow at $Re_τ \\approx 1000$",
+    "authors": "Yoshinobu Yamamoto, Yoshiyuki Tsuji",
+    "abstract": "A Full Turbulence Simulation (FTS) of turbulent channel flow at friction Reynolds number (Re_tau) approx 1000 was performed by resolving the Kolmogorov wavenumber in all spatial directions. At this Reynolds number, the intermediate layer attains a physically meaningful width and is fully resolved in the present computation, providing the reference dataset that captures its turbulence and dissipation characteristics with high fidelity. The wall-normal grid spacing of the FTS also confirms that, when the Kolmogorov length scale is sufficiently resolved, the second-order central-difference scheme introduces no adverse numerical effects in the wall-normal direction. In the wall-parallel directions, two resolution criteria were identified based on the present FTS: a first-approximation DNS resolution that resolves more than 99 percent of the turbulent kinetic energy and dissipation rate (Delta x+ approx 19, Delta y+ approx 8, where Delta x+ and Delta y+ denote the streamwise and spanwise spatial resolutions in wall units) and a full dissipation-resolution criterion (Delta x+ approx 7.5, Delta y+ approx 5.0). The first-approximation resolution by means of a spectral method reproduces the essential turbulence statistics within 1 percent accuracy while requiring only one-eighth of the grid points used in the FTS, demonstrating its practical efficiency. In contrast, even the highest-resolution second-order central-difference case (Delta x+ approx 5.0, Delta y+ approx 4.5) fails to match the accuracy of the first-approximation spectral resolution. These findings provide important resolution guidelines for high-Reynolds-number DNS, particularly for simulations at Re_tau = O(10^4).",
+    "url": "https://arxiv.org/abs/2605.22107v1",
+    "published": "2026-05-21T07:42:09Z",
+    "arxiv_id": "2605.22107v1",
+    "summary": "This research paper solves the problem of accurately simulating turbulent channel flow at high Reynolds numbers by resolving the Kolmogorov wavenumber in all spatial directions. The key approach involves using a Full Turbulence Simulation (FTS) with a high-resolution grid spacing to capture the turbulence and dissipation characteristics of the flow. The main result is the establishment of resolution guidelines for high-Reynolds-number Direct Numerical Simulations (DNS), including a first-approximation DNS resolution criterion that can reproduce essential turbulence statistics with high accuracy while requiring significantly fewer grid points.",
+    "topic": "turbulence"
+  },
+  {
+    "title": "Modelling hydroelastic flexure of arbitrarily shaped ice shelves forced by long ocean waves",
+    "authors": "T. K. Papathanasiou, L. G. Bennetts, M. H. Meylan",
+    "abstract": "Flexure of Antarctic ice shelves under excitation from long ocean waves induces mechanical ice shelf stresses that amplify fractures and, hence, contribute to calving events. Here, a solution method is developed for a hydroelastic mathematical model of wave-induced ice shelf flexure, based on the conventional theory of a Kirchoff-Love plate floating on shallow water under linearised conditions, but allowing wave forcing of ice shelves with variations in both horizontal dimensions, and where the ice shelves are of arbitrary shape, including non-uniform thickness. The method uses finite elements specifically designed for the high-order hydroelastic system, and a Dirichlet-to-Neumann map to bound the computational domain in the open ocean. Following verification, the method is used to conduct novel studies on how the ice-shelf deflection is affected by the ice shelf shape, the incident wave direction and the proportion of the shelf that is grounded. The efficiency of the method allows the studies to be conducted over a broad frequency range, such that resonant responses are identified.",
+    "url": "https://arxiv.org/abs/2605.22042v1",
+    "published": "2026-05-21T06:30:25Z",
+    "arxiv_id": "2605.22042v1",
+    "summary": "Error summarizing: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+    "topic": "turbulence"
+  },
+  {
+    "title": "Decomposing Ensemble Spread in Lorenz '96 With Learned Stochastic Parameterizations",
+    "authors": "Birgit Kühbacher, Daan Crommelin, Niki Kilbertus",
+    "abstract": "Weather and climate forecasts are inherently uncertain due to chaotic dynamics, imperfect initial conditions, and incomplete representation of the underlying physical processes. Operational ensemble forecasts aim to represent these uncertainties through forecast spread, yet many approaches yield underdispersive estimates, with spread that grows too slowly relative to forecast error. Using the two-scale Lorenz 1996 system as a widely used, controlled testbed, we design a systematic approach to disentangle intrinsic variability, initial-condition perturbations, and stochastic model uncertainty. We compare multiple ensemble configurations and parameterization strategies, including existing deterministic and autoregressive as well as novel Bayesian and flow-based approaches. Our results show that ensemble perturbations do not increase the system's long-term variance; rather, they regulate how rapidly trajectories decorrelate and explore the invariant measure. Stochastic parameterizations, particularly those with temporally persistent structure, enhance early spread growth and improve spread-error consistency. Overall, we bring clarity to how different sources of uncertainty interact in a chaotic system and provide guidance for the design and evaluation of stochastic parameterizations in weather and climate models.",
+    "url": "https://arxiv.org/abs/2605.22242v1",
+    "published": "2026-05-21T09:48:10Z",
+    "arxiv_id": "2605.22242v1",
+    "summary": "Error summarizing: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+    "topic": "geophysical turbulence"
+  },
+  {
+    "title": "Water vapor buoyancy and the African easterly jet",
+    "authors": "Heng Quan, Da Yang, William Boos, Tiffany Shaw, Huazhi Ge, Yaoxuan Zeng, Carly KleinStern",
+    "abstract": "The African easterly jet (AEJ) is a prominent circulation feature in the tropical atmosphere. It transports mineral dust and generates easterly waves that serve as seeds for hurricanes. Conventional wisdom holds that the AEJ is in thermal wind balance with the positive meridional temperature gradient over North Africa. Here, using reanalysis data, we show that the negative meridional moisture gradient substantially counteracts the effect of the temperature gradient on density in that balance, diagnostically accounting for a 30\\% reduction of the AEJ magnitude. Using CMIP6 data, we further show that this effect of vapor buoyancy on the AEJ strengthens under global warming, highlighting the critical role of the spatial distribution of moisture on large-scale circulation. Analysis of the AEJ in CMIP6 models confirms that some models do not include vapor buoyancy in their governing equations, raising questions about the relevance of their projections of climate change in that region.",
+    "url": "https://arxiv.org/abs/2605.21875v1",
+    "published": "2026-05-21T01:38:05Z",
+    "arxiv_id": "2605.21875v1",
+    "summary": "This research paper addresses the problem of understanding the factors that influence the African easterly jet (AEJ), a crucial atmospheric circulation feature that impacts hurricane formation and mineral dust transport. The key approach involves analyzing reanalysis and CMIP6 data to demonstrate the significant impact of water vapor buoyancy on the AEJ, which counteracts the effect of temperature gradients on density. The main contribution of the study is the finding that vapor buoyancy reduces the AEJ magnitude by 30% and that this effect strengthens under global warming, highlighting the importance of accurately representing moisture distribution in climate models.",
+    "topic": "geophysical turbulence"
+  },
+  {
+    "title": "A Simulation Methodology Testbed for Typhoon Sensitivity Analysis: Framework Development and Perturbation-Response Experiments with the Pangu Weather Model",
+    "authors": "Yuehua Peng, Yuchen Zhang, Qin Huang, Chengzhi Ye, Jingsong Yang",
+    "abstract": "Understanding how typhoons respond to localized perturbations in their environmental fields is fundamental to assessing the limits of predictability and exploring the potential for track or intensity intervention. This study develops a dedicated simulation methodology testbed for typhoon sensitivity analysis by integrating the Pangu weather model, a high-precision AI forecasting system, with Proportional-Integral-Derivative (PID) closed-loop techniques. The testbed is constructed with modular functional blocks including a meteorological prediction module, an artificial perturbation input interface, a typhoon quantitative modeling module, and a PID closed-loop test module, implemented via a cross-platform MATLAB/ONNX technical framework. A Single-Input Single-Output (SISO) test system was built, with velocity and thermal perturbations set as the core inputs and typhoon track and intensity as the key output targets, to perform controlled perturbation-response experiments. The experiments reveal the feasible perturbation-response range, the parameter tuning behavior of the PID module, and the energy-scale response characteristics under different perturbation modes, and quantify the input-output coupling relationships of the test system. By constructing this testbed on an operational AI weather forecasting model, this study provides a framework that goes beyond idealized sensitivity studies typically validated only on low-order dynamical models. The testbed offers an expandable platform for investigating typhoon sensitivity to artificial environmental perturbations and provides a foundation for subsequent expansion toward multi-input multi-output architectures and advanced analysis strategies such as nonlinear PID or model predictive control.",
+    "url": "https://arxiv.org/abs/2605.21864v1",
+    "published": "2026-05-21T01:21:10Z",
+    "arxiv_id": "2605.21864v1",
+    "summary": "Error summarizing: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+    "topic": "geophysical turbulence"
+  },
+  {
+    "title": "Microwave-Stimulated Serpentinization of Olivine for Geological Hydrogen Production",
+    "authors": "Ansan Pokharel, Terence Musho",
+    "abstract": "Serpentinization of ultramafic rocks is a naturally occurring mineralogical process that can generate molecular hydrogen through the oxidation of ferrous iron during water-rock reaction. Although the resource potential is large, the natural reaction is kinetically limited, and practical hydrogen recovery requires methods that can accelerate conversion without imposing an energy penalty that exceeds the value of the hydrogen produced. This short communication reports a preliminary atmospheric-pressure microwave serpentinization experiment using a water-saturated 2 g crushed olivine sample. Microwave irradiation produced a rapid increase in measured hydrogen concentration compared with conventional hot-plate heating under otherwise similar conditions. The preliminary experiment showed approximately a 12-fold increase in hydrogen concentration and an apparent rate increase from about 2 ppb s$^{-1}$ for conventional heating to about 10 ppb s$^{-1}$ during microwave exposure. These results suggest that electromagnetic stimulation can enhance serpentinization kinetics, likely through rapid volumetric heating, selective coupling to iron-bearing phases, and localized thermal gradients. The result provides an initial experimental basis for evaluating microwave stimulation as a route to accelerated geologic hydrogen production and motivates follow-on measurements using calibrated gas analysis, absorbed-power measurements, dielectric characterization, and elevated-pressure testing.",
+    "url": "https://arxiv.org/abs/2605.21790v1",
+    "published": "2026-05-20T22:32:34Z",
+    "arxiv_id": "2605.21790v1",
+    "summary": "Error summarizing: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+    "topic": "geophysical turbulence"
+  },
+  {
+    "title": "Three-Dimensional Velocity Analysis and Particle Size Dynamics from Multi-Site RGB-Photometry of Noctilucent Clouds",
+    "authors": "Oleg S. Ugolnikov, Olga Yu. Golubeva, Egor O. Ugolnikov",
+    "abstract": "A method for measuring the altitude and particle size of noctilucent clouds, based on positioning and photometry from wide-angle three-color cameras, has been developed to determine the three velocity components, particle radius, and its derivative with respect to time for different cloud fragments. The updated method is applied to observational data of bright clouds during the summers of 2023-2025. Meridional motion of the cloud is found to be the principal factor driving the change in particle size. The effect of particle size evolution in the presence of a strong latitudinal temperature gradient is also studied.",
+    "url": "https://arxiv.org/abs/2605.21687v1",
+    "published": "2026-05-20T19:44:55Z",
+    "arxiv_id": "2605.21687v1",
+    "summary": "Error summarizing: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+    "topic": "geophysical turbulence"
+  },
+  {
+    "title": "From Licensing to Open Access: Designing a Sustainable Transition in Operational Weather Data",
+    "authors": "Emma Pidduck, Umberto Modigliani, Victoria L. Bennett, Fabio Venuti, Florian Pappenberger, Florence Rabier",
+    "abstract": "This translational article documents the European Centre for Medium-Range Weather Forecasts (ECMWF) transition from a restricted data licensing model to open access under CC BY 4.0, completed in October 2025. The policy context included EU open data requirements and alignment with international data exchange frameworks. The transition was implemented through a tiered service model that kept core forecast data open while offering operationally supported delivery as a cost-recovered service. Between 2020 and 2025, ECMWF executed an iterative planning cycle: setting an annual target for revenue reduction, specifying additions to the open tier under that target, provisioning infrastructure, and assessing outcomes to update assumptions. Drawing on internal administrative records (2014 - 2025), we describe design choices, operational constraints, and early outcomes. In the six months following the end of the transition, more than 93% of previously paying organisations retained a Service Agreement, while open endpoint download volumes increased substantially. We discuss trade-offs in defining the open tier (resolution, parameters, schedule), the reduction of compliance overheads formerly associated with redistribution restrictions, and the scalability implications of global distribution. We note an emerging sustainability question as AI-based forecast products become freely available. The early evidence is consistent with the view that a tiered service model can be designed to reconcile open-access obligations with operational sustainability, subject to monitoring over longer contract renewal cycles (typically annual).",
+    "url": "https://arxiv.org/abs/2605.21673v1",
+    "published": "2026-05-20T19:30:02Z",
+    "arxiv_id": "2605.21673v1",
+    "summary": "Error summarizing: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+    "topic": "geophysical turbulence"
+  },
+  {
+    "title": "Effect of grid anisotropy, resolution, and subgrid-scale models in pseudo-spectral Large Eddy Simulations of low-level clouds",
+    "authors": "Davide Selvatici, Richard J. A. M. Stevens",
+    "abstract": "We investigate the effect due to grid resolution and subgrid-scale model on large-eddy simulations of low-level clouds using a novel framework that combines pseudo-spectral advection with the anisotropic minimum dissipation (AMD) subgrid-scale model. We use two field campaigns as reference, DYCOMS-II RF01 and ASTEX, which cover both non-precipitating and precipitating stratocumulus cloud regimes across different time scales. Our results demonstrate that the AMD model combined with pseudo-spectral advection produces robust and accurate predictions across varying grid resolutions without parameter tuning. We identify a recommended grid anisotropy where vertical spacing is approximately three times finer than horizontal spacing, balancing accuracy and computational efficiency. Finally, an error analysis based on cloud liquid water content and vertical velocity variance reveals good agreement with theoretical predictions for isotropic grids, while grid anisotropy effectively improves convergence rates.",
+    "url": "https://arxiv.org/abs/2605.21196v1",
+    "published": "2026-05-20T13:57:19Z",
+    "arxiv_id": "2605.21196v1",
+    "summary": "Error summarizing: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+    "topic": "geophysical turbulence"
+  },
+  {
+    "title": "Beyond Vorticity: An Angular Momentum Perspective on Fluid Flow",
+    "authors": "Ahmed Farooq",
+    "abstract": "While vorticity is the classical tool for analyzing rotational fluid kinematics, it inherently focuses on local, differential spin. This paper introduces a complementary framework based on the angular momentum density field, $\\mathbf{L} = \\mathbf{r} \\times \\mathbf{u}$, deriving generalized transport equations that explicitly balance macroscopic torque and rotational momentum. This $\\mathbf{L}$ perspective offers several distinct theoretical advantages over traditional velocity/vorticity formulations. Specifically, this approach: (i) provides a novel decomposition of the viscous torque into a diffusive component and a local spin dissipative term; (ii) shows the mechanism by which lift is generated in viscous boundary layers by vorticity acting as a source of angular momentum; it also explains stall (iii) reformulates the hydrodynamic impulse to yield a remarkably clean separation of terms into dilatational, volumetric, and rotational flux components; The $\\mathbf{L}$ formalism provides the kinematic closure necessary to unify non-circulatory added mass and circulatory lift within a single, dimensionally consistent budget. (iv) enables the direct calculation of the viscous added mass force, accounting for the inertial resistance of boundary layers and separated wakes; (v) simplifies geophysical fluid dynamics by absorbing the planet's rotation, traditionally treated as an artificial virtual vorticity term which directly gets absorbed into the conserved axial angular momentum $m$, revealing the fundamental physics of global circulation through explicit torque balances; (vi) identifies the rotlet as a fundamental Green's function for the $\\mathbf{L}$ transport equation in the Stokes regime; and (vii) demonstrates that both oblique shocks and vortex sheets act as singular sources of $\\mathbf{L}$ that turn the macroscopic flow.",
+    "url": "https://arxiv.org/abs/2605.21191v1",
+    "published": "2026-05-20T13:54:38Z",
+    "arxiv_id": "2605.21191v1",
+    "summary": "Error summarizing: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+    "topic": "geophysical turbulence"
+  },
+  {
+    "title": "Blending machine learning and physics-based approaches for weather and climate: a typology",
+    "authors": "Benjamin J Shipway, Caroline Bain, David Walters, Ben B. B. Booth, Ian Boutle, Robin T. Clark, Katherine L. Hill, Elizabeth Kendon, Simon B. Vosper",
+    "abstract": "The integration of machine learning (ML) with traditional physics-based models is reshaping the landscape of weather and climate prediction. On their own, ML-based and physics-based approaches each have significant benefits - but also challenges. Deploying both these approaches side by side has the potential to accelerate the pull through of emerging science in a trusted and practical way. But there are many choices that can be made to how we \"blend\" ML and established physics-based modelling systems to get the optimal benefits. This paper aims to provide a typology of blended modelling approaches and discusses some of the strategic benefits that come with them. It can be used not just to classify modelling systems, but also identify routes to gradual, incremental or wholesale development and implementation of new and emerging capabilities. These approaches provide a practical path to innovation by combining the speed and adaptability of machine learning with the robustness, trust, and interpretability of physics-based systems. By adopting a structured vocabulary and outlining the benefits and limitations of each approach, this framework supports informed decision-making and strategic planning, and can be used by the wider community to navigate the transition to next-generation prediction systems.",
+    "url": "https://arxiv.org/abs/2605.20925v1",
+    "published": "2026-05-20T09:10:45Z",
+    "arxiv_id": "2605.20925v1",
+    "summary": "Error summarizing: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+    "topic": "geophysical turbulence"
   }
 ]
