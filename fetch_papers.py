@@ -204,6 +204,7 @@ def main():
         json.dump(all_results, f, indent=2)
 
     print(f"✅ Saved summaries for {len(all_results)} papers")
+    print(f"📄 Summary file: summaries/{today}.md")
 
 if __name__ == "__main__":
     main()
