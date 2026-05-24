@@ -1,130 +1,209 @@
-# fetch_papers.py
-# One-paper-per-call summarization + category reducer
-# Groq-safe: bounded tokens, no category-sized prompts
-
 import os
 import time
+import json
+import feedparser
 import requests
-import datetime
-from pathlib import Path
+from datetime import datetime
+from requests.exceptions import ReadTimeout, RequestException
 
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
-MODEL = "llama-3.3-70b-versatile"
-GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+# =========================
+# Configuration
+# =========================
 
-# Hard safety margins
-PER_PAPER_SLEEP = 2.2          # seconds between Groq calls
-CATEGORY_REDUCER_SLEEP = 2.2
-MAX_ABSTRACT_CHARS = 700        # hard truncate
+MAX_PAPERS = 10
+REQUEST_DELAY = 5
+GROQ_DELAY = 8
+GROQ_MODEL = "llama-3.3-70b-versatile"
 
-HEADERS = {
-    "Authorization": f"Bearer {GROQ_API_KEY}",
-    "Content-Type": "application/json",
+OUTPUT_DIR = "summaries"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+TOPICS = [t.strip().lower() for t in os.getenv("TOPICS", "").split(",") if t.strip()]
+
+ARXIV_CATEGORIES = {
+    "quantum algorithms": "quant-ph",
+    "quantum information": "quant-ph",
+    "statistical physics": "cond-mat.stat-mech",
+    "turbulence": "physics.flu-dyn",
+    "geophysical turbulence": "physics.ao-ph",
+    "nonlinear sciences": ["nlin.CD", "nlin.PS", "nlin.SI"],
 }
 
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+if not GROQ_API_KEY:
+    raise RuntimeError("Missing GROQ_API_KEY")
 
-def groq_chat(prompt, max_tokens=200):
-    """Single bounded Groq request."""
-    payload = {
-        "model": MODEL,
-        "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0.2,
-        "max_tokens": max_tokens,
+# =========================
+# arXiv Fetching
+# =========================
+
+def fetch_arxiv_api(category, max_results, retries=3):
+    url = (
+        "http://export.arxiv.org/api/query?"
+        f"search_query=cat:{category}"
+        f"&start=0&max_results={max_results}"
+        "&sortBy=submittedDate&sortOrder=descending"
+    )
+
+    for attempt in range(1, retries + 1):
+        try:
+            r = requests.get(url, timeout=20)
+            r.raise_for_status()
+            feed = feedparser.parse(r.content)
+
+            papers = []
+            for e in feed.entries:
+                papers.append({
+                    "title": e.title.strip(),
+                    "authors": ", ".join(a.name for a in getattr(e, "authors", [])) or "Unknown",
+                    "abstract": e.summary.strip(),
+                    "url": e.link,
+                    "published": getattr(e, "published", "Unknown"),
+                })
+            return papers
+
+        except (ReadTimeout, RequestException):
+            print(f"  API timeout {attempt}/{retries} for {category}")
+            time.sleep(5 * attempt)
+
+    print(f"  ❌ API failed for {category}")
+    return []
+
+
+def fetch_arxiv(category, max_results):
+    rss_url = f"http://export.arxiv.org/rss/{category}"
+    feed = feedparser.parse(rss_url)
+
+    if not feed.entries:
+        print("  RSS empty, using API")
+        time.sleep(REQUEST_DELAY)
+        return fetch_arxiv_api(category, max_results)
+
+    papers = []
+    for e in feed.entries[:max_results]:
+        papers.append({
+            "title": e.title.strip(),
+            "authors": e.get("author", "Unknown"),
+            "abstract": e.summary.strip(),
+            "url": e.link,
+            "published": e.get("published", "Unknown"),
+        })
+    return papers
+
+# =========================
+# Groq Summarization
+# =========================
+
+def summarize_with_groq(text, short=False):
+    headers = {
+        "Authorization": f"Bearer {GROQ_API_KEY}",
+        "Content-Type": "application/json",
     }
-    r = requests.post(GROQ_URL, headers=HEADERS, json=payload, timeout=60)
-    if r.status_code == 429:
-        raise RuntimeError("Groq TPM exceeded — prompt too large")
-    r.raise_for_status()
-    return r.json()["choices"][0]["message"]["content"].strip()
 
+    prompt = (
+        "Summarize the following set of research abstracts in one coherent paragraph:\n\n"
+        if short else
+        "Summarize this research abstract in 3 concise sentences:\n\n"
+    )
 
-# ---------------- Summarization ----------------
+    payload = {
+        "model": GROQ_MODEL,
+        "messages": [{"role": "user", "content": prompt + text[:2000]}],
+        "temperature": 0.3,
+    }
 
-def summarize_single_paper(paper):
-    abstract = (paper.get("abstract") or "")[:MAX_ABSTRACT_CHARS]
+    for _ in range(3):
+        r = requests.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            headers=headers,
+            json=payload,
+            timeout=30,
+        )
 
-    prompt = f"""
-Summarize the following paper in 2–3 very short bullet points.
-Be technical but concise.
+        if r.status_code == 429:
+            print("  Groq rate limit — sleeping")
+            time.sleep(15)
+            continue
 
-Title: {paper['title']}
+        r.raise_for_status()
+        return r.json()["choices"][0]["message"]["content"].strip()
 
-Abstract:
-{abstract}
-"""
-    summary = groq_chat(prompt, max_tokens=120)
-    time.sleep(PER_PAPER_SLEEP)
-    return summary
+    return "Summary unavailable due to rate limits."
 
-
-def summarize_category_reducer(paper_summaries, category):
-    joined = "\n".join(f"- {s}" for s in paper_summaries)
-
-    prompt = f"""
-Given the following bullet summaries of recent papers in {category},
-write ONE short paragraph (3–4 lines) summarizing overall themes.
-
-{joined}
-"""
-    summary = groq_chat(prompt, max_tokens=180)
-    time.sleep(CATEGORY_REDUCER_SLEEP)
-    return summary
-
-
-# ---------------- Main Pipeline ----------------
+# =========================
+# Main
+# =========================
 
 def main():
-    today = datetime.date.today().isoformat()
-    outdir = Path("summaries")
-    outdir.mkdir(exist_ok=True)
-    outfile = outdir / f"{today}.md"
+    print("Starting daily paper fetch...")
 
-    # Example category map (unchanged fetching logic assumed upstream)
-    categories = {
-        "quant-ph": "quantum algorithms, quantum information",
-        "cond-mat.stat-mech": "statistical physics",
-        "physics.flu-dyn": "turbulence",
-        "physics.ao-ph": "geophysical turbulence",
-        "nlin.CD": "nonlinear sciences",
-        "nlin.PS": "nonlinear sciences",
-        "nlin.SI": "nonlinear sciences",
-    }
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+    md_path = os.path.join(OUTPUT_DIR, f"{today}.md")
+    json_path = os.path.join(OUTPUT_DIR, f"{today}.json")
 
-    total = 0
+    all_results = []
+    seen_titles = set()
 
-    with open(outfile, "w") as md:
-        md.write(f"# Daily arXiv Paper Summaries ({today})\n\n")
+    category_map = {}
+    for topic in TOPICS:
+        cats = ARXIV_CATEGORIES.get(topic, [])
+        if isinstance(cats, str):
+            cats = [cats]
+        for c in cats:
+            category_map.setdefault(c, []).append(topic)
 
-        for cat, desc in categories.items():
-            print(f"Fetching {cat} ({desc})")
+    with open(md_path, "w") as md:
+        md.write(f"# Daily Research Papers — {today}\n\n")
 
-            papers = fetch_papers_for_category(cat)  # EXISTING FUNCTION
+        for category, topics in category_map.items():
+            print(f"Fetching {category} ({', '.join(topics)})")
+
+            try:
+                papers = fetch_arxiv(category, MAX_PAPERS)
+            except Exception as e:
+                print(f"  ❌ Skipping {category}: {e}")
+                continue
+
             if not papers:
                 continue
 
-            md.write(f"## {cat} — {desc}\n\n")
+            # ---- CATEGORY HEADER ----
+            md.write(f"## {category}\n\n")
 
-            paper_summaries = []
+            # ---- CATEGORY SUMMARY (TOP) ----
+            abstracts = []
             for p in papers:
-                try:
-                    s = summarize_single_paper(p)
-                except Exception as e:
-                    print(f"  Skipping paper due to error: {e}")
+                if p["title"] not in seen_titles:
+                    abstracts.append(p["abstract"])
+
+            if abstracts:
+                combined = "\n\n".join(abstracts)
+                cat_summary = summarize_with_groq(combined, short=True)
+                time.sleep(GROQ_DELAY)
+                md.write(f"**Category Summary:** {cat_summary}\n\n")
+
+            # ---- INDIVIDUAL PAPERS ----
+            for p in papers:
+                if p["title"] in seen_titles:
                     continue
+                seen_titles.add(p["title"])
 
-                paper_summaries.append(s)
-                md.write(f"**{p['title']}**\n{s}\n\n")
-                total += 1
+                summary = summarize_with_groq(p["abstract"])
+                time.sleep(GROQ_DELAY)
 
-            if paper_summaries:
-                cat_summary = summarize_category_reducer(paper_summaries, cat)
-                md.write(f"**Category summary:** {cat_summary}\n\n")
+                md.write(f"### {p['title']}\n")
+                md.write(f"- **Authors:** {p['authors']}\n")
+                md.write(f"- **Link:** {p['url']}\n\n")
+                md.write(f"{summary}\n\n")
 
-    print(f"✅ Saved summaries for {total} papers")
-    print(f"📄 Summary file: {outfile}")
+                p["summary"] = summary
+                p["category"] = category
+                all_results.append(p)
 
+    with open(json_path, "w") as f:
+        json.dump(all_results, f, indent=2)
 
-# ---------------- Entry ----------------
+    print(f"✅ Saved summaries for {len(all_results)} papers")
 
 if __name__ == "__main__":
     main()
