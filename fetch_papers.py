@@ -229,7 +229,7 @@ def main():
         for category, summary in category_summaries.items():
             f.write(f"## {category}\n\n")
             f.write(f"{summary}\n\n")
-            for p in [x for x in all_papers if x["topic"] in unique_categories[category]]:
+            for p in [x for x in all_papers if x["topic"] == unique_categories[category][0]]:
                 f.write(f"### {p['title']}\n\n")
                 f.write(f"**Authors:** {p['authors']}\n\n")
                 f.write(f"**Summary:** {p['summary']}\n\n")
