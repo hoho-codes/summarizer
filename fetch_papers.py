@@ -22,13 +22,9 @@ ARXIV_CATEGORIES = {
     'geophysical turbulence': 'physics.ao-ph',
     'fluid dynamics': 'physics.flu-dyn',
     'atmospheric physics': 'physics.ao-ph',
-    'machine learning': 'cs.LG',
-    'artificial intelligence': 'cs.AI',
-    'computer vision': 'cs.CV',
-    'natural language processing': 'cs.CL',
-    'robotics': 'cs.RO',
-    'deep learning': 'cs.LG',
-    'neural networks': 'cs.NE',
+    'nonlinear sciences': 'nlin',
+    'chaos': 'nlin.CD',
+    'pattern formation': 'nlin.PS',
 }
 
 def fetch_arxiv_papers_api(category, max_results=10):
