@@ -240,14 +240,27 @@ def summarize_paper(paper, cache, seen):
         seen.add(pid)
         return cache[pid].get("summary")
 
+    # UPDATED PROMPT:
+    # Explicitly asking for NO introductory text and exactly 3 points.
     prompt = (
-        "Summarize in 3 bullet points (max 12 words each).\n\n"
+        "Provide exactly 3 bullet points summarizing the paper below. "
+        "Do not include any introductory or concluding sentences. "
+        "Each bullet point must be a maximum of 12 words.\n\n"
         f"Title: {paper['title']}\n"
         f"Abstract: {paper['abstract'][:MAX_ABSTRACT_CHARS]}"
     )
 
     summary = format_bullets(get_llm_summary(prompt, PAPER_MODEL_GROQ))
 
+    if summary:
+        cache[pid] = {
+            "title": paper["title"],
+            "summary": summary,
+            "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        }
+        seen.add(pid)
+
+    return summary
     if summary:
         cache[pid] = {
             "title": paper["title"],
