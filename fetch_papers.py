@@ -6,9 +6,9 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-# =========================
+# ============================================================
 # Configuration
-# =========================
+# ============================================================
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 TOPICS = os.environ.get(
@@ -37,9 +37,9 @@ ARXIV_CATEGORIES = {
     "pattern formation": "nlin.PS",
 }
 
-# =========================
+# ============================================================
 # Rate limiting
-# =========================
+# ============================================================
 
 def groq_rate_limit():
     global LAST_GROQ_CALL
@@ -48,16 +48,46 @@ def groq_rate_limit():
         time.sleep(GROQ_DELAY - elapsed)
     LAST_GROQ_CALL = time.time()
 
-# =========================
-# arXiv fetching
-# =========================
+# ============================================================
+# arXiv fetching (RSS → API fallback)
+# ============================================================
 
-def fetch_arxiv_papers(category, max_results=10):
-    url = f"http://export.arxiv.org/rss/{category}"
-    feed = feedparser.parse(url)
+def fetch_arxiv_papers_api(category, max_results):
+    base_url = "http://export.arxiv.org/api/query?"
+    params = {
+        "search_query": f"cat:{category}",
+        "start": 0,
+        "max_results": max_results,
+        "sortBy": "submittedDate",
+        "sortOrder": "descending",
+    }
+
+    url = base_url + "&".join(f"{k}={v}" for k, v in params.items())
+    response = requests.get(url, timeout=30)
+    response.raise_for_status()
+
+    feed = feedparser.parse(response.content)
+    papers = []
+
+    for entry in feed.entries:
+        papers.append({
+            "title": entry.title.strip(),
+            "authors": ", ".join(a.name for a in getattr(entry, "authors", [])) or "Unknown",
+            "abstract": entry.summary.strip(),
+            "url": entry.link,
+            "published": getattr(entry, "published", "Unknown"),
+        })
+
+    return papers
+
+def fetch_arxiv_papers(category, max_results):
+    rss_url = f"http://export.arxiv.org/rss/{category}"
+    feed = feedparser.parse(rss_url)
 
     if not feed.entries:
-        return []
+        print("  RSS empty, falling back to arXiv API")
+        time.sleep(REQUEST_DELAY)
+        return fetch_arxiv_papers_api(category, max_results)
 
     papers = []
     for entry in feed.entries[:max_results]:
@@ -68,11 +98,12 @@ def fetch_arxiv_papers(category, max_results=10):
             "url": entry.link,
             "published": entry.get("published", "Unknown"),
         })
+
     return papers
 
-# =========================
+# ============================================================
 # Groq summarization
-# =========================
+# ============================================================
 
 def summarize_papers_with_groq(papers):
     if not GROQ_API_KEY or not papers:
@@ -86,7 +117,7 @@ def summarize_papers_with_groq(papers):
         blocks.append(f"{i}. Title: {p['title']}\nAbstract: {abstract}")
 
     prompt = (
-        "Summarize each research paper in 2–3 sentences. "
+        "Summarize each research paper in 2–3 sentences.\n"
         "Return a numbered list matching the paper numbers.\n\n"
         + "\n\n".join(blocks)
     )
@@ -110,8 +141,8 @@ def summarize_papers_with_groq(papers):
     response.raise_for_status()
 
     text = response.json()["choices"][0]["message"]["content"]
-    summaries = []
 
+    summaries = []
     for line in text.split("\n"):
         if line.strip() and line.lstrip()[0].isdigit():
             summaries.append(line.split(".", 1)[-1].strip())
@@ -127,10 +158,7 @@ def summarize_category(category, papers):
 
     groq_rate_limit()
 
-    bullets = [
-        f"- {p['title']}: {p['summary']}"
-        for p in papers
-    ]
+    bullets = [f"- {p['title']}: {p['summary']}" for p in papers]
 
     prompt = (
         "Write one concise paragraph summarizing the following research papers "
@@ -157,9 +185,9 @@ def summarize_category(category, papers):
     response.raise_for_status()
     return response.json()["choices"][0]["message"]["content"]
 
-# =========================
+# ============================================================
 # Main
-# =========================
+# ============================================================
 
 def main():
     print("Starting daily paper fetch...")
@@ -175,8 +203,10 @@ def main():
         unique_categories.setdefault(category, []).append(topic)
 
     for category, topics in unique_categories.items():
-        print(f"\nFetching {category} ({', '.join(topics)})")
+        print(f"Fetching {category} ({', '.join(topics)})")
+
         papers = fetch_arxiv_papers(category, MAX_PAPERS)
+        print(f"  Found {len(papers)} papers")
         time.sleep(REQUEST_DELAY)
 
         category_papers = []
@@ -227,8 +257,7 @@ def main():
     with open(output_dir / f"{today}.md", "w", encoding="utf-8") as f:
         f.write(f"# Research Paper Summaries — {today}\n\n")
         for category, summary in category_summaries.items():
-            f.write(f"## {category}\n\n")
-            f.write(f"{summary}\n\n")
+            f.write(f"## {category}\n\n{summary}\n\n")
             for p in [x for x in all_papers if x["topic"] == unique_categories[category][0]]:
                 f.write(f"### {p['title']}\n\n")
                 f.write(f"**Authors:** {p['authors']}\n\n")
