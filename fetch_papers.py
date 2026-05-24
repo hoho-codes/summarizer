@@ -2,6 +2,7 @@ import os
 import json
 import feedparser
 import requests
+import time
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -9,6 +10,7 @@ from pathlib import Path
 GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
 TOPICS = os.environ.get('TOPICS', 'machine learning').split(',')
 MAX_PAPERS = 10  # Adjust based on how many papers you want daily
+REQUEST_DELAY = 3  # Seconds between arXiv requests to avoid rate limiting
 
 # arXiv category mappings (add more as needed)
 ARXIV_CATEGORIES = {
@@ -131,15 +133,26 @@ Abstract: {text}"""
 
 def main():
     print("Starting daily paper fetch and summarization...")
+    print(f"Using {REQUEST_DELAY}s delay between requests to respect arXiv rate limits\n")
     
     all_papers = []
     seen_titles = set()  # Track duplicates across categories
     
-    # Fetch papers for each topic
+    # Deduplicate topics that share categories
+    unique_categories = {}
     for topic in TOPICS:
         topic = topic.strip().lower()
         category = ARXIV_CATEGORIES.get(topic, 'cs.AI')
-        print(f"\nFetching papers for: {topic} (category: {category})")
+        if category not in unique_categories:
+            unique_categories[category] = []
+        unique_categories[category].append(topic)
+    
+    print(f"Fetching from {len(unique_categories)} unique arXiv categories for {len(TOPICS)} topics\n")
+    
+    # Fetch papers for each unique category
+    for category, topics in unique_categories.items():
+        topic_names = ', '.join(topics)
+        print(f"Fetching papers for: {topic_names} (category: {category})")
         
         papers = fetch_arxiv_papers(category, MAX_PAPERS)
         print(f"  Found {len(papers)} papers")
@@ -155,7 +168,7 @@ def main():
             
             summary = summarize_with_groq(paper['abstract'], paper['title'])
             paper['summary'] = summary
-            paper['topic'] = topic
+            paper['topic'] = topics[0]  # Assign first topic from this category
             all_papers.append(paper)
     
     # Save results even if no papers found
