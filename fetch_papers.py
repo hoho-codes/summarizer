@@ -12,8 +12,9 @@ from requests.exceptions import ReadTimeout, RequestException
 
 MAX_PAPERS = 10
 REQUEST_DELAY = 5
-GROQ_DELAY = 8
+GROQ_DELAY = 10  # hard throttle (safe under 30 RPM)
 GROQ_MODEL = "llama-3.3-70b-versatile"
+MAX_ABSTRACT_CHARS = 600
 
 OUTPUT_DIR = "summaries"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -94,22 +95,30 @@ def fetch_arxiv(category, max_results):
 # Groq Summarization
 # =========================
 
-def summarize_with_groq(text, short=False):
+def summarize_with_groq(text, mode="paper"):
     headers = {
         "Authorization": f"Bearer {GROQ_API_KEY}",
         "Content-Type": "application/json",
     }
 
-    prompt = (
-        "Summarize the following set of research abstracts in one coherent paragraph:\n\n"
-        if short else
-        "Summarize this research abstract in 3 concise sentences:\n\n"
-    )
+    text = text[:MAX_ABSTRACT_CHARS]
+
+    if mode == "paper":
+        prompt = (
+            "Summarize this research abstract as 3 short bullet points "
+            "(max 12 words each):\n\n"
+        )
+    else:
+        prompt = (
+            "Summarize the main themes of these papers as 3 short bullet points "
+            "(max 15 words each):\n\n"
+        )
 
     payload = {
         "model": GROQ_MODEL,
-        "messages": [{"role": "user", "content": prompt + text[:2000]}],
-        "temperature": 0.3,
+        "messages": [{"role": "user", "content": prompt + text}],
+        "temperature": 0.2,
+        "max_tokens": 120,
     }
 
     for _ in range(3):
@@ -122,13 +131,13 @@ def summarize_with_groq(text, short=False):
 
         if r.status_code == 429:
             print("  Groq rate limit — sleeping")
-            time.sleep(15)
+            time.sleep(20)
             continue
 
         r.raise_for_status()
         return r.json()["choices"][0]["message"]["content"].strip()
 
-    return "Summary unavailable due to rate limits."
+    return "- Summary unavailable due to rate limits."
 
 # =========================
 # Main
@@ -158,29 +167,24 @@ def main():
         for category, topics in category_map.items():
             print(f"Fetching {category} ({', '.join(topics)})")
 
-            try:
-                papers = fetch_arxiv(category, MAX_PAPERS)
-            except Exception as e:
-                print(f"  ❌ Skipping {category}: {e}")
-                continue
-
+            papers = fetch_arxiv(category, MAX_PAPERS)
             if not papers:
                 continue
 
-            # ---- CATEGORY HEADER ----
             md.write(f"## {category}\n\n")
 
             # ---- CATEGORY SUMMARY (TOP) ----
-            abstracts = []
-            for p in papers:
-                if p["title"] not in seen_titles:
-                    abstracts.append(p["abstract"])
+            abstracts = [
+                p["abstract"] for p in papers
+                if p["title"] not in seen_titles
+            ]
 
             if abstracts:
                 combined = "\n\n".join(abstracts)
-                cat_summary = summarize_with_groq(combined, short=True)
+                cat_summary = summarize_with_groq(combined, mode="category")
                 time.sleep(GROQ_DELAY)
-                md.write(f"**Category Summary:** {cat_summary}\n\n")
+                md.write("**Category Summary:**\n")
+                md.write(f"{cat_summary}\n\n")
 
             # ---- INDIVIDUAL PAPERS ----
             for p in papers:
@@ -188,7 +192,7 @@ def main():
                     continue
                 seen_titles.add(p["title"])
 
-                summary = summarize_with_groq(p["abstract"])
+                summary = summarize_with_groq(p["abstract"], mode="paper")
                 time.sleep(GROQ_DELAY)
 
                 md.write(f"### {p['title']}\n")
@@ -204,6 +208,7 @@ def main():
         json.dump(all_results, f, indent=2)
 
     print(f"✅ Saved summaries for {len(all_results)} papers")
+    print(f"📄 Summary file: {md_path}")
 
 if __name__ == "__main__":
     main()
