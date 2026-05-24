@@ -217,7 +217,7 @@ def format_bullets(text, max_lines=3, min_lines=3):
         return None
 
     def clean(l):
-        return re.sub(r'^(\*|-|\d+\.)\s*', '', l).strip()
+        return re.sub(r'^(\*|-|\d+[\.\)]?)\s*', '', l).strip()
 
     lines = []
     for l in text.splitlines():
@@ -261,16 +261,6 @@ def summarize_paper(paper, cache, seen):
         seen.add(pid)
 
     return summary
-    if summary:
-        cache[pid] = {
-            "title": paper["title"],
-            "summary": summary,
-            "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
-        }
-        seen.add(pid)
-
-    return summary
-
 
 def summarize_category(category, papers):
     valid = [p for p in papers if p.get("summary")]
