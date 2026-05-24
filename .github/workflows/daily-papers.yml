@@ -31,7 +31,7 @@ jobs:
     - name: Fetch and summarize papers
       env:
         GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        TOPICS: "quantum algorithms,quantum information,statistical physics,turbulence,geophysical turbulence"
+        TOPICS: "quantum algorithms,quantum information,statistical physics,turbulence,geophysical turbulence,nonlinear sciences"
       run: python fetch_papers.py
       
     - name: Commit and push results
