@@ -1,5 +1,7 @@
 # 📚 Automated Daily Research Paper Summarizer
 
+This is a completely vibe coded project developed in my spare time - using the free tiers of Claude, ChatGPT and Gemini. The only human generated text are these two lines 😁.
+
 A zero-overhead, production-grade automated pipeline that tracks, fetches, and summarizes academic literature from arXiv using state-of-the-art Large Language Models (**Groq / Llama 3** & **Google Gemini**). 
 
 Running entirely on **GitHub Actions**, this script updates daily, handles API rate-limits defensively, skips already-processed papers via local disk caching, and outputs elegant, human-readable Markdown digests.
