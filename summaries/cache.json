@@ -218,5 +218,120 @@
     "title": "Pairwise Distance-Diffusion Analysis (PDDA): A Geometric Framework for Estimating Hurst Exponents in Multivariate Long-Memory Processes",
     "summary": "- PDDA is a geometric framework for estimating Hurst exponents.\n- PDDA yields two complementary routes: R/S-PDDA and MSD-PDDA analysis.\n- PDDA is extended to multivariate isotropic and anisotropic processes analysis.",
     "timestamp": "2026-05-24"
+  },
+  "2605.23894": {
+    "title": "A Two-Branch Finite-Field Construction for Regular CSS LDPC Bases",
+    "summary": "- A two-branch construction reduces regularity and CSS orthogonality conditions.\n- The construction separates design into two stages: base matrix and lift.\n- The resulting CSS code has girth at least eight and excludes specific orbits.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23881": {
+    "title": "Time crystals in cavity-BEC systems",
+    "summary": "- Time crystals in cavity-BEC systems are reviewed and discussed.\n- Three distinct time crystalline states are predicted and realized.\n- Cavity mode and condensate momentum modes are used for characterization.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23880": {
+    "title": "Not all black holes decohere quantum superpositions",
+    "summary": "- Near-extremal charged black holes exhibit large quantum metric fluctuations.\n- Quantum gravity effects make decoherence rate vanish at late times.\n- Decoherence rate is suppressed relative to semiclassical expectations always.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23874": {
+    "title": "Quantum Quenches that Resemble Operator Growth",
+    "summary": "- Linear growth of Lanzcos coefficients conjectured in generic quenches.\n- Growth quench dynamics localized in Krylov and Fock spaces.\n- Fock space cage states interpreted as conserved charge in East-West model.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23873": {
+    "title": "Coherent dynamics in chaotic spin chains via interference-protected subspaces",
+    "summary": "- Local spin-1/2 chains exhibit nonthermal phenomena at high energy densities.\n- Structured subspaces are protected by destructive interference in these chains.\n- A leakage theory predicts states that retain coherence in these chains.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23862": {
+    "title": "Indefinite probabilities in quantum spacetime: A deepening of unpredictability",
+    "summary": "- Non-commutative spacetime captures non-classical features of spacetime and its symmetries.\n- SU_q( quantum group leads to non-commuting probability operators for spin measurements.\n- Indefinite probabilities result from uncertainty principle between different probability operators.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23853": {
+    "title": "Exact versus tight-binding models in longitudinally modulated $\\mathcal{PT}$-symmetric coupled waveguides",
+    "summary": "- Exact continuous solutions are derived from z-dependent supersymmetric transformations.\n- Tight-binding model is widely adopted but not rigorously benchmarked against exact solutions.\n- TB model reproduces spatial intensity distributions but not complex phase dynamics.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23852": {
+    "title": "Convexity and non-Markovianity of Weyl Maps",
+    "summary": "- Weyl maps exhibit non-Markovian dynamics in finite-dimensional open systems.\n- Convex combinations of Weyl maps can generate Markovian semigroups.\n- Non-Markovianity is not additive under mixing of Weyl maps.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23830": {
+    "title": "IntegrateUnitary.jl: A Julia package for symbolic integration over Haar measures",
+    "summary": "- IntegrateUnitary.jl is a Julia package for symbolic integration over Haar measures.\n- It supports compact groups, circular and Gaussian ensembles, and Ginibre ensembles.\n- Package provides Weingarten calculus and Wick contractions with symbolic-$d$ support.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23824": {
+    "title": "The negativity core of a 1+1D massless scalar quantum field",
+    "summary": "- Vacuum entanglement is a fundamental feature of quantum field theory.\n- Entanglement between regions is characterized in a 1+1D scalar field.\n- Negativity cores are localized modes carrying logarithmic negativity in the field.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23803": {
+    "title": "Chirality-sensitive mobility and dissipation of Brownian motion on a helical landscape",
+    "summary": "- Brownian motion separates into free propagation and harmonic motion in a helical landscape.\n- Anisotropic damping destroys separability in the stochastic dynamics of the particle.\n- Zero mode associated with diffusion along the screw coordinate is projected out.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23789": {
+    "title": "Orientable Surfactants on Thin Liquid Films: A Dynamic Density-Functional Theory Approach",
+    "summary": "- Surfactants are treated as polar uniaxial particles in the model.\n- Dynamic density-functional theory is used for surfactant-laden films.\n- Thin-film equations are derived under the long-wave approximation.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23781": {
+    "title": "Multi-field Return Point Memory",
+    "summary": "- Non-equilibrium systems display memory beyond their present environment.\n- Multiple control fields enable precise and complex system control.\n- Return-point memory restores a system to a previous microstate.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23758": {
+    "title": "Order-Disorder Tricriticality in $\\mathrm{A}_n \\mathrm{B}_n$ Star Polymer Melts",
+    "summary": "- Arm number drives order-disorder transition from second to first order.\n- Tricritical arm number is approximately 4475 in star-polymer melts.\n- Transition becomes first order for arm numbers above",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23567": {
+    "title": "Phase diagram of the vortex state in an amorphous Re6Zr thin film exhibiting inverse melting",
+    "summary": "- Vortex lattice exhibits inverse melting in amorphous Re6Zr thin film.\n- Inverse melting transitions from liquid to crystalline solid with temperature.\n- Phase diagram constructed in magnetic field-temperature parameter space.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23364": {
+    "title": "Inviscid scaling in the Kuramoto-Sivashinsky equation from functional renormalization group and direct numerical simulations",
+    "summary": "- The Kuramoto-Sivashinsky equation features a scaling regime with dynamical exponent z=\n- This scaling regime arises from the vanishing of effective viscosity in KS.\n- The behavior pertains to the inviscid-Burgers universality class with z=1 scaling.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23285": {
+    "title": "Reinforcement Learning for Microcanonical Graph Ensemble with Assortativity Constraints",
+    "summary": "- DMGG uses reinforcement learning to generate graphs with exact assortativity constraints.\n- DMGG eliminates exhaustive parameter tuning and accelerates graph generation significantly.\n- DMGG provides exact null models for quantitative analysis of graph observables.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23228": {
+    "title": "Exact solution of generalized gauge-invariant Ising chains with multi-spin interactions",
+    "summary": "- Exact solutions are obtained for generalized gauge-invariant n-chain Ising models.\n- Explicit expression for the partition function is derived using transfer-matrix method.\n- Wilson loop behavior exhibits area-law and perimeter-law dependence regimes.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23877": {
+    "title": "Particle Image Velocimetry of 3D printed vascular fluidic phantom devices",
+    "summary": "- 3D printed vascular models were fabricated with straight and pathological geometries.\n- Flow experiments were conducted under steady laminar conditions using microPIV.\n- Measured velocities were compared to analytical Hagen Poiseuille predictions with errors.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23869": {
+    "title": "Soft Mobility Theory",
+    "summary": "- Soft mobility theory applies virtual power and Lorentz reciprocal theorem.\n- Soft mobility equation depends on instantaneous deformation and deformation.\n- Framework allows efficient gradient-based inverse design and simulation.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23812": {
+    "title": "An Ensemble Variational approach for High-Dimensional Open-Loop Flow Control",
+    "summary": "- Ensemble-variational framework approximates cost-function gradients through perturbed control vectors.\n- Method uses finite-difference approximation in ensemble space for high-dimensional parameter spaces.\n- Framework remains effective in chaotic regime where adjoint-based approaches fail.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23800": {
+    "title": "A derivation of viscous thin film flow equations on curved surfaces",
+    "summary": "- Viscous thin film flow equations are derived for curved surfaces.\n- Derivation includes gravitational, capillary, and Marangoni effects.\n- Resulting expression incorporates leading order terms and additional terms.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23729": {
+    "title": "Real time monitoring of pressure-induced deformation of PDMS to evaluate pressure distribution in microfluidic channels",
+    "summary": "- Real-time pressure measurements are essential for microfluidic applications.\n- Existing approaches require additional probes or sensing elements.\n- Compliant microfluidic channels are used for pressure sensing.",
+    "timestamp": "2026-05-25"
   }
 }
