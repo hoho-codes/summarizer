@@ -53,7 +53,7 @@ Whether the automatic schedule is commented out or not, you can always kick off 
 ```
 Once completed, a fresh automated summary markdown file and raw JSON catalog will appear inside your repository's `/summaries` directory!
 
-🛠️ Repository Architecture
+## 🛠️ Repository Architecture
 To ensure the automated workflow functions correctly, structure your repository exactly like this:
 
 ```Plaintext
