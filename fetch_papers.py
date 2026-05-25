@@ -46,16 +46,6 @@ CACHE_PATH = Path("summaries/cache.json")
 ARXIV_CATEGORIES = {
     "quantum algorithms": ["quant-ph"],
     "quantum information": ["quant-ph"],
-    "quantum computing": ["quant-ph"],
-    "statistical physics": ["cond-mat.stat-mech"],
-    "turbulence": ["physics.flu-dyn"],
-    "geophysical turbulence": ["physics.ao-ph"],
-    "fluid dynamics": ["physics.flu-dyn"],
-    "atmospheric physics": ["physics.ao-ph"],
-    "nonlinear sciences": ["nlin.CD", "nlin.PS", "nlin.SI"],
-    "chaos": ["nlin.CD"],
-    "pattern formation": ["nlin.PS"],
-    "integrable systems": ["nlin.SI"],
 }
 
 # =========================
