@@ -1,0 +1,202 @@
+{
+  "2605.22909": {
+    "title": "Sample-efficient benchmarking of shallow all-to-all random quantum circuits",
+    "summary": "- Nonlinear cross-entropy is a sample-efficient benchmark for shallow-depth random quantum circuits.\n- It separates noisy quantum computers from classical spoofers even with depolarizing noise.\n- A binary classifier based on heavy output generation has logarithmic sample complexity at short depth.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22915": {
+    "title": "Unified resonant-manifold framework for dynamical quantum phase transitions",
+    "summary": "- A unified framework explains dynamical quantum phase transitions (DQPTs) through energy structure of product state configurations.\n- Manifold DQPTs are governed by resonances within the initial state, while branch DQPTs involve resonances with a transitional manifold.\n- Branch DQPTs' regularity is linked to the multiplicity of the transitional manifold.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22917": {
+    "title": "Quantum Fisher Information under decoherence with explicit wavefunctions",
+    "summary": "- A method to estimate quantum Fisher information under decoherence is presented.\n- The method uses Markov-chain Monte Carlo sampling for efficient estimation.\n- The framework is applied to Jastrow-Gutzwiller wave functions and noise channels.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22920": {
+    "title": "Estimating Green's functions with a robust quantum Arnoldi method",
+    "summary": "- A robust quantum Arnoldi method (ROQAM) is introduced for estimating Green's functions.\n- ROQAM preserves the upper-Hessenberg structure of projected matrices through orthogonal polynomials.\n- ROQAM outperforms pointwise estimation by multiple orders of magnitude for certain models.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22922": {
+    "title": "Observation of associative-memory retrieval and spin-glass phases on a photonic quantum simulator",
+    "summary": "- Researchers used photonic quantum simulators to study associative memories and neural networks.\n- The study identified three phases: memory retrieval, spin-glass \"black-out,\" and paramagnetic.\n- Experimental results confirmed successful memory retrieval at low storage capacities and temperatures.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22947": {
+    "title": "Entanglement-facilitated macroscopic cluster formation in quantum many-body dynamics",
+    "summary": "- Entanglement suppresses fragmentation in quantum many-body systems.\n- Initial-state entanglement stabilizes macroscopic connected clusters.\n- Entanglement entropy is not the sole factor in stabilizing global structures.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22953": {
+    "title": "Chaos to Synchronization and Dissipative Quantum Scarring in Open Coupled top-Dicke model in a Lossy Cavity",
+    "summary": "- The open coupled-top Dicke model explores non-equilibrium phenomena in an open environment.\n- Photon loss induces synchronization and chaos in the model, followed by restoration of coherence.\n- Two types of quantum scarring are identified, with one remaining protected and the other decaying due to dissipation.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22966": {
+    "title": "Phase-dependent role of dissipation across the Aubry-Andr\\'e-Harper transition",
+    "summary": "- Bath memory affects transport differently in extended and localized phases.\n- In the extended phase, bath memory reshapes the dynamical generator.\n- In the localized phase, bath memory mainly renormalizes timescales.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22977": {
+    "title": "Absorbing Many-Body Correlations into Core-Optimized Orbitals",
+    "summary": "- The paper proposes a method called Core-Optimized Orbitals (COO) to reduce the computational cost of simulating quantum many-body systems.\n- COO absorbs many-body correlations into the single-particle basis, making Configuration Interaction (CI) more parameter-efficient.\n- The method achieves significant compactness gains compared to existing methods, such as TrimCI and SU(-adapted DMRG.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22980": {
+    "title": "Automatic De-Quantization of Quantum Programs Using Constant Propagation",
+    "summary": "- Researchers propose a method to de-quantize quantum operations for classical computation.\n- Hybrid quantum-classical constant propagation reduces quantum operations by trading them for classical instructions.\n- The approach makes quantum programs more practical and robust for near-term devices.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22933": {
+    "title": "Emergent heavy-tailed distributions from a Markovian random walk",
+    "summary": "- A Markovian random walk with a deterministic step length function exhibits heavy-tailed distributions.\n- The walk's stationary state is a Lorentz-like distribution with power-law tails decaying as |x|^{-2}.\n- Non-zero initial acceleration drives the walker away from the origin, enabling scale-free statistics.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23228": {
+    "title": "Exact solution of generalized gauge-invariant Ising chains with multi-spin interactions",
+    "summary": "- Exact solutions are found for generalized gauge-invariant n-chain Ising models with multi-spin interactions.\n- An explicit expression for the partition function is derived using the transfer-matrix method.\n- The behavior of the Wilson loop is analyzed, revealing area-law and perimeter-law regimes.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23364": {
+    "title": "Inviscid scaling in the Kuramoto-Sivashinsky equation from functional renormalization group and direct numerical simulations",
+    "summary": "- The Kuramoto-Sivashinsky equation features a scaling regime with z=1 at intermediate scales.\n- This regime arises from the vanishing of effective viscosity in the equation.\n- The behavior pertains to the inviscid-Burgers universality class.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23758": {
+    "title": "Order-Disorder Tricriticality in $\\mathrm{A}_n \\mathrm{B}_n$ Star Polymer Melts",
+    "summary": "- Tricriticality occurs in symmetric $\\mathrm{A}_n\\mathrm{B}_n$ star-polymer melts due to arm number $n$.\n- A tricritical arm number $n_{\\mathrm{tc}}\\approx 4475$ is identified.\n- The transition becomes first order for $nn_{\\mathrm{tc}}$ with a quadratic dependence near the tricritical point.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23781": {
+    "title": "Multi-field Return Point Memory",
+    "summary": "- Researchers developed a method for controlling non-equilibrium systems with multiple control fields.\n- The method, called multi-field return point memory, restores a system to a previous exact microstate.\n- This approach enables precise and complex control of the system with commutative and noncommutative behavior.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23789": {
+    "title": "Orientable Surfactants on Thin Liquid Films: A Dynamic Density-Functional Theory Approach",
+    "summary": "- Surfactants are treated as polar uniaxial particles in a dynamic density-functional theory approach.\n- The model accounts for the shape and amphiphilic nature of surfactants.\n- The approach preserves gradient dynamics form with a revised free energy expression.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23803": {
+    "title": "Chirality-sensitive mobility and dissipation of Brownian motion on a helical landscape",
+    "summary": "- A particle's Brownian motion on a helical landscape separates into free and harmonic motion under isotropic damping.\n- Anisotropic damping destroys separability, requiring a linear Ornstein-Uhlenbeck process in phase space.\n- The system's stationary dynamics can be projected onto a stable subspace to obtain a linear response theory.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22906": {
+    "title": "Weak wave turbulence as a precursor to universal coarsening in a homogeneous Bose gas",
+    "summary": "- A homogeneous Bose gas exhibits universal coarsening through phase-ordering kinetics.\n- Weak wave turbulence describes the initial transport of particles to low momenta.\n- The momentum distribution follows a power-law with exponent γ = 4(.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22982": {
+    "title": "Transient and asymptotic Taylor--Aris dispersion of Brownian rods in arbitrary regular-polygonal ducts",
+    "summary": "- Taylor-Aris dispersion of Brownian rods in non-circular ducts is influenced by pressure-driven shear and duct geometry.\n- A local Jeffery-Brownian closure gives four transport fields at each cross-sectional point in regular-polygonal ducts.\n- Rod alignment enhances the Taylor coefficient by reducing transverse mixing, with a small shift in mean speed.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23046": {
+    "title": "Weakly nonlinear interaction of capillary waves in a finite system: leading interaction process and scales' range of direct energy cascade",
+    "summary": "- Resonant interactions dominate weakly nonlinear capillary wave interactions.\n- Zakharov-Filonenko spectrum forms in isotropic capillary wave turbulence.\n- Spectrum's range of scales is finite in finite systems due to wavenumber grid discreteness.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23166": {
+    "title": "Free surfaces in turbulence -- A unified framework from water surfaces to elastic solids",
+    "summary": "- A unified framework describes deformable surfaces in turbulent flows.\n- The framework distinguishes between surface-driven and flow-driven dynamics.\n- Nonlinear interactions and wave turbulence are key components of the framework.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23303": {
+    "title": "On the Applicability of the Gas-Kinetic Scheme with Kinetic Boundary Conditions for Near-Continuum Hypersonic Flows",
+    "summary": "- The gas-kinetic scheme (GKS) captures near-equilibrium flow physics using the Chapman-Enskog expansion.\n- GKS employs kinetic boundary conditions for velocity slip and temperature jump.\n- GKS provides more accurate aerodynamic predictions than conventional CFD solvers in near-continuum flow regimes.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23309": {
+    "title": "Full-component reconstruction of three-dimensional fluid stress tensors",
+    "summary": "- Researchers developed U-FlowPET, a framework for reconstructing 3D fluid stress tensors.\n- U-FlowPET integrates photoelastic tomography with fluid mechanics equations to reconstruct stress tensors.\n- The method validates results using analytical, numerical, and experimental datasets.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23396": {
+    "title": "CHIMERA: A wide Reynolds number range Taylor-Couette facility",
+    "summary": "- A Taylor-Couette facility is designed for wide Reynolds number range experiments.\n- The facility uses a torsion pendulum for direct torque measurement.\n- Measurements cover over five decades in Reynolds number, up to Re ~ 10^",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23620": {
+    "title": "From Optical Breakdown to Bubble Inception: A Coupled Plasma-Thermal Framework for Nanosecond Laser-Induced Cavitation in Water",
+    "summary": "- A coupled plasma-thermal framework models laser-induced cavitation in water.\n- Plasma-induced thermoelastic acoustic relaxation governs early bubble formation.\n- The framework accurately captures early cavity formation and bubble expansion.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23800": {
+    "title": "A derivation of viscous thin film flow equations on curved surfaces",
+    "summary": "- Viscous thin film flow equations are derived for curved surfaces.\n- The derivation includes gravitational, capillary, and Marangoni effects.\n- The resulting expression incorporates leading order terms and additional terms for nongeneric cases.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23812": {
+    "title": "An Ensemble Variational approach for High-Dimensional Open-Loop Flow Control",
+    "summary": "- An ensemble-variational framework is proposed for high-dimensional flow control.\n- It approximates cost-function gradients through a finite ensemble of perturbed control vectors.\n- The method is effective in both quasi-periodic and chaotic regimes, reducing kinetic energy fluctuations.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23869": {
+    "title": "Soft Mobility Theory",
+    "summary": "- A soft mobility theory is proposed for deformable bodies in viscous flows.\n- The theory yields a configuration-dependent ODE for generalized coordinates.\n- It enables efficient inverse design and gradient-based optimization.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23776": {
+    "title": "Precipitation diffusion downscaling and application to out-of-distribution simulations with and without stratospheric aerosol injection",
+    "summary": "- A deep learning diffusion downscaler is trained to generate high-resolution precipitation data from coarse climate simulations.\n- The downscaler accurately recreates climate change projections of extreme precipitation and generates realistic downscaled precipitation.\n- Stratospheric aerosol injection (SAI) is modeled to nearly halve the increase in yearly max precipitation in the contiguous United States.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23778": {
+    "title": "The physics of AI weather models",
+    "summary": "- AI weather models may be solving physical equations differently than conventional NWP models.\n- AI models represent the atmosphere in similar ways despite architectural differences.\n- AI models implement a particle description of the atmosphere, with particles moving towards a minimum free energy.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23875": {
+    "title": "Atmosphere as a steam engine",
+    "summary": "- Earth's atmosphere operates a steam cycle with water vapor evaporation, expansion, condensation, and precipitation.\n- The Clausius-Clapeyron law is generalized to an atmospheric column with condensation over a range of heights.\n- Global steam-engine power is estimated as $W_v=4\\pm9$ W/m2, close to total atmospheric power.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23403": {
+    "title": "Hybrid Quantum-Classical Corrective Diffusion Modeling for Meteorological Downscaling",
+    "summary": "- A hybrid quantum-classical model is proposed for statistical downscaling of weather fields.\n- The model combines variational quantum circuit layers with a classical regression branch in a diffusion UNet.\n- The hybrid model improves performance over a classical model in several configurations.",
+    "timestamp": "2026-05-25"
+  },
+  "2412.00936": {
+    "title": "Smoothing and spatial verification of global fields",
+    "summary": "- Two new methodologies for smoothing global fields are presented.\n- They can handle irregular grids and missing data.\n- Smoothing-based metrics can now be calculated globally.",
+    "timestamp": "2026-05-25"
+  },
+  "2503.05331": {
+    "title": "Radiosonde-constrained reconstructions reveal a weakening Northern Hadley circulation",
+    "summary": "- Radiosonde data reveal a weakening Northern Hadley circulation since\n- Reanalyses systematically underestimate NHC strength, with ERA5 showing persistent strengthening.\n- Climate models and radiosonde-based reconstructions agree on a weakening NHC.",
+    "timestamp": "2026-05-25"
+  },
+  "2601.05841": {
+    "title": "Non-stationary time series attribution for heatwaves over Europe",
+    "summary": "- A non-stationary Markov process models temporal dependence in extreme events.\n- Attribution results show strong evidence for anthropogenic climate change over Europe.\n- Mean warming's effect is eliminated to examine its influence on attribution statements.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.11639": {
+    "title": "Enabling High-Accuracy Data Assimilation with Limited Ensembles via Machine Learning-Based Covariance Correction",
+    "summary": "- A machine learning-based EnKF framework improves accuracy with small ensemble sizes.\n- A multilayer perceptron predicts covariance difference between limited and large ensembles.\n- The predicted difference is incorporated into the EnKF algorithm for improved accuracy.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22901": {
+    "title": "A No-Go Theorem for the Mass-Radius Relation of Solitons",
+    "summary": "- A no-go theorem excludes solitons with mass-radius index Γ in the range [0, d].\n- The theorem applies to real scalar field theories in d spatial dimensions.\n- Typical solitons cannot have Γ in the excluded range due to forces from gradient energy, self-interaction, and gravitation.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23001": {
+    "title": "Nonlinear Wave Propagation in 1D Polycatenated Ring Chains",
+    "summary": "- Nonlinear wave propagation is observed in 1D polycatenated ring chains.\n- Wave dynamics are driven by tensile activation and internal flexibility.\n- System nonlinearity can be tuned through geometric aspect ratio and contact angles.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23688": {
+    "title": "Adjoint inverse design of microresonator frequency combs",
+    "summary": "- Adjoint inverse design optimizes microresonator frequency comb spectra directly.\n- This approach addresses challenging design problems with high efficiency.\n- Inverse design enables compact on-chip light sources tailored to specific applications.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22236": {
+    "title": "Beyond descendants: integrable observables for cohomological field theories",
+    "summary": "- Integrable observables are proposed as alternatives to Witten's psi classes in cohomological field theories.\n- Three examples of integrable observables are presented, recovering known hierarchies and revealing new features.\n- The integrable observables framework yields a proof of the Miura equivalence of new hierarchies and known hierarchies.",
+    "timestamp": "2026-05-25"
+  }
+}
