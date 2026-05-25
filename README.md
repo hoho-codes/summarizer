@@ -27,9 +27,7 @@ The script requires at least one API key to function.
 ### 2. Configure Your Target Topics
 Open `.github/workflows/daily_summary.yml` and modify the `TOPICS` string to match your research interests. Make sure they match the supported keys inside `fetch_papers.py`:
 
-```
-yaml
-env:
+```yaml
   GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   TOPICS: "quantum algorithms, quantum computing"
@@ -38,8 +36,14 @@ env:
 ⚠️ Public Repo Protection: By default, the schedule block inside the workflow file is commented out with # so it does not run automatically on forks or public copies. To enable the daily automatic execution at 00:30 UTC, simply uncomment those lines:
 
 ```yaml
-env:
   on:
     schedule:
       - cron: '30 0 * * *'
     workflow_dispatch:
+```
+
+### 3. Run Your First Test Manually
+Whether the automatic schedule is commented out or not, you can always kick off a run instantly via the GitHub UI:
+1. Navigate to the Actions tab at the top of your GitHub repository page.
+2. Select Daily Research Paper Summary from the left-hand sidebar.
+3. Click the Run workflow dropdown menu on the right and hit the green button.
