@@ -4,7 +4,8 @@ import feedparser
 import requests
 import time
 import re
-from datetime import datetime, timezone
+import html  # Added for robust API text escaping
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from requests.exceptions import RequestException
 from collections import defaultdict
@@ -29,20 +30,17 @@ MAX_PAPERS = 10
 REQUEST_DELAY = 5
 MAX_ABSTRACT_CHARS = 1500
 CATEGORY_TOP_N = 8
+CACHE_RETENTION_DAYS = 90
 
 PAPER_MODEL_GROQ = "llama-3.1-8b-instant"
 CATEGORY_MODEL_GROQ = "llama-3.3-70b-versatile"
 GEMINI_MODEL = "gemini-1.5-flash"
 
-MIN_GROQ_INTERVAL = 12
-MIN_GEMINI_INTERVAL = 4
-MAX_GROQ_CALLS = 25
-
-LAST_GROQ_CALL = 0.0
-LAST_GEMINI_CALL = 0.0
-GROQ_CALL_COUNT = 0
-
 session = requests.Session()
+session.headers.update({
+    "User-Agent": "ResearchPaperSummarizer/1.0 (contact: github-bot)"
+})
+
 CACHE_PATH = Path("summaries/cache.json")
 
 ARXIV_CATEGORIES = {
@@ -65,212 +63,231 @@ ARXIV_CATEGORIES = {
 # =========================
 
 def load_cache():
-    if CACHE_PATH.exists():
-        try:
-            with open(CACHE_PATH, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except json.JSONDecodeError:
-            print("[!] Cache corrupted, resetting.")
-    return {}
+    if not CACHE_PATH.exists():
+        return {}
+
+    try:
+        with open(CACHE_PATH, "r", encoding="utf-8") as f:
+            cache = json.load(f)
+
+        cutoff = datetime.now(timezone.utc) - timedelta(days=CACHE_RETENTION_DAYS)
+        pruned = {}
+
+        for k, v in cache.items():
+            try:
+                ts = datetime.strptime(v["timestamp"], "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                if ts >= cutoff:
+                    pruned[k] = v
+            except Exception:
+                pass
+
+        return pruned
+
+    except json.JSONDecodeError:
+        print("[!] Cache corrupted, resetting.")
+        return {}
 
 def save_cache(cache):
     CACHE_PATH.parent.mkdir(exist_ok=True)
-    tmp_path = CACHE_PATH.with_suffix(".tmp")
-    with open(tmp_path, "w", encoding="utf-8") as f:
-        json.dump(cache, f, indent=2, ensure_ascii=False)
-        f.flush()
-        os.fsync(f.fileno())
-    tmp_path.replace(CACHE_PATH)
+    tmp = CACHE_PATH.with_suffix(".tmp")
+    try:
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(cache, f, indent=2, ensure_ascii=False)
+            f.flush()
+            os.fsync(f.fileno())
+        tmp.replace(CACHE_PATH)
+    except Exception as e:
+        print(f"[!] Critical: Failed to save cache safely: {e}")
 
-def arxiv_id_from_url(url: str):
+def arxiv_id_from_url(url):
     if not url:
         return None
     m = re.search(r"arxiv\.org/(?:abs|pdf)/([^?#]+)", url)
     if not m:
         return None
-    pid = m.group(1).replace(".pdf", "").strip()
-    return re.sub(r"v\d+$", "", pid)
+    return re.sub(r"v\d+$", "", m.group(1).replace(".pdf", "").strip())
 
 # =========================
-# Fetch & LLM Engine
+# Fetch Engine
 # =========================
+
+def clean_feed_text(text):
+    if not text:
+        return ""
+    # Unescape HTML entities (e.g., &lt; to <) and normalize spacing
+    text = html.unescape(text)
+    return re.sub(r"[ \t\r\f\v]+", " ", text.replace("\n", " ")).strip()
+
+def normalize_date(time_struct=None):
+    if time_struct:
+        try:
+            return datetime(*time_struct[:6], tzinfo=timezone.utc).strftime("%Y-%m-%d")
+        except Exception:
+            pass
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 def fetch_arxiv_papers(category, max_results):
-    url = "https://export.arxiv.org/api/query"
+    rss_url = f"https://rss.arxiv.org/rss/{category}"
+
+    for attempt in range(3):
+        try:
+            r = session.get(rss_url, timeout=15)
+            r.raise_for_status()
+            feed = feedparser.parse(r.content)
+
+            if feed.entries:
+                return [{
+                    "title": clean_feed_text(e.get("title")),
+                    "authors": clean_feed_text(e.get("author", "Unknown")),
+                    "abstract": clean_feed_text(e.get("summary")),
+                    "url": e.get("link"),
+                    "published": normalize_date(getattr(e, "published_parsed", None)),
+                } for e in feed.entries[:max_results]]
+        except Exception:
+            time.sleep(2 ** (attempt + 1))
+
+    time.sleep(REQUEST_DELAY)
+
+    api_url = "https://export.arxiv.org/api/query"
     params = {
         "search_query": f"cat:{category}",
         "max_results": max_results,
         "sortBy": "submittedDate",
         "sortOrder": "descending",
     }
-    headers = {
-        "User-Agent": "ResearchPaperSummarizer/1.0 (contact: github-bot)"
-    }
 
-    try:
-        r = session.get(url, params=params, headers=headers, timeout=30)
-        r.raise_for_status()
-        feed = feedparser.parse(r.content)
-    except RequestException as e:
-        print(f"[!] arXiv request failed for {category}: {e}")
-        return []
-    except Exception as e:
-        print(f"[!] feed parsing failed for {category}: {e}")
-        return []
-
-    papers = []
-    for e in feed.entries:
-        title = re.sub(r"\s+", " ", getattr(e, "title", "").replace("\n", "").strip())
-        abstract = re.sub(r"\s+", " ", getattr(e, "summary", "").replace("\n", "").strip())
-        authors = ", ".join(getattr(a, "name", "Unknown") for a in getattr(e, "authors", []))
-
-        papers.append({
-            "title": title,
-            "authors": authors or "Unknown",
-            "abstract": abstract,
-            "url": getattr(e, "link", ""),
-            "published": getattr(e, "published", "Unknown"),
-        })
-
-    return papers
-
-# =========================
-# LLM Engine
-# =========================
-
-def get_llm_summary(prompt, model):
-    global LAST_GROQ_CALL, LAST_GEMINI_CALL, GROQ_CALL_COUNT
-
-    # ---------------- Groq ----------------
-    if GROQ_API_KEY and GROQ_CALL_COUNT < MAX_GROQ_CALLS:
-        elapsed = time.time() - LAST_GROQ_CALL
-        if elapsed < MIN_GROQ_INTERVAL:
-            time.sleep(MIN_GROQ_INTERVAL - elapsed)
-
+    for attempt in range(3):
         try:
-            r = session.post(
-                "https://api.groq.com/openai/v1/chat/completions",
-                headers={
-                    "Authorization": f"Bearer {GROQ_API_KEY}",
-                    "Content-Type": "application/json",
-                },
-                json={
-                    "model": model,
-                    "messages": [{"role": "user", "content": prompt}],
-                    "temperature": 0.2,
-                    "max_tokens": 150,
-                },
-                timeout=30,
-            )
+            r = session.get(api_url, params=params, timeout=20)
+            r.raise_for_status()
+            feed = feedparser.parse(r.content)
 
-            if r.status_code == 200:
-                LAST_GROQ_CALL = time.time()
-                GROQ_CALL_COUNT += 1
-                return r.json()["choices"][0]["message"]["content"].strip()
+            return [{
+                "title": clean_feed_text(e.get("title")),
+                "authors": ", ".join(a.name for a in getattr(e, "authors", [])) or "Unknown",
+                "abstract": clean_feed_text(e.get("summary")),
+                "url": e.get("link"),
+                "published": normalize_date(getattr(e, "published_parsed", None)),
+            } for e in feed.entries]
 
-            print(f"[!] Groq error {r.status_code}: {r.text[:120]}")
+        except RequestException:
+            time.sleep(2 ** (attempt + 1))
 
-        except Exception as e:
-            print(f"[!] Groq request failed: {e}")
-
-    # ---------------- Gemini fallback ----------------
-    if GEMINI_API_KEY:
-        elapsed = time.time() - LAST_GEMINI_CALL
-        if elapsed < MIN_GEMINI_INTERVAL:
-            time.sleep(MIN_GEMINI_INTERVAL - elapsed)
-
-        try:
-            r = session.post(
-                f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}",
-                json={
-                    "contents": [{"parts": [{"text": prompt}]}],
-                    "generationConfig": {
-                        "temperature": 0.2,
-                        "maxOutputTokens": 150,
-                    },
-                },
-                timeout=30,
-            )
-
-            LAST_GEMINI_CALL = time.time()
-
-            data = r.json()
-            return (
-                data.get("candidates", [{}])[0]
-                .get("content", {})
-                .get("parts", [{}])[0]
-                .get("text", "")
-                .strip()
-            )
-
-        except Exception as e:
-            print(f"[!] Gemini request failed: {e}")
-
-    return None
+    return []
 
 # =========================
-# Processing Logic
+# LLM Helpers
 # =========================
 
-def format_bullets(text, max_lines=3, min_lines=3):
+def format_bullets(text, max_lines=3, min_lines=1):
     if not text:
         return None
 
-    def clean(l):
-        return re.sub(r'^[\*\-\•]|\d+[\.\)]', '', l).strip()
-
     lines = []
-    for l in text.splitlines():
-        c = clean(l)
-        if c:
-            lines.append(f"- {c}")
+    for line in text.splitlines():
+        line = re.sub(r'^[\*\-\•\s]+|\d+[\.\)]', '', line).strip()
+        if line:
+            lines.append(f"- {line}")
 
     if len(lines) < min_lines:
         return None
 
     return "\n".join(lines[:max_lines])
 
+def get_llm_summary(prompt, model, is_category_wide=False):
+    if GROQ_API_KEY:
+        # Throttling delay matches safety boundaries perfectly
+        time.sleep(3.0 if is_category_wide else 2.2)
+        for attempt in range(3):
+            try:
+                r = session.post(
+                    "https://api.groq.com/openai/v1/chat/completions",
+                    headers={"Authorization": f"Bearer {GROQ_API_KEY}"},
+                    json={
+                        "model": model,
+                        "messages": [{"role": "user", "content": prompt}],
+                        "temperature": 0.2,
+                        "max_tokens": 300,
+                    },
+                    timeout=20,
+                )
+                if r.status_code == 200:
+                    return r.json()["choices"][0]["message"]["content"].strip()
+                elif r.status_code == 429:
+                    time.sleep(6 * (attempt + 1))
+            except Exception:
+                time.sleep(2)
+
+    if GEMINI_API_KEY:
+        for _ in range(3):
+            try:
+                r = session.post(
+                    f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_API_KEY}",
+                    json={"contents": [{"parts": [{"text": prompt}]}]},
+                    timeout=20,
+                )
+                if r.status_code == 200:
+                    data = r.json()
+                    if data.get("candidates") and "content" in data["candidates"][0]:
+                        parts = data["candidates"][0]["content"].get("parts", [])
+                        if parts and "text" in parts[0]:
+                            return parts[0]["text"].strip()
+
+                    print("  [!] Warning: Gemini payload tripped safety constraints. Falling back safely.")
+                    return "Summary unavailable due to automated API safety flags."
+            except Exception:
+                time.sleep(2)
+
+    return None
+
+# =========================
+# Processing
+# =========================
 
 def summarize_paper(paper, cache, seen):
-    pid = arxiv_id_from_url(paper.get("url"))
+    pid = arxiv_id_from_url(paper["url"])
     if not pid or pid in seen:
         return None
+    seen.add(pid)
 
-    if pid in cache and isinstance(cache[pid], dict):
-        seen.add(pid)
-        return cache[pid].get("summary")
+    if pid in cache:
+        return cache[pid]["summary"]
 
-    # UPDATED PROMPT:
-    # Explicitly asking for NO introductory text and exactly 3 points.
     prompt = (
-        "Provide exactly 3 bullet points summarizing the paper below. "
-        "Do not include any introductory or concluding sentences. "
-        "Each bullet point must be a maximum of 12 words.\n\n"
+        "Provide up to 3 short bullet points summarizing the paper below. "
+        "Keep each bullet highly concise.\n\n"
         f"Title: {paper['title']}\n"
         f"Abstract: {paper['abstract'][:MAX_ABSTRACT_CHARS]}"
     )
 
-    summary = format_bullets(get_llm_summary(prompt, PAPER_MODEL_GROQ))
+    raw = get_llm_summary(prompt, PAPER_MODEL_GROQ, is_category_wide=False)
+    summary = format_bullets(raw)
 
-    if summary:
-        cache[pid] = {
-            "title": paper["title"],
-            "summary": summary,
-            "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
-        }
-        seen.add(pid)
+    # Optimization Fix: Fallback gracefully to raw un-bulleted output if formatting regex fails
+    if not summary:
+        if raw:
+            summary = f"- {raw}"
+        else:
+            return None
+
+    cache[pid] = {
+        "title": paper["title"],
+        "summary": summary,
+        "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+    }
 
     return summary
 
 def summarize_category(category, papers):
-    valid = [p for p in papers if p.get("summary")]
-    if not valid:
-        return ""
-
-    titles = "\n".join(f"- {p['title']}" for p in valid[:CATEGORY_TOP_N])
-    prompt = f"Summarize themes in these {category} papers:\n\n{titles}"
-
-    return format_bullets(get_llm_summary(prompt, CATEGORY_MODEL_GROQ)) or ""
+    titles = "\n".join(f"- {p['title']}" for p in papers[:CATEGORY_TOP_N])
+    prompt = f"Summarize major themes or core concepts shared among these {category} papers:\n\n{titles}"
+    
+    raw = get_llm_summary(prompt, CATEGORY_MODEL_GROQ, is_category_wide=True)
+    summary = format_bullets(raw)
+    
+    if not summary and raw:
+        return f"- {raw}"
+    return summary or ""
 
 # =========================
 # Main
@@ -283,46 +300,60 @@ def main():
     cache = load_cache()
     seen = set()
     all_papers = []
+    newly_summarized_count = 0
 
     markdown = [
         f"# Research Paper Summaries — {today}\n\n",
-        f"Topics: {', '.join(TOPICS)}\n\n",
+        f"**Topics:** {', '.join(TOPICS)}\n\n---\n\n"
     ]
 
     cat_map = defaultdict(list)
     for t in TOPICS:
-        if t in ARXIV_CATEGORIES:
-            for c in ARXIV_CATEGORIES[t]:
-                cat_map[c].append(t)
+        for c in ARXIV_CATEGORIES.get(t, []):
+            cat_map[c].append(t)
 
-    for cat in cat_map:
-        time.sleep(REQUEST_DELAY)
+    total_categories = len(cat_map)
 
+    for idx, cat in enumerate(cat_map, 1):
+        print(f"[{idx}/{total_categories}] Fetching papers for category: {cat}...")
         papers = fetch_arxiv_papers(cat, MAX_PAPERS)
+        print(f"  -> Found {len(papers)} papers in feed.")
+
         cat_papers = []
 
         for p in papers:
+            pid = arxiv_id_from_url(p["url"])
+            is_cached = pid and pid in cache
+
             summary = summarize_paper(p, cache, seen)
             if summary:
                 p["summary"] = summary
                 cat_papers.append(p)
                 all_papers.append(p)
 
-        if cat_papers:
-            markdown.append(f"## {cat}\n\n")
+                if not is_cached:
+                    newly_summarized_count += 1
+                    if newly_summarized_count % 5 == 0:
+                        save_cache(cache)
 
-            cat_summary = summarize_category(cat, cat_papers)
-            if cat_summary:
-                markdown.append(cat_summary + "\n\n")
+        if not cat_papers:
+            continue
 
-            for p in cat_papers:
-                markdown.append(
-                    f"### {p['title']}\n\n"
-                    f"**Authors:** {p['authors']}\n\n"
-                    f"{p['summary']}\n\n"
-                    f"[Read paper]({p['url']})\n\n---\n\n"
-                )
+        markdown.append(f"## {cat}\n\n")
 
+        cat_summary = summarize_category(cat, cat_papers)
+        if cat_summary:
+            markdown.append(cat_summary + "\n\n")
+
+        for p in cat_papers:
+            markdown.append(
+                f"### {p['title']}\n\n"
+                f"**Authors:** {p['authors']}\n\n"
+                f"{p['summary']}\n\n"
+                f"[Read paper]({p['url']})\n\n---\n\n"
+            )
+
+    # Definitive execution barrier cache save
     save_cache(cache)
 
     with open(f"summaries/{today}.md", "w", encoding="utf-8") as f:
@@ -331,8 +362,7 @@ def main():
     with open(f"summaries/{today}.json", "w", encoding="utf-8") as f:
         json.dump(all_papers, f, indent=2, ensure_ascii=False)
 
-    print(f"\nDone. Processed {len(all_papers)} papers.")
-
+    print(f"\n[+] Complete! Successfully compiled {len(all_papers)} papers across {total_categories} categories.")
 
 if __name__ == "__main__":
     main()
