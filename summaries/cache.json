@@ -333,5 +333,160 @@
     "title": "Real time monitoring of pressure-induced deformation of PDMS to evaluate pressure distribution in microfluidic channels",
     "summary": "- Real-time pressure measurements are essential for microfluidic applications.\n- Existing approaches require additional probes or sensing elements.\n- Compliant microfluidic channels are used for pressure sensing.",
     "timestamp": "2026-05-25"
+  },
+  "2605.22909": {
+    "title": "Sample-efficient benchmarking of shallow all-to-all random quantum circuits",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- Researchers developed a sample-efficient benchmark for shallow-depth random quantum circuits.\n- Nonlinear cross-entropy and heavy output generation were used to distinguish between noisy quantum computers and classical spoofers.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22915": {
+    "title": "Unified resonant-manifold framework for dynamical quantum phase transitions",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- Researchers propose a unified framework for dynamical quantum phase transitions (DQPTs).\n- The framework distinguishes between manifold and branch DQPTs based on resonances within and between state manifolds.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22917": {
+    "title": "Quantum Fisher Information under decoherence with explicit wavefunctions",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- Researchers developed a method to estimate quantum Fisher information (QFI) in many-body systems under decoherence.\n- The method maps QFI lower bounds onto expectation values over a classical probability distribution, enabling efficient estimation via Monte Carlo sampling.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22920": {
+    "title": "Estimating Green's functions with a robust quantum Arnoldi method",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- A robust quantum Arnoldi method (ROQAM) is introduced for estimating Green's functions.\n- ROQAM preserves the upper-Hessenberg structure of projected matrices and reduces precision requirements.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22922": {
+    "title": "Observation of associative-memory retrieval and spin-glass phases on a photonic quantum simulator",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- Researchers used a photonic quantum simulator to study associative memories and neural networks.\n- The simulator identified three distinct phases: memory retrieval, spin-glass \"black-out,\" and paramagnetic.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22947": {
+    "title": "Entanglement-facilitated macroscopic cluster formation in quantum many-body dynamics",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- Quantum many-body systems can preserve global information through non-local correlations.\n- Initial-state entanglement helps stabilize macroscopic cluster structures in 2D quantum Ising models.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22953": {
+    "title": "Chaos to Synchronization and Dissipative Quantum Scarring in Open Coupled top-Dicke model in a Lossy Cavity",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- The open coupled-top Dicke model explores non-equilibrium phenomena, including quantum scars in an open environment.\n- Photon loss induces spontaneous synchronization and chaos, followed by restoration of coherence and synchronization.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22966": {
+    "title": "Phase-dependent role of dissipation across the Aubry-Andr\\'e-Harper transition",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- Non-Markovian dissipation affects transport across the Aubry-Andr\\'e-Harper transition.\n- In the extended phase, dissipation qualitatively reshapes the dynamical generator.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22977": {
+    "title": "Absorbing Many-Body Correlations into Core-Optimized Orbitals",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- Researchers developed a method called Core-Optimized Orbitals (COO) to optimize orbitals in Configuration Interaction (CI) simulations.\n- COO reduces the number of determinants required in CI simulations by several orders of magnitude, making it more computationally efficient.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22980": {
+    "title": "Automatic De-Quantization of Quantum Programs Using Constant Propagation",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- Researchers propose a method to reduce quantum operations by replacing them with classical instructions.\n- The approach, called hybrid quantum-classical constant propagation, eliminates unnecessary quantum gates and controls.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22933": {
+    "title": "Emergent heavy-tailed distributions from a Markovian random walk",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- A Markovian random walk with a deterministic step length function exhibits heavy-tailed distributions.\n- The walk's positive feedback loop induces strong correlations, leading to a non-Gaussian stationary state.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22906": {
+    "title": "Weak wave turbulence as a precursor to universal coarsening in a homogeneous Bose gas",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- A homogeneous Bose gas exhibits universal coarsening behavior.\n- Weak wave turbulence describes the initial transport of particles to low momenta.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22982": {
+    "title": "Transient and asymptotic Taylor--Aris dispersion of Brownian rods in arbitrary regular-polygonal ducts",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- Brownian rods in non-circular ducts exhibit unique dispersion behavior due to pressure-driven shear alignment.\n- The dispersion is governed by a tensorial diffusion that varies across the duct cross-section, influenced by the duct geometry.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23046": {
+    "title": "Weakly nonlinear interaction of capillary waves in a finite system: leading interaction process and scales' range of direct energy cascade",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- Resonant interactions dominate the weakly nonlinear interaction of capillary waves.\n- The Zakharov-Filonenko spectrum forms in isotropic turbulence of capillary waves.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23166": {
+    "title": "Free surfaces in turbulence -- A unified framework from water surfaces to elastic solids",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- A unified framework is developed to study deformable surfaces in turbulent flows.\n- The framework predicts distinct dynamical regimes depending on whether surface dynamics emerge or are enslaved by flow turbulence.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23303": {
+    "title": "On the Applicability of the Gas-Kinetic Scheme with Kinetic Boundary Conditions for Near-Continuum Hypersonic Flows",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- The Gas-Kinetic Scheme (GKS) is applied to near-continuum hypersonic flows.\n- GKS with kinetic boundary conditions captures non-equilibrium physics and velocity slip.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23309": {
+    "title": "Full-component reconstruction of three-dimensional fluid stress tensors",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- Researchers developed U-FlowPET, a framework to reconstruct 3D fluid stress tensors from optical measurements.\n- U-FlowPET integrates photoelastic tomography with fluid mechanics equations to find physically admissible stress fields.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23396": {
+    "title": "CHIMERA: A wide Reynolds number range Taylor-Couette facility",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- Researchers designed a Taylor-Couette facility (CHIMERA) for studying angular momentum transport across a wide Reynolds number range.\n- The facility uses a novel torque measurement technique, suspending the outer cylinder as a torsion pendulum, for direct inference of fluid-induced torque.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23620": {
+    "title": "From Optical Breakdown to Bubble Inception: A Coupled Plasma-Thermal Framework for Nanosecond Laser-Induced Cavitation in Water",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- A coupled plasma-thermal framework is developed to explain nanosecond laser-induced cavitation in water.\n- Plasma-induced thermoelastic acoustic relaxation drives initial bubble formation, while residual thermal energy sustains growth.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23776": {
+    "title": "Precipitation diffusion downscaling and application to out-of-distribution simulations with and without stratospheric aerosol injection",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- Researchers developed a deep learning diffusion downscaler to generate high-resolution precipitation data from coarse climate simulations.\n- The downscaler accurately recreated climate change projections of extreme precipitation and generated realistic downscaled precipitation data.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23778": {
+    "title": "The physics of AI weather models",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- AI weather models may be solving physical equations, not those used by conventional NWP models.\n- Different AI models represent the atmosphere similarly, despite varying architectures and capacities.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23875": {
+    "title": "Atmosphere as a steam engine",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- The Earth's atmosphere operates a steam cycle where water vapor evaporates, expands, condenses, and returns as precipitation.\n- The paper estimates the global \"steam-engine power\" as 4 ± 9 W/m², close to the total atmospheric power.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23403": {
+    "title": "Hybrid Quantum-Classical Corrective Diffusion Modeling for Meteorological Downscaling",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- A hybrid quantum-classical model is proposed for statistical downscaling of weather fields.\n- The model inserts quantum circuit layers into a diffusion UNet to act as compact nonlinear feature maps.",
+    "timestamp": "2026-05-25"
+  },
+  "2412.00936": {
+    "title": "Smoothing and spatial verification of global fields",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- Researchers developed two new methodologies for smoothing global fields to enable spatial verification in global domains.\n- The methods can handle varying grid point area sizes and missing data, making them suitable for high-resolution global fields.",
+    "timestamp": "2026-05-25"
+  },
+  "2503.05331": {
+    "title": "Radiosonde-constrained reconstructions reveal a weakening Northern Hadley circulation",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- The Northern Hadley cell (NHC) has shown a weakening trend since 1980, according to radiosonde-constrained reconstructions.\n- Climate models consistently simulate a weakening NHC, but reanalyses have suggested an opposing strengthening trend.",
+    "timestamp": "2026-05-25"
+  },
+  "2601.05841": {
+    "title": "Non-stationary time series attribution for heatwaves over Europe",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- Researchers developed a method to attribute entire time series of extreme events to anthropogenic climate change.\n- The method uses a non-stationary Markov process and bivariate extreme value theory to model temporal dependence.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.11639": {
+    "title": "Enabling High-Accuracy Data Assimilation with Limited Ensembles via Machine Learning-Based Covariance Correction",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- A machine learning-based framework is proposed to improve ensemble Kalman filter (EnKF) accuracy with limited ensemble sizes.\n- A multilayer perceptron (MLP) predicts the difference between forecast error covariances from limited and large ensembles.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22901": {
+    "title": "A No-Go Theorem for the Mass-Radius Relation of Solitons",
+    "summary": "- Here are three concise bullet points summarizing the paper:\n- A no-go theorem is proven for the mass-radius relation of solitons, excluding typical non-topological, non-relativistic, and spherically symmetric solitons from having a mass-radius index (Γ) in the range [0, d].\n- The theorem applies to real scalar field theories in d spatial dimensions, considering forces from gradient energy, self-interaction, and gravitation, and works for arbitrary self-interactions.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23001": {
+    "title": "Nonlinear Wave Propagation in 1D Polycatenated Ring Chains",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- Researchers studied nonlinear wave dynamics in 1D chains of polycatenated rings.\n- The system exhibits amplitude-dependent nonlinear wave propagation due to internal flexibility.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.23688": {
+    "title": "Adjoint inverse design of microresonator frequency combs",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- Researchers developed an adjoint-based inverse-design framework for microresonator frequency combs.\n- This approach optimizes comb spectra directly, reducing reliance on manual or semi-empirical design methods.",
+    "timestamp": "2026-05-25"
+  },
+  "2605.22236": {
+    "title": "Beyond descendants: integrable observables for cohomological field theories",
+    "summary": "- Here are 3 concise bullet points summarizing the paper:\n- Researchers propose \"integrable observables\" as alternatives to Witten's psi classes in cohomological field theories.\n- Three examples of integrable observables are presented, recovering and extending known hierarchies.",
+    "timestamp": "2026-05-25"
   }
 }
