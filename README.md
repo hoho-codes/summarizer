@@ -51,3 +51,19 @@ Whether the automatic schedule is commented out or not, you can always kick off 
 ```plaintext
 [Actions] ➔ [Daily Research Paper Summary] ➔ [Run workflow ▼] ➔ [Run workflow]
 ```
+Once completed, a fresh automated summary markdown file and raw JSON catalog will appear inside your repository's `/summaries` directory!
+
+🛠️ Repository Architecture
+To ensure the automated workflow functions correctly, structure your repository exactly like this:
+
+```Plaintext
+├── .github/
+│   └── workflows/
+│       └── daily_summary.yml      # Your GitHub Actions Workflow file
+├── summaries/
+│   ├── cache.json                 # Auto-generated/updated rolling paper cache
+│   ├── YYYY-MM-DD.md              # Daily human-readable Markdown report
+│   └── YYYY-MM-DD.json            # Structured raw metadata backup
+├── fetch_papers.py                # Main Python execution engine
+└── README.md                      # Documentation
+```
