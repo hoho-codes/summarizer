@@ -2,7 +2,9 @@
 
 This is a completely vibe coded project developed in my spare time - using the free tiers of Claude, ChatGPT and Gemini. The only human generated text are these two lines 😁.
 
-# Overview
+---
+
+## 📋 Overview
 
 A zero-overhead, production-grade automated pipeline that tracks, fetches, and summarizes academic literature from arXiv using state-of-the-art Large Language Models (**Groq / Llama 3** & **Google Gemini**). 
 
@@ -16,6 +18,7 @@ Get your automated daily newsletter running in three simple steps:
 
 ### 1. Add API Keys to GitHub Secrets
 The script requires at least one API key to function. 
+
 1. Go to your GitHub Repository **Settings > Secrets and variables > Actions**.
 2. Click **New repository secret** and add at least one of these:
    * `GROQ_API_KEY` (Recommended primary engine for blistering speed)
