@@ -28,13 +28,12 @@ The script requires at least one API key to function.
 Open `.github/workflows/daily_summary.yml` and modify the `TOPICS` string to match your research interests. Make sure they match the supported keys inside `fetch_papers.py`:
 
 ```
-{
 yaml
 env:
   GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
   TOPICS: "quantum algorithms, quantum computing"
-}
+```
 
 ⚠️ Public Repo Protection: By default, the schedule block inside the workflow file is commented out with # so it does not run automatically on forks or public copies. To enable the daily automatic execution at 00:30 UTC, simply uncomment those lines:
 
