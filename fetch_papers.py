@@ -4,7 +4,7 @@ import feedparser
 import requests
 import time
 import re
-import html  # Added for robust API text escaping
+import html
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from requests.exceptions import RequestException
@@ -185,9 +185,13 @@ def format_bullets(text, max_lines=3, min_lines=1):
 
     lines = []
     for line in text.splitlines():
-        line = re.sub(r'^[\*\-\•\s]+|\d+[\.\)]', '', line).strip()
-        if line:
-            lines.append(f"- {line}")
+        line = line.strip()
+        # FILTER: Only capture lines the LLM explicitly meant to be a bullet or number
+        if re.match(r'^([\*\-\•]|\d+[\.\)])', line):
+            # CLEAN: Strip the original bullet away to standardize it
+            clean_line = re.sub(r'^[\*\-\•\s]+|\d+[\.\)]\s*', '', line).strip()
+            if clean_line:
+                lines.append(f"- {clean_line}")
 
     if len(lines) < min_lines:
         return None
@@ -255,7 +259,8 @@ def summarize_paper(paper, cache, seen):
 
     prompt = (
         "Provide up to 3 short bullet points summarizing the paper below. "
-        "Keep each bullet highly concise.\n\n"
+        "Keep each bullet highly concise. "
+        "Respond ONLY with the bullet points. Do NOT include any introductory phrases like 'Here is a summary'.\n\n"
         f"Title: {paper['title']}\n"
         f"Abstract: {paper['abstract'][:MAX_ABSTRACT_CHARS]}"
     )
@@ -263,10 +268,10 @@ def summarize_paper(paper, cache, seen):
     raw = get_llm_summary(prompt, PAPER_MODEL_GROQ, is_category_wide=False)
     summary = format_bullets(raw)
 
-    # Optimization Fix: Fallback gracefully to raw un-bulleted output if formatting regex fails
-    if not summary:
+    # FALLBACK: If the LLM failed to use bullets, save the paper by using the raw text
+    if summary is None:
         if raw:
-            summary = f"- {raw}"
+            summary = f"- {raw.strip()}"
         else:
             return None
 
@@ -280,13 +285,20 @@ def summarize_paper(paper, cache, seen):
 
 def summarize_category(category, papers):
     titles = "\n".join(f"- {p['title']}" for p in papers[:CATEGORY_TOP_N])
-    prompt = f"Summarize major themes or core concepts shared among these {category} papers:\n\n{titles}"
+    
+    prompt = (
+        f"Summarize major themes or core concepts shared among these {category} papers.\n"
+        "Respond ONLY with a bulleted list. Do NOT include any introductory or conversational text.\n\n"
+        f"{titles}"
+    )
     
     raw = get_llm_summary(prompt, CATEGORY_MODEL_GROQ, is_category_wide=True)
     summary = format_bullets(raw)
     
-    if not summary and raw:
-        return f"- {raw}"
+    # FALLBACK: If the LLM failed to use bullets, save the category summary by using the raw text
+    if summary is None and raw:
+        return f"- {raw.strip()}"
+        
     return summary or ""
 
 # =========================
