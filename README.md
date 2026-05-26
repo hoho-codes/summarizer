@@ -16,7 +16,13 @@ Running entirely on **GitHub Actions**, this script updates daily, handles API r
 
 Get your automated daily newsletter running in three simple steps:
 
-### 1. Add API Keys to GitHub Secrets
+### 1. Fork this Repository
+1. Scroll to the very top of this GitHub page.
+2. Click the **Fork** button in the upper-right corner.
+3. Select your personal GitHub account as the owner and click **Create fork**.
+4. Once the redirection finishes, you are officially working out of your own personal copy!
+
+### 2. Add API Keys to GitHub Secrets
 The script requires at least one API key to function. 
 
 1. Go to your GitHub Repository **Settings > Secrets and variables > Actions**.
@@ -24,7 +30,7 @@ The script requires at least one API key to function.
    * `GROQ_API_KEY` (Recommended primary engine for blistering speed)
    * `GEMINI_API_KEY` (Excellent failover backup layer)
 
-### 2. Configure Your Target Topics
+### 3. Configure Your Target Topics
 Open `.github/workflows/daily_summary.yml` and modify the `TOPICS` string to match your research interests. Make sure they match the supported keys inside `fetch_papers.py`:
 
 ```yaml
@@ -42,7 +48,7 @@ Open `.github/workflows/daily_summary.yml` and modify the `TOPICS` string to mat
     workflow_dispatch:
 ```
 
-### 3. Run Your First Test Manually
+### 4. Run Your First Test Manually
 Whether the automatic schedule is commented out or not, you can always kick off a run instantly via the GitHub UI:
 1. Navigate to the Actions tab at the top of your GitHub repository page.
 2. Select Daily Research Paper Summary from the left-hand sidebar.
