@@ -14,7 +14,7 @@ Running entirely on **GitHub Actions**, this script updates daily, handles API r
 
 ## 🚀 Quick Start (3-Minute Setup)
 
-Get your automated daily newsletter running in three simple steps:
+Get your automated daily newsletter running in four simple steps:
 
 ### 1. Fork this Repository
 1. Scroll to the very top of this GitHub page.
