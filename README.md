@@ -8,7 +8,7 @@ This is a completely vibe coded project developed in my spare time - using the f
 
 An automated pipeline that tracks, fetches, and summarizes academic literature from arXiv using state-of-the-art Large Language Models (**Groq / Llama 3** & **Google Gemini**). 
 
-Running entirely on **GitHub Actions**, this script updates daily, handles API rate-limits defensively, skips already-processed papers via local disk caching, and outputs elegant, human-readable Markdown digests.
+Running entirely on **GitHub Actions**, this script updates daily, handles API rate-limits defensively, skips already-processed papers via local disk caching, and outputs human-readable Markdown digests.
 
 ---
 
